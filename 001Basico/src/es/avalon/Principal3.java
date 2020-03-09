@@ -20,7 +20,8 @@ public class Principal3 {
 		
 		System.out.println("todo ok slava 2");
 		System.out.println("todo ok slava 100");
-		System.out.println("todo ok slava 100");
+		System.out.println("todo ok slava 104"
+				+ "");
 
 	}
 
