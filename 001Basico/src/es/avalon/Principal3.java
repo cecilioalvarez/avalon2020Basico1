@@ -18,7 +18,7 @@ public class Principal3 {
 			System.out.println("has hecho buen examen");
 		}
 		
-		System.out.println("hola pepe 2");
+		System.out.println("hola pepe 100");
 
 	}
 
