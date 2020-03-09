@@ -17,6 +17,8 @@ public class Principal3 {
 		else {
 			System.out.println("has hecho buen examen");
 		}
+		
+		System.out.println("todo ok");
 
 	}
 
