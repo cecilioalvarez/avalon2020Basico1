@@ -19,6 +19,7 @@ public class Principal3 {
 		}
 		
 		System.out.println("todo ok maria");
+		System.out.println("hola 100 , soy 200");
 
 	}
 
