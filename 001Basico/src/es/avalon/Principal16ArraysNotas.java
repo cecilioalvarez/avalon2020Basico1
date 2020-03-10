@@ -5,7 +5,7 @@ public class Principal16ArraysNotas {
 	public static void main(String[] args) {
 		
 		int [] numeros = new int [] {2,3,4,7,9};
-		int[]  numeros2 = new int [6];
+		int []  numeros2 = new int [5];
 		
 		System.out.println(numeros [0]);
 		System.out.println(numeros [1]);
@@ -17,6 +17,6 @@ public class Principal16ArraysNotas {
 			System.out.println(numeros[i+1]);
 		}
 
-	}
+	} 
 
 }
