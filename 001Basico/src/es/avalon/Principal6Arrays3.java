@@ -6,12 +6,18 @@ public class Principal6Arrays3 {
 		// Sumar dos Arrays
 
 		int[] n1 = new int[] { 2, 4, 9 };
-		int[] n2 = new int[] { 3, 6, 4 };
+		int[] n2 = new int[] { 4, 6, 4 };
 		
+		int[] n3 = new int[3];
 
-		for (int i = 0; i < 3; i++) {
+		for (int i = 0; i < n1.length; i++) {
 
-			System.out.println(n1[i]+n2[i]);
+			n3[i] = n1[i] + n2[i];
+		}
+		
+		for (int j = 0; j < n3.length; j++) {
+
+			System.out.println(n3[j]);
 		}
 
 	}
