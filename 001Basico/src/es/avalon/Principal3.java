@@ -1,10 +1,15 @@
 package es.avalon;
 
+import java.util.Scanner;
+
 public class Principal3 {
 
 	public static void main(String[] args) {
-
-		int numero = 4;
+		
+		Scanner reader = new Scanner(System.in);
+        System.out.println("Tio, ¿que nota sacaste en el examen?");
+        int numero =0;
+        numero=reader.nextInt();
 
 		if (numero < 5) {
 
