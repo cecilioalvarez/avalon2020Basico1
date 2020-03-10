@@ -13,8 +13,7 @@ public class Principal5 {
 //		for (int i=0; i<numeros.length; i++) {
 //			System.out.println(numeros[i]);
 //		}
-		
-		
+
 //		int[] notas = new int[] {2,3,4,6,8};
 //
 //		for (int i=0; i<notas.length; i++) {
@@ -36,12 +35,23 @@ public class Principal5 {
 //				System.out.println(notas[i]);
 //			}
 //		}
-		int[] arr1 = new int[] {2,4,6,8,10};
-		int[] arr2 = new int[] {1,3,5,7,9};
-		int[] arrSum = new int[] {0,0,0,0,0};
-		for (int i=0; i<arr1.length; i++) {
-			arrSum[i] = arr1[i]+arr2[i];
-			System.out.println(arrSum[i]);
+//		int[] arr1 = new int[] { 2, 4, 6, 8, 10 };
+//		int[] arr2 = new int[] { 1, 3, 5, 7, 9 };
+//		int[] arrSum = new int[] { 0, 0, 0, 0, 0 }; // new int[5] - array vacio de dim=5
+//		for (int i = 0; i < arr1.length; i++) {
+//			arrSum[i] = arr1[i] + arr2[i];
+//			System.out.println(arrSum[i]);
+//		}
+		int[] arr1 = new int[] { 4, 2, 6, 0, 5 };
+		int[] arr2 = new int[] { 1, 3, 5, 7, 9 };
+		int[] arrBig = new int[5];
+		for (int i = 0; i < arr1.length; i++) {
+			if (arr1[i] < arr2[i]) {
+				arrBig[i] = arr2[i]; }
+			else {
+				arrBig[i] = arr1[i];}
+			
+			System.out.println(arrBig[i]);
 		}
 
 	}
