@@ -5,10 +5,6 @@ public class Principal16ArraysNotas {
 	public static void main(String[] args) {
 		
 		int [] numeros = new int [] {2,3,4,7,9};
-<<<<<<< HEAD
-		int []  numeros2 = new int [5];
-=======
->>>>>>> branch 'slava' of https://github.com/cecilioalvarez/avalon2020Basico1.git
 		
 	
 		
@@ -25,6 +21,6 @@ public class Principal16ArraysNotas {
 			System.out.println(numeros[i]);
 		}
 
-	} 
+	}
 
 }
