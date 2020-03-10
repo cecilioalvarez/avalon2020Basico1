@@ -4,7 +4,7 @@ public class Principal3 {
 
 	public static void main(String[] args) {
 
-		int numero = 9;
+		int numero = 7;
 
 		if(numero < 5) {
 			 
