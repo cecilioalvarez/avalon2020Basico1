@@ -11,14 +11,14 @@ public class PrincipalArraysCogerMayor {
 		for (int i = 0; i < array1.length; i++) {
 			System.out.print(array1[i] + " ");
 		}
-		System.out.println("  --> Array 1");
+		System.out.println(" --> Array 1");
 		for (int i = 0; i < array1.length; i++) {
 			System.out.print(array2[i] + " ");
 		}
-		System.out.println("  --> Array 2");
+		System.out.println(" --> Array 2");
 		for (int i = 0; i < array1.length; i++) {
 			array3[i] = array2[i];
-			if (array2[i]<array1[i]) {
+			if (array1[i]>array2[i]) {
 				array3[i]=array1[i];
 			}
 			System.out.print(array3[i] + " ");
