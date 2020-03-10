@@ -13,6 +13,7 @@ public static void main(String[] args) {
 	double f2=10000.234;
 	char caracter='a';
 	boolean cierto=true;
+	
 	System.out.println("hola desde java");
 
 	System.out.println(numero);
