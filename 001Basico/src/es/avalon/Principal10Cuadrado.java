@@ -1,6 +1,6 @@
 package es.avalon;
 
-public class PrincipalCuadrado {
+public class Principal10Cuadrado {
 
 	public static void main(String[] args) {
 		
