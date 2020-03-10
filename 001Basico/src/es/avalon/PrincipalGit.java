@@ -6,6 +6,7 @@ public class PrincipalGit {
 		
 		
 		System.out.println("nuevo cecilio");
+		System.out.println("nuevo slava");
 
 	}
 
