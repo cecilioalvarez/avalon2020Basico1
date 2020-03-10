@@ -23,18 +23,36 @@ public class Principal5 {
 		// for(int i=0;i<numeros.length;i++) { syso(numeros)
 
 		int[] Array1 = new int[] { 1, 2, 3, 4, 5 };
-		int[] Array2 = new int[] { 1, 2, 3, 4, 5 };
+		int[] Array2 = new int[] { 2, 3, 4, 5, 1 };
 		int[] Array3 = new int[5];
 
-		for (int i = 0; i < Array1.length; i++) {
+//		for (int i = 0; i < Array1.length; i++) {
+//
+//			Array3[i] = Array1[i] + Array2[i];
+//
+//			if (i < Array1.length - 1) {
+//				System.out.print(Array3[i] + ",");
+//			} else {
+//				System.out.println(Array3[i]);
+//			}
+//		}
+		for(int i=0; i< Array1.length; i++) 
+		{
+		if(Array1[i]<Array2[i])
+		{
+			Array3[i] =Array2[i];
+		}
+		else
+		{
+			Array3[i] =Array1[i];
+		}
 
-			Array3[i] = Array1[i] + Array2[i];
-
-			if (i < Array1.length - 1) {
-				System.out.print(Array3[i] + ",");
-			} else {
-				System.out.println(Array3[i]);
-			}
+		
+		if (i < Array1.length - 1) {
+  			System.out.print(Array3[i] + ",");
+  		} else {
+			System.out.println(Array3[i]);
+		}
 		}
 	}
 
