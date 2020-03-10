@@ -10,29 +10,29 @@ public class Principal3b {
 		
 		int numero;
 	       
-        System.out.println("¿Que sacaste en el examen?");
+        System.out.println("Tio, ¿que nota sacaste en el examen?");
         numero=sc.nextInt();
        
        
         if(numero < 5) {
 			 
-            System.out.println("Suspenso");
+            System.out.println("Que horror");
  
         }else if( numero < 5) {
  
-            System.out.println("Suficiente");
+            System.out.println("Por los pelos");
  
         }else if( numero < 7) {
  
-            System.out.println("Bien");
+            System.out.println("Ni tan mal");
  
         }else if (numero < 9) {
  
-            System.out.println("Notable");
+            System.out.println("Nada mal bro");
  
         }else {
  
-            System.out.println("Sobresaliente");
+            System.out.println("OLE OLE Notaza");
  
         }
 
