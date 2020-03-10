@@ -12,7 +12,5 @@ public class Principal5WhileMulti {
 			System.out.println(i+ "x7=" + i*7);
 			i++;
 		}
-
 	}
-
 }
