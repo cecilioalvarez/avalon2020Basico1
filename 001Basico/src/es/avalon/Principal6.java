@@ -3,17 +3,20 @@ package es.avalon;
 public class Principal6 {
 	public static void main (String [] args)
 	{
-		
+		float [] paliva= new float [] {100,85,60,1000,50,85};  
+		calculoiva(paliva);// va a calcuar el iva total de la suma del array
+			
+			
 //		int [] unalista= new int [] {1,2,3,85};
 //		//eligira el numero más alto
 //		System.out.println(masalto(unalista));
-		int [] unalista= new int [] {1,12,3,26,0,85}; // que me sume todo lo de la lista que sea mayor que 3
-		int[]  nueva=backward(unalista);
-		
-		for (int j = 0; j < nueva.length; j++) {
-			System.out.println(nueva[j]);
-		}
-		
+//		int [] unalista= new int [] {1,12,3,26,0,85}; // que me sume todo lo de la lista que sea mayor que 3
+//		int[]  nueva=backward(unalista);
+//		
+//		for (int j = 0; j < nueva.length; j++) {
+//			System.out.println(nueva[j]);
+//		}
+//		
 //		lista(7); // hace una lista desde el cero hasta el numero pedido
 		
 //		suma (10); // suma todos los mnumero entero hasta el numero pedido
@@ -24,14 +27,24 @@ public class Principal6 {
 //		
 //		
 	}
-	
-	private static int [] backward(int[] numeros ) {
-		int [] nueva= new int [numeros.length];
-		int L= numeros.length;
-		for (int i=0; i< numeros.length;i++) {
-			nueva [L-i-1]= numeros [i];
-		}return nueva;
+	private static float calculoiva (float[] numeros ) {
+		float a=0;
+		for (int i=0; i<numeros.length;i++) {
+			a=a+ numeros[i];
+		}
+		float IVA= (float) (0.21*a) +a ;
+		
+				System.out.println(IVA);
+				return IVA;
 	}
+//	
+//	private static int [] backward(int[] numeros ) {
+//		int [] nueva= new int [numeros.length];
+//		int L= numeros.length;
+//		for (int i=0; i< numeros.length;i++) {
+//			nueva [L-i-1]= numeros [i];
+//		}return nueva;
+//	}
 	//otra version
 	/*
 	 * 
