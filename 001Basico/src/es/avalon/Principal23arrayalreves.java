@@ -15,8 +15,8 @@ public class Principal23arrayalreves {
 	private static int[] reordenar(int[] vector) {
 		int[] nueva = new int[vector.length];
 
-		for (int i = 0; i < vector.length; i++) { //for(int i=vector.length-1;i>=0;i--) {
-			nueva[vector.length - i - 1] = vector[i]; //nueva[i]=vectro[vector.length-i]
+		for (int i = 0; i < vector.length; i++) { 
+			nueva[vector.length - i - 1] = vector[i]; 
 		}
 		return nueva;
 	}
