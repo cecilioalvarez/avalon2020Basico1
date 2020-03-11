@@ -4,7 +4,7 @@ public class PrincipalFuncionesConArrays {
 
 	public static void main(String[] args) {
 
-		int[] array = new int[] { 1, 7, 3, 4 };
+		int[] array = new int[] { 1, 2, 4, 4 };
 		int[] arrayDuplicado = duplicarArray(array);
 		int[] arraySumado = sumaArray(array, 2);
 		int[] arrayAlReves = alRevesArray(array);
@@ -18,8 +18,19 @@ public class PrincipalFuncionesConArrays {
 		imprimirArray(arrayAlReves, "ArrayAlReves   -->  ");
 		System.out.println();
 		int mayor =devuelveMayor(array);
-		System.out.println("El mayor es    --> " + mayor);
+		System.out.println("El mayor es    -->  " + mayor);
+		int suma = sumaMayores(array);
+		System.out.println("La suma >3 es  -->  " + suma);
 
+	}
+
+	private static int sumaMayores(int[] array) {
+		int suma=0;
+		for(int i=0;i<array.length;i++) {
+			if(array[i]>3) {
+				suma = suma + array[i];
+			}
+		}return suma;
 	}
 
 	private static int devuelveMayor(int[] array) {
@@ -32,7 +43,6 @@ public class PrincipalFuncionesConArrays {
 		}
 		return mayor;
 	}
-	
 	
 	private static int[] sumaArray(int[] array, int a) {
 
