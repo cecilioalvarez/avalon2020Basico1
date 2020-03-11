@@ -9,7 +9,7 @@ public class Principal19funcionarray {
 		
 		int [] milista=new int [] {1,2,3,4,5}; 
 		
-		int [] resultado=duplicararray(milista);
+		int [] resultado=duplicararray(milista); 
 		imprimir(resultado);
 	}
 
@@ -27,7 +27,7 @@ public class Principal19funcionarray {
 	
 	private static void imprimir(int [] vector) {
 	
-		for(int i=0; i<=vector.length; i++) {
+		for(int i=0; i<vector.length; i++) {
 			System.out.println(vector[i]);
 		}
 	
