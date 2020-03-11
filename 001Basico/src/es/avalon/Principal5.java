@@ -5,6 +5,7 @@ public class Principal5 {
 	{
 		int[]numeros= new int [] {1,2,3};
 		System.out.println(numeros);
+		
 	System.out.println(numeros [0]);
 	System.out.println(numeros [1]);
 	System.out.println(numeros [2]);

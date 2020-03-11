@@ -6,21 +6,37 @@ public class Principal6 {
 		
 //		lista(7); // hace una lista desde el cero hasta el numero pedido
 		
-		suma (10); // suma todos los mnumero entero hasta el numero pedido
-			
-		}
-	// metodo lista en el que haces una suma de 0 hasta el numero pedido
-	private static void suma (int a) {
-		int suma=0;
-		for (int i=0; i<=a;i++) {
-			suma=suma+i;
-					
-			
-		}
-		System.out.println(suma);
+//		suma (10); // suma todos los mnumero entero hasta el numero pedido
+			// genero una lista
+		int [] unalista= new int [] {1,2,3};
+		
+		inferno (unalista);// duplica los numeros del array
 		
 		
+		}
+	private static int [] inferno (int[] numeros ) {
+		int [] nueva= new int [numeros.length]	; // asegura tener el array del mismo tamaño del que entra y asi no hay problema
+		for (int i=0; i<numeros.length;i++) {
+			nueva[i]= numeros[i]*2;
+		}
+		return nueva;
 	}
+	
+	
+	
+	
+	// metodo lista en el que haces una suma de 0 hasta el numero pedido
+//	private static void suma (int a) {
+//		int suma=0;
+//		for (int i=0; i<=a;i++) {
+//			suma=suma+i;
+//					
+//			
+//		}
+//		System.out.println(suma);
+//		
+//		
+//	}
 	// metodo lista en el que haces una lista de 0 hasta el numero pedido
 //	private static void lista (int a) {
 //		
