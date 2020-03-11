@@ -21,7 +21,7 @@ public class Principal16ArraysNotas {
 
 		for (int i = 0; i < numeros.length; i++) {
 
-			System.out.print(numeros[i]+",");
+			System.out.print(numeros[i] + ",");
 		}
 
 	}
