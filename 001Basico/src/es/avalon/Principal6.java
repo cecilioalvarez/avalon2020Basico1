@@ -4,25 +4,41 @@ public class Principal6 {
 	public static void main (String [] args)
 	{
 		
+		int [] unalista= new int [] {1,2,3,85};
+		//eligira el numero más alto
+		System.out.println(masalto(unalista));
+		
+		
+		
 //		lista(7); // hace una lista desde el cero hasta el numero pedido
 		
 //		suma (10); // suma todos los mnumero entero hasta el numero pedido
 			// genero una lista
-		int [] unalista= new int [] {1,2,3};
-		
-		inferno (unalista);// duplica los numeros del array
-		
-		
-		}
-	private static int [] inferno (int[] numeros ) {
-		int [] nueva= new int [numeros.length]	; // asegura tener el array del mismo tamaño del que entra y asi no hay problema
-		for (int i=0; i<numeros.length;i++) {
-			nueva[i]= numeros[i]*2;
-		}
-		return nueva;
+//		int [] unalista= new int [] {1,2,3};
+//		
+//		//inferno (unalista);// duplica los numeros del array
+//		
+//		
 	}
-	
-	
+//	private static int [] inferno (int[] numeros ) {
+//		int [] nueva= new int [numeros.length]	; // asegura tener el array del mismo tamaño del que entra y asi no hay problema
+//		for (int i=0; i<numeros.length;i++) {
+//			nueva[i]= numeros[i]*2;
+//		}
+//		return nueva;
+//	}
+	private static int  masalto(int[] numeros ) {
+		int a= 0;
+		for (int i=1; i<numeros.length;i++) {
+			if(numeros [i] >= a) {
+				a= numeros [i];
+				i++;
+		}else {
+			i++;
+		}
+	}
+		return a;
+	}
 	
 	
 	// metodo lista en el que haces una suma de 0 hasta el numero pedido
