@@ -8,7 +8,14 @@ public class Principal6 {
 //		hola();
 //		adios();
 //		lista(10);
-		sumaN(10);
+//		sumaN(10);
+		int[] inicial = new int[] {5,3,8};
+		
+		int[] duplicada = arrDupl(inicial);
+		
+		imprimir(duplicada);
+		
+		
 
 	}
 
@@ -38,11 +45,29 @@ public class Principal6 {
 	
 	
 	//suma numeros del 1 hasta N
-	private static void sumaN(int N) {
-		int suma = 0;
-		for (int i=1; i<N; i++) {
-			suma = suma + i;
+//	private static void sumaN(int N) { // quitar void
+//		int suma = 0;
+//		for (int i=1; i<N; i++) {
+//			suma = suma + i;
+//		}
+//		System.out.println(suma); // Hacerlo con return suma
+//	}
+	
+	//array con los numeros duplicados
+	private static int[] arrDupl(int[] arrInicial) {
+		
+		int[] arrDuplicado = new int[arrInicial.length];
+
+		for (int i=0; i<arrInicial.length; i++) {
+			arrDuplicado[i] = arrInicial[i]*2;
+			
 		}
-		System.out.println(suma);
+		return arrDuplicado;
+	}
+	
+	private static void imprimir(int[] lista) {
+		for (int i=0; i<lista.length; i++) {
+			System.out.println(lista[i]);
+		}
 	}
 }
