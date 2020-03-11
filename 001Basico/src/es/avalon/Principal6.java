@@ -19,7 +19,9 @@ public class Principal6 {
 		
 //		System.out.println(masAlto(inicial));
 		
-		System.out.println(sumaArr3(inicial));
+		int[] reves = reverArr(inicial);
+		imprimir(reves);
+
 
 	}
 
@@ -88,17 +90,33 @@ public class Principal6 {
 //		return mayor;
 //	}
 
-	//recorre un array y devuelve la suma de numeros mayores de 3
-	private static int sumaArr3(int[] arr) {
+	// recorre un array y devuelve la suma de numeros mayores de 3
+//	private static int sumaArr3(int[] arr) {
+//	
+//	int suma = 0;
+//	for (int i = 0; i < arr.length; i++) {
+//		if (arr[i] > 3) {
+//			suma = suma + arr[i];
+//		}
+//	}
+//	return suma;
+//}
 	
-	int suma = 0;
-	for (int i = 0; i < arr.length; i++) {
-		if (arr[i] > 3) {
-			suma = suma + arr[i];
+	
+	//array al reves
+	
+	private static int[] reverArr(int[] arr) {
+		int[] arr2 = new int[arr.length];
+		for (int i = 0; i < arr.length; i++) {
+			arr2[i] = arr[arr.length-i-1];
 		}
+		return arr2;
 	}
-	return suma;
-}
 	
+	private static void imprimir(int[] lista) {
+	for (int i=0; i<lista.length; i++) {
+		System.out.println(lista[i]);
+	}
+}
 }
 
