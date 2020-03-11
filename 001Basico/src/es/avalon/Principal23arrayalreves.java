@@ -6,17 +6,17 @@ public class Principal23arrayalreves {
 
 		// Sacar el array al reves
 
-		int[] vector = new int[] { 1, 2, 3, 4, 5 }; // introduzco el array
+		int[] mivector = new int[] { 1, 2, 3, 4, 5 }; // introduzco el array
 
-		int[] vectorordenado = reordenar(vector);
+		int[] vectorordenado = reordenar(mivector);
 		imprimir(vectorordenado);
 	}
 
 	private static int[] reordenar(int[] vector) {
 		int[] nueva = new int[vector.length];
 
-		for (int i = 0; i < vector.length; i++) {
-			nueva[vector.length - i - 1] = vector[i];
+		for (int i = 0; i < vector.length; i++) { //for(int i=vector.length-1;i>=0;i--) {
+			nueva[vector.length - i - 1] = vector[i]; //nueva[i]=vectro[vector.length-i]
 		}
 		return nueva;
 	}

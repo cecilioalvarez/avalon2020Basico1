@@ -6,9 +6,9 @@ public class Principal22sumaarrayfuncion {
 
 		// Funcion que me devuelva la suma de todos los valores del array mayores que 3
 
-		int[] vector = new int[] { 7, 25, 3, 1, 8 }; // introduzco array
+		int[] mivector = new int[] { 7, 25, 3, 1, 8 }; // introduzco array
 
-		int acumulado = Sumarvalores(vector);
+		int acumulado = Sumarvalores(mivector);
 		System.out.println(acumulado);
 
 	}

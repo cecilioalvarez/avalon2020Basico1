@@ -6,9 +6,9 @@ public class Principal21arraymayorvalor {
 
 		// uncion que escoge el mayor valor de un array
 
-		int[] vector = new int[] { 7, 25, 3, 1, 8 }; // introduzco array
+		int[] mivector = new int[] { 7, 25, 3, 1, 8 }; // introduzco array
 
-		int resultado = valormayor(vector);
+		int resultado = valormayor(mivector);
 		System.out.println(resultado);
 		// System.out.println(valormayor(vector)); // otra forma de sacar el resultado
 	}
