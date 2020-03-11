@@ -21,10 +21,10 @@ public class Principal16 {
 		for (int i = 0; i < 5; i++) {
 
 		if (numeros[i]>numeros2[i]) {
-			System.out.println(numeros[i]);
+			System.out.print(numeros[i]+",");
 		}
 		else {
-		System.out.println(numeros2[i]); //Pinto las notas retocadas
+		System.out.print(numeros2[i]+","); //Pinto las notas retocadas
 		}
 		}
 	}
