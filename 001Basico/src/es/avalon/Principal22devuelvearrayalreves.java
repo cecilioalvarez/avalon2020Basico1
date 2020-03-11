@@ -11,6 +11,7 @@ public class Principal22devuelvearrayalreves {
 		
 		int [] resultado=reves(miarray);
 		// imprimir(resultado);
+		
 		for (int i=0; i<resultado.length; i++) {
 			System.out.println(resultado[i]);
 		}
@@ -21,7 +22,7 @@ public class Principal22devuelvearrayalreves {
 			
 			int [] nuevoarray=new int [array.length];
 			
-			for(int i=0; i<array.length; i++) {
+			for(int i=0; i<array.length; i++) {	
 				
 				nuevoarray[array.length-i-1]=array[i];		
 				
