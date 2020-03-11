@@ -4,11 +4,11 @@ public class Principal6 {
 	public static void main (String [] args)
 	{
 		
-		int [] unalista= new int [] {1,2,3,85};
-		//eligira el numero más alto
-		System.out.println(masalto(unalista));
-		
-		
+//		int [] unalista= new int [] {1,2,3,85};
+//		//eligira el numero más alto
+//		System.out.println(masalto(unalista));
+		int [] unalista= new int [] {1,2,3,26,0,85}; // que me sume todo lo de la lista que sea mayor que 3
+		System.out.println(sumamasalto(unalista));
 		
 //		lista(7); // hace una lista desde el cero hasta el numero pedido
 		
@@ -20,6 +20,22 @@ public class Principal6 {
 //		
 //		
 	}
+	
+	private static int sumamasalto(int[] numeros ) {
+		int a=3;
+		int suma=0;
+		for (int i=1; i<numeros.length;i++) {
+			if (numeros[i]>a) {
+				suma = suma + numeros[i];
+				i++;
+			}else {
+				i++;
+			}
+		}
+		return suma;
+	}
+	
+	
 //	private static int [] inferno (int[] numeros ) {
 //		int [] nueva= new int [numeros.length]	; // asegura tener el array del mismo tamaño del que entra y asi no hay problema
 //		for (int i=0; i<numeros.length;i++) {
@@ -27,19 +43,19 @@ public class Principal6 {
 //		}
 //		return nueva;
 //	}
-	private static int  masalto(int[] numeros ) {
-		int a= 0;
-		for (int i=1; i<numeros.length;i++) {
-			if(numeros [i] >= a) {
-				a= numeros [i];
-				i++;
-		}else {
-			i++;
-		}
-	}
-		return a;
-	}
-	
+//	private static int  masalto(int[] numeros ) {
+//		int a= 0;
+//		for (int i=1; i<numeros.length;i++) {
+//			if(numeros [i] >= a) {
+//				a= numeros [i];
+//				i++;
+//		}else {
+//			i++;
+//		}
+//	}
+//		return a;
+//	}
+//	
 	
 	// metodo lista en el que haces una suma de 0 hasta el numero pedido
 //	private static void suma (int a) {
