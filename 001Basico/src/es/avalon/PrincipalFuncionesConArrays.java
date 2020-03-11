@@ -8,6 +8,8 @@ public class PrincipalFuncionesConArrays {
 		int[] arrayDuplicado = duplicarArray(array);
 		int[] arraySumado = sumaArray(array, 2);
 		int[] arrayAlReves = alRevesArray(array);
+		
+		double[] arrayIva = new double[] { 100,100 };
 
 		imprimirArray(array, "ArrayOriginal  -->  ");
 		System.out.println();
@@ -21,7 +23,18 @@ public class PrincipalFuncionesConArrays {
 		System.out.println("El mayor es    -->  " + mayor);
 		int suma = sumaMayores(array);
 		System.out.println("La suma >3 es  -->  " + suma);
+		
+		double iva = calculaIva(arrayIva);
+		System.out.println("Suma(Iva) es   -->  "+ iva);
 
+	}
+	
+	private static double calculaIva(double[] array) {
+		double suma = 0;
+		for(int i =0; i<array.length;i++) {
+			
+			suma =  suma + array[i]*1.21;
+		}return suma;
 	}
 
 	private static int sumaMayores(int[] array) {
@@ -76,7 +89,6 @@ public class PrincipalFuncionesConArrays {
 		}
 		return array2;
 	}
-	
 
 	private static void imprimirArray(int[] array, String titulo) {
 
