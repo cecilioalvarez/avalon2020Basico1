@@ -9,13 +9,17 @@ public class Principal6 {
 //		adios();
 //		lista(10);
 //		sumaN(10);
-		int[] inicial = new int[] {5,3,8};
+		int[] inicial = new int[] {6,2,3,4,5};
 		
-		int[] duplicada = arrDupl(inicial);
+
 		
-		imprimir(duplicada);
+//		int[] duplicada = arrDupl(inicial);
 		
+//		imprimir(duplicada);
 		
+//		System.out.println(masAlto(inicial));
+		
+		System.out.println(sumaArr3(inicial));
 
 	}
 
@@ -54,20 +58,47 @@ public class Principal6 {
 //	}
 	
 	//array con los numeros duplicados
-	private static int[] arrDupl(int[] arrInicial) {
-		
-		int[] arrDuplicado = new int[arrInicial.length];
-
-		for (int i=0; i<arrInicial.length; i++) {
-			arrDuplicado[i] = arrInicial[i]*2;
-			
-		}
-		return arrDuplicado;
-	}
+//	private static int[] arrDupl(int[] arrInicial) {
+//		
+//		int[] arrDuplicado = new int[arrInicial.length];
+//
+//		for (int i=0; i<arrInicial.length; i++) {
+//			arrDuplicado[i] = arrInicial[i]*2;
+//			
+//		}
+//		return arrDuplicado;
+//	}
+//	
+//	private static void imprimir(int[] lista) {
+//		for (int i=0; i<lista.length; i++) {
+//			System.out.println(lista[i]);
+//		}
+//	}
 	
-	private static void imprimir(int[] lista) {
-		for (int i=0; i<lista.length; i++) {
-			System.out.println(lista[i]);
+	//recorre un array y devuelve el número más alto
+	
+//	private static int masAlto(int[] arr) {
+//		
+//		int mayor = 0;
+//		for (int i = 0; i < arr.length; i++) {
+//			if (arr[i] > mayor) {
+//				mayor = arr[i];
+//			}
+//		}
+//		return mayor;
+//	}
+
+	//recorre un array y devuelve la suma de numeros mayores de 3
+	private static int sumaArr3(int[] arr) {
+	
+	int suma = 0;
+	for (int i = 0; i < arr.length; i++) {
+		if (arr[i] > 3) {
+			suma = suma + arr[i];
 		}
 	}
+	return suma;
 }
+	
+}
+
