@@ -9,7 +9,7 @@ public class Principal6 {
 //		adios();
 //		lista(10);
 //		sumaN(10);
-		int[] inicial = new int[] {6,2,3,4,5};
+//		int[] inicial = new int[] {8,10,100,80};
 		
 
 		
@@ -19,8 +19,11 @@ public class Principal6 {
 		
 //		System.out.println(masAlto(inicial));
 		
-		int[] reves = reverArr(inicial);
-		imprimir(reves);
+//		int[] reves = reverArr(inicial);
+//		imprimir(reves);
+		double[] inicial = new double[] {8,10,100,80};		
+		double sumaIVA = arrIVA(inicial);
+		System.out.println(sumaIVA);
 
 
 	}
@@ -105,18 +108,30 @@ public class Principal6 {
 	
 	//array al reves
 	
-	private static int[] reverArr(int[] arr) {
-		int[] arr2 = new int[arr.length];
-		for (int i = 0; i < arr.length; i++) {
-			arr2[i] = arr[arr.length-i-1];
-		}
-		return arr2;
-	}
+//	private static int[] reverArr(int[] arr) {
+//		int[] arr2 = new int[arr.length];
+//		for (int i = 0; i < arr.length; i++) {
+//			arr2[i] = arr[arr.length-i-1];
+//		}
+//		return arr2;
+//	}
+//	
+//	private static void imprimir(int[] lista) {
+//	for (int i=0; i<lista.length; i++) {
+//		System.out.println(lista[i]);
+//	}
+//}
 	
-	private static void imprimir(int[] lista) {
-	for (int i=0; i<lista.length; i++) {
-		System.out.println(lista[i]);
+	// array que añada el iva a un array y devuelva la suma
+	private static double arrIVA(double[] arr) {
+		double iva = 0.21;
+		double suma = 0;
+		for (int i = 0; i < arr.length; i++) {
+			suma = suma + arr[i]*iva;
+		}
+		return suma;
 	}
 }
-}
+
+
 
