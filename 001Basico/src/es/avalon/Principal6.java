@@ -12,10 +12,12 @@ public class Principal6 {
 			
 			
 		}
-	private static int lista (int a) {
-		for (int i>=0; i<=a;i++) {
+	private static void lista (int a) {
+		
+		for (int i=0; i<=a;i++) {
 			System.out.println(i);
 		}
+		
 	}
 }
 	
