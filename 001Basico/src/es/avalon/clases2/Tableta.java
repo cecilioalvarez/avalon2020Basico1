@@ -13,7 +13,22 @@ public class Tableta {
 	public int getPrecio() {
 		return precio;
 	}
+	
+	//es identico
+	public double getPrecioConIVA() {
+		
+		return precio * 1.21;
+	}
+	
+	// este otro
+	public double getPrecioConIVA(int porcentaje) {
+		
+		return precio + porcentaje*(precio /100) ;
+	}
+	
 	public void setPrecio(int precio) {
+		
+		
 		this.precio = precio;
 	}
 	
