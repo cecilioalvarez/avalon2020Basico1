@@ -10,7 +10,7 @@ public class Principal3 {
 		Alumno a = new Alumno();
 		
 		a.setNombre("Razvan");
-		a.setNota(4);
+		a.setNota(15);
 		
 		System.out.println(a.getNombre());
 		System.out.println(a.getNota());

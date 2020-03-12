@@ -2,9 +2,9 @@ package es.avalon.clases2;
 
 public class Alumno {
 	
-	String nombre;
+	private String nombre;
 	
-	int nota;
+	private int nota;
 	
 	//FUNCIONES NOMBRE
 	public String getNombre() {
@@ -25,7 +25,7 @@ public class Alumno {
 		if (nota>=0 && nota<10) {
 			this.nota = nota;
 		}else {
-			this.nota = -1;
+			this.nota = -999;
 		}	
 	}
 
