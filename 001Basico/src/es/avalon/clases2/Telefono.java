@@ -10,7 +10,14 @@ public class Telefono {
 	}
 
 	public void setNumero(int numero) {
-		this.numero = numero;
+		if (numero>7_000_000) {
+			this.numero=0;
+		}else {
+			
+			this.numero = numero;
+		}
+		
+		
 	}
 	
 	
