@@ -16,15 +16,11 @@ public class Principal {
 		p.setEdad(200);
 		// System.out.println(p.getEdad());
 
-		Alumno alumno = new Alumno();
-		alumno.setNombre("Moises");
-		alumno.setNota(13);
-		// System.out.println(alumno.getNombre() + " " + alumno.getNota());
+		Alumno alumno = new Alumno("Moises",13);
+		System.out.println(alumno.getNombre() + " " + alumno.getNota());
 
-		Alumno alumno1 = new Alumno();
-		alumno1.setNombre("Ana");
-		alumno1.setNota(-2);
-		// System.out.println(alumno1.getNombre() + " " + alumno1.getNota());
+		Alumno alumno1 = new Alumno("Ana", -2);
+		System.out.println(alumno1.getNombre() + " " + alumno1.getNota());
 
 		Cuadrado cuadrado = new Cuadrado();
 		cuadrado.setLado(6);
