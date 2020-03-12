@@ -6,8 +6,8 @@ public class Alumno {
 
 	//funciones con el mismo nombre de la clase
 	public Alumno(String nombre, int nota) {
-		this.nombre=nombre;
-		this.nota=nota;
+		this.setNombre(nombre);
+		this.setNota(nota);
 	}
 	
 	public String getNombre() {
