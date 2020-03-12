@@ -6,10 +6,12 @@ public class Principal2 {
 
 	public static void main(String[] args) {
 		
-		
+		// objeto p construido
+		//los valores de sus propiedades
+		// son nulos o ceros
 		Persona p= new Persona();
 		
-		p.setEdad(200);
+		p.setEdad(50);
 		
 		System.out.println(p.getEdad());
 
