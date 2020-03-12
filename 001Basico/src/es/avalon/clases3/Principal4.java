@@ -9,8 +9,13 @@ public class Principal4 {
 		Tableta t= new Tableta("apple",100);
 		System.out.println(t.getMarca());
 		System.out.println(t.getPrecio());
+		
+		
 		System.out.println(t.getPrecioConIVA());
-		System.out.println(t.getPrecioConIVA(10));
+		System.out.println(t.getPrecioConIVA(20));
+		Tableta t2=new Tableta(500);
+		
+		System.out.println(t2.getMarca());
 
 	}
 
