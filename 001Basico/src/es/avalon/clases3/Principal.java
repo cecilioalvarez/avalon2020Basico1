@@ -8,9 +8,12 @@ public class Principal {
 		
 		
 		Telefono t= new Telefono();
-		t.numero=123456789;
-		//no tenemos acceso al numero
-		System.out.println(t.numero);
+		
+	
+		
+		t.setNumero(123456789);
+		
+		System.out.println(t.getNumero());
 
 	}
 
