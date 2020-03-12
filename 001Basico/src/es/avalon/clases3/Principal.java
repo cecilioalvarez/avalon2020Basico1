@@ -9,7 +9,7 @@ public class Principal {
 
 		Telefono t= new Telefono();
 		// no tenemos acceso al numero
-		t.setNumero=(12312435);
+		t.setNumero(12312435);
 		
 		System.out.println(t.getNumero());
 		
