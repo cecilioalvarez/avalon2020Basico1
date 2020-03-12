@@ -5,6 +5,12 @@ public class Alumno {
 	public String nombre;
 	double nota;
 	
+	public Alumno(String nombre,int nota) {
+		
+		this.nombre=nombre;
+		this.nota=nota;
+	}
+	
 	public double getNota() {
 		
 		return nota;
