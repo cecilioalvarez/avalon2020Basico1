@@ -7,12 +7,12 @@ public class Principal3 {
 
 	public static void main(String[] args) {
 		
+		// inializamos los valores a traves de un constructor
+		Alumno a= new Alumno("pepe",7);
 		
-		Alumno a= new Alumno();
-		a.setNota(12);
 		System.out.println(a.getNota());
-		Alumno a1= new Alumno();
-		a1.setNota(-3);
+		Alumno a1 = new Alumno("ana",5);
+	
 		System.out.println(a1.getNota());
 
 	}

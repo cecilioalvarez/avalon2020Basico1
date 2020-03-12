@@ -5,6 +5,13 @@ public class Alumno {
 	private String nombre;
 	private int nota;
 
+	// el mismo nombre de la clase
+	public Alumno(String nombre,int nota) {
+		
+		this.nombre=nombre;
+		this.nota=nota;
+	}
+	
 	public String getNombre() {
 		return nombre;
 	}
