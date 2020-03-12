@@ -4,18 +4,18 @@ public class Principal2Persona {
 
 	public static void main(String[] args) {
 
-		Persona d1=new Persona();
-		d1.nombre="Pepe";
-		d1.edad=37;
+		Persona p1=new Persona();
+		p1.nombre="Pepe";
+		p1.edad=37;
 		
-		Persona d2=new Persona();
-		d2.nombre="Fernando";
-		d2.edad=21;
+		Persona p2=new Persona();
+		p2.nombre="Fernando";
+		p2.edad=21;
 		
-		System.out.println(d1.nombre);
-		System.out.println(d1.edad);
-		System.out.println(d2.nombre);
-		System.out.println(d2.edad);
+		System.out.println(p1.nombre);
+		System.out.println(p1.edad);
+		System.out.println(p2.nombre);
+		System.out.println(p2.edad);
 
 
 	}
