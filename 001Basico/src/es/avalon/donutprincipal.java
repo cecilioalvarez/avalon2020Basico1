@@ -13,7 +13,8 @@ public class donutprincipal {
 		System.out.println(d1.sabor);
 		System.out.println(d2.precio);
 		System.out.println(d2.sabor);
-		
+		System.out.println(d2.precioconIVA());
+		System.out.println(d1.precioconIVA());
 	}
 
 }
