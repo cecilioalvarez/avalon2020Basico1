@@ -3,6 +3,7 @@ package es.avalon.clases3;
 public class Tablet {
 	private String marca;
 	private int precio;
+	
 	public String getMarca() {
 		return marca;
 	}
@@ -11,6 +12,15 @@ public class Tablet {
 	}
 	public int getPrecio() {
 		return precio;
+		
+		public double getPrecioConIva() {
+			return precio * 1.21;
+			
+		}
+		public double getPrecioConIva() {
+			return precio + porcentaje*(precio/100);
+			
+		}
 	}
 	public void setPrecio(int precio) {
 		this.precio = precio;
