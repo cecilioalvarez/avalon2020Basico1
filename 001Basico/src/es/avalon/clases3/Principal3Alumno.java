@@ -6,11 +6,13 @@ public class Principal3Alumno {
 
 	public static void main(String[] args) {
 
-		Alumno a=new Alumno();
-		a.setNota(17);
-		a.setNombre("Pepe");
-		System.out.println("Nombre -> "+a.getNombre());
-		System.out.println("Nota -> "+a.getNota());
+		//inicializamos los valores a traves de un constructor
+		Alumno a1=new Alumno("Pepe",8);
+		Alumno a2=new Alumno("Ines",7);
+		System.out.println("Nombre -> "+a1.getNombre());
+		System.out.println("Nota -> "+a1.getNota());
+		System.out.println("Nombre -> "+a2.getNombre());
+		System.out.println("Nota -> "+a2.getNota());
 
 	}
 
