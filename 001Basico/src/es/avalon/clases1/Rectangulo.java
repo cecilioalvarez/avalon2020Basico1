@@ -2,7 +2,6 @@ package es.avalon.clases1;
 
 public class Rectangulo {
 
-	
 	double lado1;
 	double lado2;
 	
