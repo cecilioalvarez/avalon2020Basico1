@@ -10,7 +10,7 @@ public class Principal1telefono {
 		telefono t=new telefono();
 
 		t.setNumero(636845644);
-		System.out.println(t.setNumero());
+		System.out.println(t.getNumero());
 		
 	}
 
