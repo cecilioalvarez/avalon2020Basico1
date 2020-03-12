@@ -16,9 +16,17 @@ public void setPrecio(double precio) {
 }
 // constructor
 	private double precio;
+	// constructor= metodo
 	public tableta(String marca, double precio) {
 		super();
 		this.marca = marca;
+		this.precio = precio;
+	}
+	
+	public tableta(double precio) {
+		super();
+		
+		this.marca = "apple";
 		this.precio = precio;
 	}
 	

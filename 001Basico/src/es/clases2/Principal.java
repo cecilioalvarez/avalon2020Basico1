@@ -22,10 +22,15 @@ public static void main (String[]arg) {
 ////		
 //		
 	tableta t= new tableta ("apple", 1000);
+	tableta t2= new tableta (800);
 	System.out.println(t.getMarca());
 	System.out.println(t.getPrecio());
 	System.out.println(t.getPrecioconIVA());
 	System.out.println(t.getPrecioconIVA(10));
+	System.out.println(t2.getMarca());
+	System.out.println(t2.getPrecio());
+	System.out.println(t2.getPrecioconIVA());
+	System.out.println(t2.getPrecioconIVA(10));
 	}
 	
 	}
