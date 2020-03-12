@@ -26,13 +26,19 @@ public class Tableta {
 
 	// Overload
 	public double getPrecioConIVA(int porcentaje) {
-		return precio + porcentaje * (precio / 100);
+		return precio - porcentaje * (precio / 100);
 	}
 
 	public Tableta(String marca, int precio) {
 
 		this.setMarca(marca);
 		this.setPrecio(precio);
+	}
+	//sobrecarga de constructores [Solo asigna un parametro]
+	public Tableta( int precio) {
+
+		this.setPrecio(precio);
+		this.marca="apple";
 	}
 
 }
