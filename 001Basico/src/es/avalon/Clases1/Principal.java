@@ -14,9 +14,15 @@ public class Principal {
 		
 		System.out.println(d1.precio);
 		System.out.println(d1.sabor);
-		
 		System.out.println(d2.precio);
 		System.out.println(d2.sabor);
+		
+		Persona p1 = new Persona();
+		p1.edad = 25;
+		p1.nombre = "Moises";
+		
+		System.out.println(p1.nombre);
+		System.out.println(p1.edad);
 		
 	}
 }
