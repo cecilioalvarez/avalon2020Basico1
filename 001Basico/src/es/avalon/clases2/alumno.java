@@ -8,8 +8,8 @@ public class alumno {
 	// creamos un constructor
 	// el mismo nombre de la clase
 	public alumno(String nombre, int nota) {
-		this.nombre=nombre;
-		this.nota=nota;
+		this.setnombre(nombre);
+		this.setnota(nota);
 	}
 	
 	public double getnota() {
