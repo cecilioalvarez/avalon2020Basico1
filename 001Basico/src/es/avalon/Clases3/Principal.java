@@ -1,6 +1,7 @@
 package es.avalon.Clases3;
 
 import es.avalon.Clases2.Alumno;
+import es.avalon.Clases2.Cuadrado;
 import es.avalon.Clases2.Persona;
 import es.avalon.Clases2.Telefono;
 
@@ -13,13 +14,24 @@ public class Principal {
 
 		Persona p = new Persona();
 		p.setEdad(200);
-		//System.out.println(p.getEdad());
-		
+		// System.out.println(p.getEdad());
+
 		Alumno alumno = new Alumno();
 		alumno.setNombre("Moises");
-		alumno.setNota(6);
-		System.out.println(alumno.getNombre() + "  "+ alumno.getNota());
-		
+		alumno.setNota(13);
+		// System.out.println(alumno.getNombre() + " " + alumno.getNota());
+
+		Alumno alumno1 = new Alumno();
+		alumno1.setNombre("Ana");
+		alumno1.setNota(-2);
+		// System.out.println(alumno1.getNombre() + " " + alumno1.getNota());
+
+		Cuadrado cuadrado = new Cuadrado();
+		cuadrado.setLado(6);
+		System.out.println("El area del cuadrado es : " + cuadrado.area());
+		System.out.println("El perimetro del cuadrado es : " + cuadrado.perimetro());
+			
+
 	}
 
 }
