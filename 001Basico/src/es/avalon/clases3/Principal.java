@@ -6,8 +6,12 @@ public class Principal {
 	public static void main(String[] args) {
 		
 		Telefono t = new Telefono();
-		t.numero = 123456789;
+		
+		//variable privada de telefono
+		
+		
+		t.setNumero(123456789);
 		//no tenemos acceso al numero
-		System.out.println(t.numero);
+		System.out.println(t.getNumero());
 	}
 }
