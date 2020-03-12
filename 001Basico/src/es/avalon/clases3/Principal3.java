@@ -13,9 +13,13 @@ public class Principal3 {
 //		a.setNota(15);
 		
 		Alumno a = new Alumno("pepe", 7);
+		Alumno a2 = new Alumno("ana", 15);
+		
 		
 		System.out.println(a.getNombre());
 		System.out.println(a.getNota());
+		System.out.println(a2.getNombre());
+		System.out.println(a2.getNota());
 
 	}
 

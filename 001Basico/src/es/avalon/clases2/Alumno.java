@@ -8,8 +8,8 @@ public class Alumno {
 	
 	//Funcion constructora [El nombre debe coincidir exactamente con el de la clase]
 	public Alumno(String nombre, int nota) {
-		this.nombre = nombre;
-		this.nota = nota;
+		this.setNombre(nombre);
+		this.setNota(nota);
 	}
 	
 	//FUNCIONES NOMBRE
