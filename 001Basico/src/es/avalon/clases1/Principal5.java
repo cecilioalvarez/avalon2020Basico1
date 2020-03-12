@@ -15,6 +15,7 @@ public class Principal5 {
 		System.out.println(f1.Importe);
 		System.out.println(f1.calcularIVA());
 		System.out.println(f1.calcularRetencion());
+		System.out.println(f1.totalIngresarCuenta());
 
 	}
 

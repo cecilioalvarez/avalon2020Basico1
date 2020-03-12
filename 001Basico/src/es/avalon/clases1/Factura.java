@@ -14,6 +14,10 @@ public class Factura {
 	}
 	
 	double calcularRetencion() {
-		return Importe*1.15;
+		return Importe*0.15;
+	}
+	
+	double totalIngresarCuenta() {
+		return calcularIVA()-calcularRetencion();
 	}
 }
