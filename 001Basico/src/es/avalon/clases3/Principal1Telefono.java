@@ -2,14 +2,17 @@ package es.avalon.clases3;
 
 import es.avalon.clases2.Telefono;
 
-public class Principal {
+public class Principal1Telefono {
 
 	public static void main(String[] args) {
 
 		Telefono t=new Telefono();
-		t.numero=636845644;
+		
+		//privada del telefono
+		t.setNumero(636845644);
+		
 		//no tenemos acceso al numero
-		System.out.println(t.numero);
+		System.out.println(t.getNumero());
 
 	}
 
