@@ -6,6 +6,12 @@ public class Alumno {
 	
 	private int nota;
 	
+	//Funcion constructora [El nombre debe coincidir exactamente con el de la clase]
+	public Alumno(String nombre, int nota) {
+		this.nombre = nombre;
+		this.nota = nota;
+	}
+	
 	//FUNCIONES NOMBRE
 	public String getNombre() {
 		return nombre;
