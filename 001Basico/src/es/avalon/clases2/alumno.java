@@ -5,6 +5,7 @@ public class alumno {
 	private double nota;
 	private String nombre;
 	
+	// creamos un constructor
 	// el mismo nombre de la clase
 	public alumno(String nombre, int nota) {
 		this.nombre=nombre;
