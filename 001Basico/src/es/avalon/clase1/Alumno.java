@@ -7,10 +7,18 @@ public class Alumno {
 	
 	public Alumno(String nombre,int nota) {
 		
-		this.nombre=nombre;
-		this.nota=nota;
+		this.setNombre(nombre);
+		this.setNota(nota);
 	}
 	
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
 	public double getNota() {
 		
 		return nota;
