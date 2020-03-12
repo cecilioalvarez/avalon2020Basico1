@@ -6,8 +6,9 @@ public class Alumno {
 	private String nombre;
 
 	public Alumno(String nombre, int nota) {
-		this.nombre = nombre;
-		this.nota = nota;
+		this.setNombre(nombre);
+		this.setNota(nota);
+		
 	}
 	
 	public int getNota() {
