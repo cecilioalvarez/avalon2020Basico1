@@ -17,12 +17,14 @@ public class Tablet {
 		return precio;
 
 	}
-	//precio con iva mal las llaves
+
+	// precio con iva mal las llaves
 	public double getPrecioConIva() {
 		return precio * 1.21;
 
 	}
-	//faltaba el parametro porcentaje
+
+	// faltaba el parametro porcentaje
 	public double getPrecioConIva(int porcentaje) {
 		return precio + porcentaje * (precio / 100);
 
@@ -31,11 +33,16 @@ public class Tablet {
 	public void setPrecio(int precio) {
 		this.precio = precio;
 	}
-
+//metodo
 	public Tablet(String marca, int precio) {
 		super();
 		this.marca = marca;
 		this.precio = precio;
 	}
-
+public Tablet(int precio) {
+	super();
+	this.precio= precio;
+	this.marca= "apple";
+	
+}
 }
