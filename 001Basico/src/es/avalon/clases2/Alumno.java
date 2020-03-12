@@ -5,11 +5,19 @@ public class Alumno {
 	private String nombre;
 	private int nota;
 
-	// el mismo nombre de la clase
+	// un constructor
 	public Alumno(String nombre,int nota) {
 		
+		// pasando por lo honesto que es las
+		//validaciones
+		this.setNombre(nombre);
+		this.setNota(nota);
+	
+		//esto no es una buena opcion
 		this.nombre=nombre;
-		this.nota=nota;
+		this.nota=nota; //fundamental
+		
+	
 	}
 	
 	public String getNombre() {
