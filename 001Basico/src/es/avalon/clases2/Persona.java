@@ -7,11 +7,11 @@ public class Persona {
 		return edad;
 	}
 
-	public void setEdad(int edad1) {
-		if (edad1<120) {
-			edad = edad1;
+	public void setEdad(int edad) {
+		if (edad<120) {
+			this.edad = edad;
 		}else {
-			edad = 18;
+			this.edad = 18;
 		}
 		
 	}

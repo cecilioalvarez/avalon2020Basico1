@@ -6,7 +6,7 @@ public class Principal2 {
 	public static void main(String[] args) {
 		Persona p = new Persona();
 		
-		p.setEdad(200);
+		p.setEdad(50);
 		
 		System.out.println(p.getEdad());
 	}
