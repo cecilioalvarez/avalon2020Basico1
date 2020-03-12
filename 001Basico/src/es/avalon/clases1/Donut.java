@@ -3,7 +3,15 @@ package es.avalon.clases1;
 public class Donut {
 
 	String sabor;
-	int precio;
+	double precio;
+	
+	//funcion o metodo a nuestra clase Donut
+	double precioConIVA() {
+		
+		return precio*1.21;
+	}
+	
+	
 	
 	
 }
