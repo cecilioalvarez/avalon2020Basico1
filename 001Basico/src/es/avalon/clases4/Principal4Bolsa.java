@@ -1,7 +1,5 @@
 package es.avalon.clases4;
 
-import es.avalon.clases5Repaso.Alumno;
-
 public class Principal4Bolsa {
 
 	public static void main(String[] args) {
