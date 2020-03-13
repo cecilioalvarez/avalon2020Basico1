@@ -1,10 +1,22 @@
 package es.clases2;
 import es.clases1.telefono;
+
 import es.clases1.alumnos;
 import es.clases1.persona;
 import es.clases1.*;
+
 public class Principal {
 public static void main (String[]arg) {
+
+	Libro l= new Libro ("java");
+.out.println(l.getTitulo());
+	
+	Libro l2= new Libro ("java");
+		Libro l3= new Libro ("java2");
+		System.out.println(l2.getTitulo());
+		
+		System.out.println(l3.getContador());
+		
 //		alumnos a= new alumnos("pepe", 7);
 //		alumnos a2= new alumnos("ana", 5);
 //		System.out.println(a.getnota());
