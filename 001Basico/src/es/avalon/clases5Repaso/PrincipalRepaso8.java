@@ -15,12 +15,27 @@ public class PrincipalRepaso8 {
 	
 	}
 	
-	private static String nombreMAyorNota(Alumno[] alumnos) {
+	private static String nombreMayorNota(Alumno[] alumnos) {
 		int notaInicial=0;
 		int posicionMayor=0;
 		
-		for(int i=0;i<alunos.length;i++) {
+		for(int i=0;i<alumnos.length;i++) {
 			
+			if(notaInicial<alumnos[i].getNota()) {
+				posicionMayor=i;
+				notaInicial=alumnos[i].getNota();
+			}
 		}
+		return alumnos[posicionMayor].getNombre();
 	}
+		
+		private static int calcularMedia(Alumno[] alumnos) {
+			int media=0;
+			
+			for(int i=0;i<alumnos.length;i++) {
+				media=media+alumnos[i].getNota();
+			}
+			return media/alumnos.length;
+		}
+		
 }

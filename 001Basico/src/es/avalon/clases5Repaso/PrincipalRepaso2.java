@@ -16,7 +16,7 @@ public class PrincipalRepaso2 {
 			media=media+notas[i];
 					
 			if(notaInicial<notas[i]) {
-				posicionMayor=i;
+				notaInicial=i;
 				notaInicial=notas[i];
 			}
 		}

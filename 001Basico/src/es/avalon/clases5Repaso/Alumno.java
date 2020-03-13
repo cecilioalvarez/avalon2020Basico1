@@ -2,7 +2,7 @@ package es.avalon.clases5Repaso;
 
 public class Alumno {
 
-	String nombre;
+	private String nombre;
 	private int nota;
 
 	public String getNombre() {
@@ -20,8 +20,12 @@ public class Alumno {
 	public void setNota(int nota) {
 		if (nota > 10) {
 			this.nota = 10;
-		} else if (nota < 0) {
+		} 
+		else if (nota < 0) {
 			this.nota = 0;
+		}
+		else {
+			this.nota=nota;
 		}
 	}
 
@@ -33,6 +37,15 @@ public class Alumno {
 
 	public Alumno() {
 		super();
+	}
+	//alumno concreto
+	public Alumno esMejor(Alumno otro) {
+		if(this.getNota()>otro.getNota()) {
+			return this;
+		}
+		else {
+			return otro;
+		}
 	}
 
 }
