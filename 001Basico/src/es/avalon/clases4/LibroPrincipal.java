@@ -1,6 +1,6 @@
 package es.avalon.clases4;
 
-public class Principal {
+public class LibroPrincipal {
 
 	public static void main(String[] args) {
 		

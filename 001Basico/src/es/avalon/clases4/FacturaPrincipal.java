@@ -1,6 +1,6 @@
 package es.avalon.clases4;
 
-public class PrincipalFactura {
+public class FacturaPrincipal {
 	public static void main(String[] args) {
 		Factura f=new Factura(1,100);
 		System.out.println(f.getNumero());
