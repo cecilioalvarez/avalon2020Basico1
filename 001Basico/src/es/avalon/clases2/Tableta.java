@@ -34,7 +34,7 @@ public class Tableta {
 		this.setMarca(marca);
 		this.setPrecio(precio);
 	}
-	//sobrecarga de constructores [Solo asigna un parametro]
+//	sobrecarga de constructores [Solo asigna un parametro]
 	public Tableta( int precio) {
 
 		this.setPrecio(precio);
