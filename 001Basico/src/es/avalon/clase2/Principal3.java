@@ -9,6 +9,7 @@ public class Principal3 {
 		Alumno Alu= new Alumno("peter",-3);
 
 		System.out.println(Alu.getNota());
+		System.out.println(Alu.getNombre());
 
 	}
 
