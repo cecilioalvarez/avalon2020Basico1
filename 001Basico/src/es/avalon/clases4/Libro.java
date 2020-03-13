@@ -4,8 +4,11 @@ public class Libro {
 	
 	private String titulo;
 	
+	
 	//static hace que contador pertenezca a la clase
 	private static int contador = 0;
+	
+	
 
 	public String getTitulo() {
 		return titulo;
