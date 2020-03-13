@@ -5,7 +5,7 @@ public class Principal9 {
 	public static void main(String[] args) {
 
 		
-		Alumno n0 = new Alumno("pedro",25);
+		Alumno n0 = new Alumno("pedro",4);
 		Alumno n1 = new Alumno("ana",7);
 		Alumno n2 = new Alumno("gema",9);
 		
@@ -23,10 +23,25 @@ public class Principal9 {
 	
 	private static Alumno nombreMayorNota(Alumno[] alumnos) {
 		
+		//1
 		Alumno alumno=alumnos[0];
 
 		for (int i = 0; i < alumnos.length; i++) {
 
+			
+			// si la nota de alumno
+			// es mayor que la nota de alumnos[i]
+			//me quedo con el alumno actual
+			//referenciado
+			// y sino le cambio por el nuevo
+			
+			// pedro		//pedro.esMejor(pedro)
+			//pedro			//pedro.esMejor(ana)
+			//ana			//ana.esMejor(gema)
+			//gema
+			
+		
+			
 			alumno=alumno.esMejor(alumnos[i]);
 	
 		}

@@ -39,6 +39,13 @@ public class Alumno {
 		super();
 	}
 	// alumno concreto
+	// 
+	//  Alumno maria= new Alumno();
+	// Alumno oliver=new Alumno();
+	
+	//
+	// maria.esMejor(oliver)
+	
 	public Alumno esMejor(Alumno otro) {
 		
 		if (this.getNota()>otro.getNota()) {
