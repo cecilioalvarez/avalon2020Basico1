@@ -14,6 +14,7 @@ public class LibroPrincipal {
 		System.out.println(l2.getTitulo());
 		// a que se trata de una variable a nivel de clase
 		System.out.println(Libro.getContador());
+		
 	}
 
 }
