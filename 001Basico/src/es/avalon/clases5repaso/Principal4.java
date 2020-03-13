@@ -5,41 +5,43 @@ public class Principal4 {
 	public static void main(String[] args) {
 
 		// un trillon
-		int [] notas= new int[] {5,7,9};
-		String [] nombres= new String[] {"pedro","ana","gema"};
-		
+		int[] notas = new int[] { 5, 7, 9 };
+		String[] nombres = new String[] { "pedro", "ana", "gema" };
+
 		/////////////////////////////////////////////////////
+
 		
-		int media=0;
-		int notaInicial=0;
-		int posicionMayor=0;
-		
-		
-		
-		
-		for(int i=0;i<notas.length;i++) {
-			
-			
-			
-			if (notaInicial<notas[i]) {
-				
-				posicionMayor=i;
-				notaInicial=notas[i];
+		System.out.println(nombreMayorNota(notas,nombres));		
+		System.out.println(calcularMedia(notas));
+
+	}
+	
+	// para obtener el nombre de la persona con mejor nota
+	private static String nombreMayorNota(int[] notas ,String[] nombres) {
+		int notaInicial = 0;
+		int posicionMayor = 0;
+
+		for (int i = 0; i < notas.length; i++) {
+
+			if (notaInicial < notas[i]) {
+
+				posicionMayor = i;
+				notaInicial = notas[i];
 			}
 		}
-		
+		return nombres[posicionMayor];
+	}
 
-		for(int i=0;i<notas.length;i++) {
-			
-			media=media+notas[i];
-			
+	// ubicada en una funcion para su reutilizacion
+	private static int calcularMedia(int[] notas) {
+		int media = 0;
+
+		for (int i = 0; i < notas.length; i++) {
+
+			media = media + notas[i];
+
 		}
-		
-		
-		
-		System.out.println(media/notas.length);
-		System.out.println(nombres[posicionMayor]);
-		
+		return media/notas.length;
 	}
 
 }
