@@ -30,8 +30,8 @@ public class Principal3 {
 		
 		
 		
-		System.out.println("La media es " + media/notas.length);
-		System.out.println("La mayor nota la tiene " + nombres[posicionMayor]);
+		System.out.println(media/notas.length);
+		System.out.println(nombres[posicionMayor]);
 		
 	}
 

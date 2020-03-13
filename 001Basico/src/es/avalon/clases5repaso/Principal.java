@@ -3,6 +3,7 @@ package es.avalon.clases5repaso;
 public class Principal {
 
 	public static void main(String[] args) {
+
 		int nota1 = 5;
 		int nota2 = 7;
 		int nota3 = 9;

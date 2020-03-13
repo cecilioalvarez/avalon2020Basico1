@@ -1,6 +1,7 @@
 package es.avalon.clases5repaso;
 
 public class Principal2 {
+
 	public static void main(String[] args) {
 
 		int [] notas= new int[] {5,7,9};
@@ -13,9 +14,9 @@ public class Principal2 {
 		for(int i=0;i<notas.length;i++) {
 			
 			media=media+notas[i];
-			if (posicionMayor<notas[i]) {
+			if (notaInicial<notas[i]) {
 				
-				posicionMayor=i;
+				notaInicial=i;
 				notaInicial=notas[i];
 			}
 		}
