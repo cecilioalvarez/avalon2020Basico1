@@ -5,8 +5,7 @@ public class Tableta {
 	private String marca;
 	private int precio;
 	public String getMarca() {
-		return marca;
-		
+		return marca;	
 	}
 	public void setMarca(String marca) {
 		this.marca=marca;
@@ -14,7 +13,6 @@ public class Tableta {
 	public int getPrecio() {
 		return precio;
 	}
-	
 	//estos 2 son iguales pero al tener el segundo el (int porcentaje) los reconoce como distintos al llamarlos desde el principal al introducir (10)
 	public double getPrecioIVA() {
 		return precio*1.21;
@@ -22,8 +20,6 @@ public class Tableta {
 	public double getPrecioIVA(int porcentaje) {
 		return precio+porcentaje*(precio/100);
 	}
-	
-	
 	public void setPrecio(int precio) {
 		this.precio = precio;
 	}

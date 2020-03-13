@@ -12,6 +12,7 @@ public class Principal5Tableta {
 		System.out.println(t.getPrecioIVA());
 		System.out.println(t.getPrecioIVA(10));
 
+		//Constructor 1 parametro
 		Tableta t2=new Tableta(500);
 		System.out.println(t2.getMarca());
 	}
