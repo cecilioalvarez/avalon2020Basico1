@@ -43,11 +43,16 @@ public class Tableta {
 		this.marca = marca;
 		this.precio = precio;
 	}
-	// 1 parametro el otro se asigna
-	public Tableta(int precio) {
-		
-		this.precio = precio;
-		this.marca = "apple";
+//	// 1 parametro el otro se asigna
+//	public Tableta(int precio) {
+//		
+//		this.precio = precio;
+//		this.marca = "apple";
+//	}
+
+	public Tableta() {
+		super();
 	}
+	
 
 }
