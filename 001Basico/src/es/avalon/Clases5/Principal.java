@@ -4,15 +4,21 @@ public class Principal {
 
 	public static void main(String[] args) {
 
-		Bolsa bolsa1= new Bolsa("Mercadona", 10);
-		Bolsa bolsa2= new Bolsa("Mercadona", 30);
-		Bolsa bolsa3= new Bolsa("Mercadona", 30);
-		
-		System.out.println(bolsa1.getPeso());
-		System.out.println(bolsa2.getPeso());
-		System.out.println(bolsa3.getPeso());
-		
+		Bolsa bolsa1 = new Bolsa("mercadona", 30);
+		Bolsa bolsa2 = new Bolsa("lupa", 40);
+		Bolsa bolsa3 = new Bolsa("erosky", 50);
+
+		Bolsa[] bolsas = new Bolsa[] { bolsa1, bolsa2, bolsa3 };
+
+		for (int i = 0; i < bolsas.length; i++) {
+
+			Bolsa bolsa = bolsas[i];
+			System.out.println(bolsa.getPeso());
+		}
 		Bolsa.getPesoTotal();
-	}
+		
+		bolsa1.esMayorQue(bolsa3);
+
+		}
 
 }
