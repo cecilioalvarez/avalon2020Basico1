@@ -24,6 +24,6 @@ public class Libro {
 	public Libro(String titulo) {
 		super();
 		this.titulo=titulo;
-		contador=contador+1;
+		Libro.contador=contador+1;
 	}
 }
