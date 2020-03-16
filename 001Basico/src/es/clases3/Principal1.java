@@ -12,8 +12,7 @@ public class Principal1 {
 //		System.out.println(p1.getNombre());
 //		//accedo a la relacion y a la propiedad de historial de enfermedad
 //		System.out.println(p1.getHistorial().getEnfermedad());
-		
-		
+
 //		//crea persona
 //				Persona p1= new Persona ("Pedro");
 //				//asigna el historial al paciente 
@@ -33,19 +32,20 @@ public class Principal1 {
 //				System.out.println(d1.getFechaCaducidad());
 //				//accedo a la relacion y a la propiedad de historial de enfermedad
 //				//System.out.println(p1.getHistorial().getEnfermedad());
-		
-		Bombilla b1= new Bombilla (true);
+
+		Bombilla b1 = new Bombilla(true);
 		System.out.println(b1.isBombilla());
 		b1.apagado();
 		System.out.println(b1.isBombilla());
-		public static void imprimirEstadoBombilla(Bombilla b) {
-			if (b.isBombilla()==true ) {
-				System.out.println("encendido");
-			}else {
-				System.out.println("apagada");
-			}
+		//faltaba la llave aqui
+	}
+
+	public static void imprimirEstadoBombilla(Bombilla b) {
+		if (b.isBombilla() == true) {
+			System.out.println("encendido");
+		} else {
+			System.out.println("apagada");
 		}
-		
 	}
 
 }
