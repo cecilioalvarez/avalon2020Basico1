@@ -7,11 +7,9 @@ public class Bombilla {
 	public boolean estaEncendida() {
 		return encendida;
 	}
-
 	public void setEncendida(boolean encendida) {
 		this.encendida = encendida;
 	}
-
 	public Bombilla(boolean encendida) {
 		super();
 		this.encendida = encendida;
