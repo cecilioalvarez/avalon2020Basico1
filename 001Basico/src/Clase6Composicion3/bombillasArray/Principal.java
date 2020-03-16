@@ -1,22 +1,33 @@
-package Clase6Composicion3.bombillasArray;
+package Clase6Composicion3.bombillas;
+
+import java.util.ArrayList;
 
 public class Principal {
 	public static void main(String[] args) {
-	Bombilla b1=new Bombilla(true);
-	System.out.println(b1.isOn());
-	b1.apagar();
-	System.out.println(b1.isOn());
-	b1.encender();
-	System.out.println(b1.isOn());
-	imprimirEstadoBombilla(b1);
 
-}
-	public static void imprimirEstadoBombilla(Bombilla b) {
-		
-		if(b.isOn()) {
-			System.out.println("encendida");
-		}else {
-			System.out.println("apagada");
+		Habitacion h = new Habitacion();
+
+		Bombilla b1 = new Bombilla(true);
+		Bombilla b2 = new Bombilla(false);
+
+		h.addBombilla(b1);
+		h.addBombilla(b2);
+		System.out.println(encendidas(h));
+	}
+
+	private static void mostrarBombillas(Habitacion h) {
+		ArrayList<Bombilla> bombillas = h.getBombillas();
+		for (int i = 0; i < bombillas.size(); i++) {
+			System.out.println(bombillas.get(i).isOn());
 		}
 	}
+
+	private static int encendidas(Habitacion h) {
+		int contador = 0;
+		ArrayList<Bombilla> bombillas = h.getBombillas();
+		for (int i = 0; i < bombillas.size(); i++) {
+			System.out.println(bombillas.get(i).isOn());
+		}
+	}
+
 }
