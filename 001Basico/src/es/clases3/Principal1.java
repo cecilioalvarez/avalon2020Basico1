@@ -56,23 +56,45 @@ public class Principal1 {
 		
 		Habitacion h= new Habitacion();
 		Bombilla b1=new Bombilla(true);
-		Bombilla b2= new Bombilla(false);
+		Bombilla b2= new Bombilla(true);
 		
 		h.addBombilla(b1);
 		h.addBombilla(b2);
-		ArrayList<Bombilla>bombillas=h.getBombillas();
+		ArrayList<Bombilla> bombillas=h.getBombillas();
 		for(int i=0;i<bombillas.size();i++) {
 			System.out.println(bombillas.get(i).isBombilla());
 		}
+		System.out.println(encendidas(h));
+		
 	}
 
 	//como es un metodo, tiene que estar fuera del metodo principal
 	public static void imprimirEstadoBombilla(Bombilla b) {
 		if (b.isBombilla() == true) {
 			System.out.println("encendido");
+			
 		} else {
 			System.out.println("apagada");
 		}
+		
 	}
+private static void mostrarBombillas(Habitacion h) {
+	ArrayList<Bombilla> bombillas= h.getBombillas();
+	for (int i=0;i<bombillas.size();i++) {
+		System.out.println(bombillas.get(i).isBombilla());
+	}
+}
+private static int encendidas(Habitacion h) {
+	int contador=0;
+	ArrayList<Bombilla> bombillas= h.getBombillas();
+	for (int i=0;i<bombillas.size();i++) {
+		if (bombillas.get(i).isBombilla()) {
+			contador++;
+		}
+		
+	}
+	return contador;
+}
+	
 
 }
