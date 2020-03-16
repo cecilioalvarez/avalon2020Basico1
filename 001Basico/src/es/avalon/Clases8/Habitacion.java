@@ -1,14 +1,24 @@
-package es.avalon.Clases7;
+package es.avalon.Clases8;
 
 public class Habitacion {
 
 	private Bombilla bombilla;
+	private Bombilla bombilla2;
 	private String nombre;
 
-	public Habitacion(Bombilla bombilla,String nombre) {
+	public Habitacion(Bombilla bombilla,Bombilla bombilla2,String nombre) {
 		super();
 		this.bombilla = bombilla;
+		this.bombilla2 = bombilla2;
 		this.nombre = nombre;
+	}
+
+	public Bombilla getBombilla2() {
+		return bombilla2;
+	}
+
+	public void setBombilla2(Bombilla bombilla2) {
+		this.bombilla2 = bombilla2;
 	}
 
 	public String getNombre() {

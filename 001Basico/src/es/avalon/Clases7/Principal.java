@@ -5,13 +5,14 @@ public class Principal {
 	public static void main(String[] args) {
 
 		Bombilla bombilla = new Bombilla(true);
-		Habitacion habitacion = new Habitacion(bombilla);
+		Habitacion habitacion = new Habitacion(bombilla,"Sala Gamer");
 
 		imprimirEstadoBombilla(bombilla);
 		habitacion.getBombilla().encender();
 		imprimirEstadoBombilla(bombilla);
 		habitacion.getBombilla().apagar();
 		imprimirEstadoBombilla(bombilla);
+		System.out.println(habitacion.getNombre());
 
 	}
 
