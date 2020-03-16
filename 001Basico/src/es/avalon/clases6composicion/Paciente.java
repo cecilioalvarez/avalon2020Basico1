@@ -4,6 +4,17 @@ public class Paciente {
 
 	
 	private String nombre;
+	//tipo que no es basico
+	private HistorialMedico historial;
+	
+
+	public HistorialMedico getHistorial() {
+		return historial;
+	}
+
+	public void setHistorial(HistorialMedico historial) {
+		this.historial = historial;
+	}
 
 	public String getNombre() {
 		return nombre;
