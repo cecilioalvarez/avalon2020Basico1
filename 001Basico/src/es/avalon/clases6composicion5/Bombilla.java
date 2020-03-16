@@ -1,11 +1,10 @@
-package es.avalon.clases6composicion4;
+package es.avalon.clases6composicion5;
 
 public class Bombilla {
 	
 	private boolean Encendido;
 	
-	private Habitacion habitacion;
-	
+
 	//Getters y setters
 	public boolean isEncendido() {
 		return Encendido;
@@ -13,14 +12,6 @@ public class Bombilla {
 	
 	public void setEncendido(boolean encendido) {
 		Encendido = encendido;
-	}
-
-	public Habitacion getHabitacion() {
-		return habitacion;
-	}
-
-	public void setHabitacion(Habitacion habitacion) {
-		this.habitacion = habitacion;
 	}
 
 	

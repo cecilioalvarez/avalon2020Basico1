@@ -18,7 +18,6 @@ public class Habitacion {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-	
 	public Bombilla getBombilla1() {
 		return bombilla1;
 	}

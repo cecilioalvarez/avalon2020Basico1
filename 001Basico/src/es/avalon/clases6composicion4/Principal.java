@@ -1,5 +1,7 @@
 package es.avalon.clases6composicion4;
 
+
+//La bombilla no tendria porque tener relacion bidireccional con la habitacion
 public class Principal {
 
 	public static void main(String[] args) {
@@ -7,8 +9,8 @@ public class Principal {
 		
 		Habitacion h1 = new Habitacion("dormitorio");
 
-		Bombilla b1 = new Bombilla(true,h1);
-		Bombilla b2 = new Bombilla(false,h1);
+		Bombilla b1 = new Bombilla(true);
+		Bombilla b2 = new Bombilla(false);
 
 		
 		h1.setBombilla1(b1);
@@ -26,12 +28,7 @@ public class Principal {
 		imprimirEstadoBombilla(b1);
 		imprimirEstadoBombilla(b2);
 		
-		System.out.println("*********");
-		
-		//Donde está la bombilla
-		System.out.println("Donde están las bombillas:");
-		System.out.println(b1.getHabitacion().getNombre());
-		System.out.println(b2.getHabitacion().getNombre());
+//		System.out.println(b1.getHabitacion().getNombre());
 
 	}
 	
