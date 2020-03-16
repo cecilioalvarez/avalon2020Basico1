@@ -5,7 +5,7 @@ public class PrincipalBombilla {
 	public static void main(String[] args) {
 		Bombilla b1= new Bombilla (true);
 		
-		System.out.println(b1.estaEncendida());
+		imprimirEstadoBombilla(b1);
 		b1.apagar();
 		System.out.println(b1.estaEncendida());
 		b1.encender();
