@@ -1,6 +1,6 @@
 package es.avalon.clases1;
 
-public class Principal4 {
+public class RectanguloPrincipal {
 
 	public static void main(String[] args) {
 		
