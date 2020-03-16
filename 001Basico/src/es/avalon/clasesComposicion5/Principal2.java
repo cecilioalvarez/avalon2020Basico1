@@ -20,20 +20,20 @@ public class Principal2 {
 		for(int i=0; i<bombillas.size();i++) {
 			System.out.println(bombillas.get(i).estaEncendida());
 		}
-		private static int encendidas(Habitacion h) {
-			int contador = 0;
-			ArrayList<Bombilla>bombillas=h.getBombillas();
-			for(int i=0;)i<bombillas.size();i++){
-				if(bombillas.get(i).estaEncendida()) {
-					contador++;
-					
-				}
-			}
-			return contador;
-			
-		}
 		
 		
 	
+	}
+	private static int encendidas(Habitacion h) {
+		int contador = 0;
+		ArrayList<Bombilla>bombillas=h.getBombillas();
+		for(int i=0;i<bombillas.size();i++){
+			if(bombillas.get(i).estaEncendida()) {
+				contador++;
+				
+			}
+		}
+		return contador;
+		
 	}
 }
