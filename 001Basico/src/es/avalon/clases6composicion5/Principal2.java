@@ -15,7 +15,7 @@ public class Principal2 {
 		h.addBombilla(b1);
 		h.addBombilla(b2);
 
-		ArrayList<Bombilla> bomnillas=h.getBombillas();
+		ArrayList<Bombilla> bombillas=h.getBombillas();
 		
 		for (int i=0; i<bombillas.size(); i++) {
 			System.out.println(bombillas.get(i).estaEncendida());
