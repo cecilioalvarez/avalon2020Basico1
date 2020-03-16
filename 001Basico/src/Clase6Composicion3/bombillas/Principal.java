@@ -10,8 +10,8 @@ public class Principal {
 		Bombilla b1 = new Bombilla(true);
 		Bombilla b2 = new Bombilla(false);
 
-		h.addBombilla(b1);
-		h.addBombilla(b2);
+		h.Bombilla(b1);
+		h.Bombilla(b2);
 		System.out.println(encendidas(h));
 	}
 
@@ -28,7 +28,6 @@ public class Principal {
 		for (int i = 0; i < bombillas.size(); i++) {
 			System.out.println(bombillas.get(i).isOn());
 		}
-		return contador;
 	}
 
 }
