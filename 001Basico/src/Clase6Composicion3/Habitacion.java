@@ -1,6 +1,6 @@
 package Clase6Composicion3;
 
-public class habitacion {
+public class Habitacion {
 	private String nombre;
 	private Bombilla bombi;
 	public String getNombre() {
@@ -15,7 +15,7 @@ public class habitacion {
 	public void setBombi(Bombilla bombi) {
 		this.bombi = bombi;
 	}
-	public habitacion(String nombre, Bombilla bombi) {
+	public Habitacion(String nombre, Bombilla bombi) {
 		super();
 		this.nombre = nombre;
 		this.bombi = bombi;
