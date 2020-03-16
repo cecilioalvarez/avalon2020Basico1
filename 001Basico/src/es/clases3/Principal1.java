@@ -33,13 +33,23 @@ public class Principal1 {
 //				//accedo a la relacion y a la propiedad de historial de enfermedad
 //				//System.out.println(p1.getHistorial().getEnfermedad());
 
+//		Bombilla b1 = new Bombilla(true);
+//		System.out.println(b1.isBombilla());
+//		imprimirEstadoBombilla(b1);
+//		b1.apagado();
+//		System.out.println(b1.isBombilla());
+//		imprimirEstadoBombilla(b1);
+//		//faltaba la llave aqui
+		
+		Habitacion h= new Habitacion ("salon");
 		Bombilla b1 = new Bombilla(true);
-		System.out.println(b1.isBombilla());
-		b1.apagado();
-		System.out.println(b1.isBombilla());
-		//faltaba la llave aqui
+		h.setBombilla(b1);
+		System.out.println(h.getNombreHabi());
+		System.out.println(h.getBombilla().isBombilla());
+		imprimirEstadoBombilla(b1);
 	}
 
+	//como es un metodo, tiene que estar fuera del metodo principal
 	public static void imprimirEstadoBombilla(Bombilla b) {
 		if (b.isBombilla() == true) {
 			System.out.println("encendido");
