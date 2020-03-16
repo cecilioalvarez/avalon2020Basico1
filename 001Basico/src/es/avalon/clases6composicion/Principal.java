@@ -26,6 +26,17 @@ public class Principal {
 		
 		// aqui accedo a la propiedad de historialde enfermedas
 		// accedo a la relacion
+		
+		
+		//realizado en dos pasos
+		HistorialMedico historial=p1.getHistorial();
+	
+		System.out.println(historial);
+		
+		System.out.println(historial.getEnfermedad());
+	
+		//realizado de golpe en un paso
+		
 		System.out.println(p1.getHistorial().getEnfermedad());
 		
 		
