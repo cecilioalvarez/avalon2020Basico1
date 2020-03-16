@@ -13,19 +13,20 @@ public class Principal {
 		h.addBombilla(b1);
 		h.addBombilla(b2);
 		System.out.println(encendidas(h));
-		
-		private static void mostrarBombillas(Habitacion h) {
-			ArrayList<Bombilla>bombillas=h.getBombillas();
-			for(int i=0;i<bombillas.size();i++) {
-				System.out.println(bombillas.get(i).estaEncendida());
-			}
+	}
+
+	private static void mostrarBombillas(Habitacion h) {
+		ArrayList<Bombilla> bombillas = h.getBombillas();
+		for (int i = 0; i < bombillas.size(); i++) {
+			System.out.println(bombillas.get(i).isOn());
 		}
-		private static int mostrarBombillas(Habitacion h) {
-			int contador=0;
-			ArrayList<Bombilla>bombillas=h.getBombillas();
-			for(int i=0;i<bombillas.size();i++) {
-				System.out.println(bombillas.get(i).estaEncendida());
-			}
+	}
+
+	private static int encendidas(Habitacion h) {
+		int contador = 0;
+		ArrayList<Bombilla> bombillas = h.getBombillas();
+		for (int i = 0; i < bombillas.size(); i++) {
+			System.out.println(bombillas.get(i).isOn());
 		}
 	}
 
