@@ -28,6 +28,7 @@ public class Principal {
 		for (int i = 0; i < bombillas.size(); i++) {
 			System.out.println(bombillas.get(i).isOn());
 		}
+		return contador;
 	}
 
 }

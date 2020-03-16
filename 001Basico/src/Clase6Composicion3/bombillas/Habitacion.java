@@ -23,7 +23,10 @@ public class Habitacion {
 		
 	}
 	
-
+public void addBombilla(Bombilla b) {
+		
+		this.bombillas.add(b);
+	}
 
 
 }
