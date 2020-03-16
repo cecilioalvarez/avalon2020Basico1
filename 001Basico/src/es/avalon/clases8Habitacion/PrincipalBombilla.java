@@ -7,10 +7,9 @@ public class PrincipalBombilla {
 		
 		imprimirEstadoBombilla(b1);
 		b1.apagar();
-		System.out.println(b1.estaEncendida());
+		imprimirEstadoBombilla(b1);
 		b1.encender();
-		System.out.println(b1.estaEncendida());
-
+		imprimirEstadoBombilla(b1);
 	}
 
 	public static void imprimirEstadoBombilla(Bombilla b) {
