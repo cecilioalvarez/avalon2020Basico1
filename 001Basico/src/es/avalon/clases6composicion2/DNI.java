@@ -1,10 +1,9 @@
-package es.avalon.clases6composicion;
+package es.avalon.clases6composicion2;
 
 public class DNI {
 	private String numero;
 	private String fechaCaducidad;
-	private Persona nombre;
-	
+	private Persona persona;
 	
 	public String getNumero() {
 		return numero;
@@ -22,19 +21,19 @@ public class DNI {
 		this.fechaCaducidad = fechaCaducidad;
 	}
 
-	public Persona getNombre() {
-		return nombre;
+	public Persona getPersona() {
+		return persona;
 	}
 
-	public void setNombre(Persona nombre) {
-		this.nombre = nombre;
+	public void setPersona(Persona persona) {
+		this.persona = persona;
 	}
 
-	public DNI(String numero, String fechaCaducidad, Persona nombre) {
+	public DNI(String numero, String fechaCaducidad, Persona persona) {
 		super();
 		this.numero = numero;
 		this.fechaCaducidad = fechaCaducidad;
-		this.nombre = nombre;
+		this.persona = persona;
 	}
 
 	
