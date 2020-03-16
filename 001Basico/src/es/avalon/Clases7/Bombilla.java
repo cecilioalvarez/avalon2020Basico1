@@ -9,7 +9,7 @@ public class Bombilla {
 		this.encendida = encendida;
 	}
 
-	public boolean isEncendida() {
+	public boolean estaEncendida() {
 		return encendida;
 	}
 

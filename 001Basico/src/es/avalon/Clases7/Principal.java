@@ -7,10 +7,19 @@ public class Principal {
 		Bombilla bombilla = new Bombilla(true);
 		Habitacion habitacion = new Habitacion(bombilla);
 
+		imprimirEstadoBombilla(bombilla);
 		habitacion.getBombilla().encender();
-		System.out.println(bombilla.isEncendida());
+		imprimirEstadoBombilla(bombilla);
 		habitacion.getBombilla().apagar();
-		System.out.println(bombilla.isEncendida());
+		imprimirEstadoBombilla(bombilla);
+
 	}
 
+	public static void imprimirEstadoBombilla(Bombilla bombilla) {
+		if (bombilla.estaEncendida()) {
+			System.out.println("encendida");
+		} else {
+			System.out.println("apagada");
+		}
+	}
 }
