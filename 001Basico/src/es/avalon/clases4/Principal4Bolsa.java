@@ -10,7 +10,7 @@ public class Principal4Bolsa {
 		//Agrupando la informacion de una forma mas sencilla para manejar
 		Bolsa[] bolsas=new Bolsa[] {b0,b1,b2};
 
-		System.out.println(calcularPesoTotal(bolsas));
+		System.out.println("Peso total -> "+calcularPesoTotal(bolsas));
 	}
 	private static int calcularPesoTotal(Bolsa[] bolsas) {
 		int pesoinicial=0;
