@@ -9,15 +9,16 @@ public class Principal2 {
 		lista.add(2);
 		lista.add(5);
 		lista.add(7);
-		
-	
 
-		for (int i=0;i<lista.size();i++) {
-			if(lista.get(i)<5)
+		for (int i = 0; i < lista.size(); i++) {
+			if (lista.get(i) < 5)
 				lista.remove(i);
 		}
-		
-		System.out.println(lista.get(i));
+
+		for (int i = 0; i < lista.size(); i++) {
+
+			System.out.println(lista.get(i));
+		}
 	}
 
 }
