@@ -3,7 +3,9 @@ package es.clases3;
 public class Habitacion {
 	private String NombreHabi; 
 
-	private Bombilla bombilla;
+	private Bombilla bombilla1;
+	
+	private Bombilla bombilla2;
 	
 	public String getNombreHabi() {
 		return NombreHabi;
@@ -17,13 +19,22 @@ public class Habitacion {
 		super();
 		NombreHabi = nombreHabi;
 	}
-
-
-	public Bombilla getBombilla() {
-		return bombilla;
+	public Bombilla getBombilla1() {
+		return bombilla1;
+	}
+	
+	public void setBombilla1(Bombilla bombilla1) {
+		this.bombilla1 = bombilla1;
+	}
+	
+	public Bombilla getBombilla2() {
+		return bombilla2;
+	}
+	
+	public void setBombilla2(Bombilla bombilla2) {
+		this.bombilla2 = bombilla2;
 	}
 
-	public void setBombilla(Bombilla bombilla) {
-		this.bombilla = bombilla;
-	}
+
+	
 }

@@ -43,10 +43,14 @@ public class Principal1 {
 		
 		Habitacion h= new Habitacion ("salon");
 		Bombilla b1 = new Bombilla(true);
-		h.setBombilla(b1);
+		Bombilla b2 = new Bombilla(false);
+		h.setBombilla1(b1);
+		h.setBombilla2(b2);
 		System.out.println(h.getNombreHabi());
-		System.out.println(h.getBombilla().isBombilla());
+		System.out.println(h.getBombilla1().isBombilla());
 		imprimirEstadoBombilla(b1);
+		System.out.println(h.getBombilla2().isBombilla());
+		imprimirEstadoBombilla(b2);
 	}
 
 	//como es un metodo, tiene que estar fuera del metodo principal
