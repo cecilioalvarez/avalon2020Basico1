@@ -1,5 +1,7 @@
 package es.avalon.clases6composicion5;
 
+import java.util.ArrayList;
+
 public class Principal2habitacion {
 
 	public static void main(String[] args) {
@@ -8,11 +10,59 @@ public class Principal2habitacion {
 		habitacion h=new habitacion("salon");
 		bombilla b1=new bombilla(true);
 		bombilla b2=new bombilla(false);
-		h.setBombilla1(b1);
-		h.setBombilla2(b2);
 		
-		System.out.println("bombilla 1 -> "+h.getBombilla1().isEncendida());
-		System.out.println("bombilla 2 -> "+h.getBombilla2().isEncendida());
+		// infinita de bombillas
+		h.addBombilla(b1);
+		h.addBombilla(b2);
+		
+		mostrarbombillas(h);
+		System.out.println("bombillas encendidas -> "+encendidas(h));
+		
+		////////// otro metodo
+		
+//		ArrayList<bombilla> bombillas=h.getBombillas();
+//		
+//		for (int i=0; i<bombillas.size(); i++) {
+//			
+//			System.out.println(bombillas.get(i).isEncendida());
+//
+//		}
+//		
+		
+//		int bombillasON=0;
+//		
+//		for (int i=0; i<bombillas.size();i++) {
+//			
+//			if (bombillas.get(i).isEncendida()==true) {
+//				
+//				bombillasON=bombillasON+1;
+//			}
+//		}
+//		System.out.println("bombillas encendidas -> "+bombillasON);
+		
+	}
+
+	private static void mostrarbombillas(habitacion h) {
+		ArrayList<bombilla> bombillas=h.getBombillas();
+		
+		for (int i=0; i<bombillas.size(); i++) {
+			
+			System.out.println(bombillas.get(i).isEncendida());
+		}
+	}
+	
+	private static int encendidas(habitacion h) {
+		int contador=0;
+		ArrayList<bombilla> bombillas=h.getBombillas();
+		
+		for (int i=0; i<bombillas.size(); i++) {
+			
+			if (bombillas.get(i).isEncendida()) {
+				
+				contador++;
+			}
+		}
+		return contador;
 	}
 
 }
