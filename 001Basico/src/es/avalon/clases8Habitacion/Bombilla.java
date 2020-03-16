@@ -19,12 +19,12 @@ public class Bombilla {
 
 	public void encender() {
 		
-		
+		this.setEncendida(true);
 	}
 
 	public void apagar() {
 		
-		
+		this.setEncendida(false);
 	}
 
 	
