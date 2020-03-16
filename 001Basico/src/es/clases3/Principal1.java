@@ -28,7 +28,9 @@ public class Principal1 {
 				 * -por que solo saco el nombre, si quiero sacar todo
 				 * -
 				 */
-				System.out.println(d1.getPersona().getNombre());
+				System.out.println(d1.getPersona().getNombre() );
+				System.out.println(d1.getNumero() );
+				System.out.println(d1.getFechaCaducidad());
 				//accedo a la relacion y a la propiedad de historial de enfermedad
 				//System.out.println(p1.getHistorial().getEnfermedad());
 	}
