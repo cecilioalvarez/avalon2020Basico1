@@ -40,4 +40,12 @@ public class Bombilla {
 		Encendido = encendido;
 		this.habitacion = habitacion;
 	}
+	
+	public static void imprimirEstadoBombilla(Bombilla b) {
+		if (b.isEncendido() ) {
+			System.out.println("encendida");
+		}else {
+			System.out.println("apagada");
+		}
+	}
 }

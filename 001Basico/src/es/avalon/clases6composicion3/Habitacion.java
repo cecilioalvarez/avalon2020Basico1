@@ -33,5 +33,11 @@ public class Habitacion {
 		super();
 		this.nombre = nombre;
 	}
+
+	public Habitacion() {
+		super();
+	}
+	
+	
 	
 }
