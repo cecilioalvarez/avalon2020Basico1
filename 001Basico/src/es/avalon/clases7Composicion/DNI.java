@@ -3,9 +3,9 @@ package es.avalon.clases7Composicion;
 public class DNI {
 
 	private String numero;
-	private String Caducidad="1/10/2023";
+	private String Caducidad = "1/10/2023";
 	private Persona persona;
-	
+
 	public String getNumero() {
 		return numero;
 	}
@@ -22,10 +22,12 @@ public class DNI {
 		Caducidad = caducidad;
 	}
 
-	public DNI(String numero, String caducidad) {
+// añadir parametro al constructor
+	public DNI(String numero, String caducidad, Persona p) {
 		super();
 		this.numero = numero;
 		this.Caducidad = caducidad;
+		this.persona = p;
 	}
 
 	public Persona getPersona() {
@@ -35,8 +37,5 @@ public class DNI {
 	public void setPersona(Persona persona) {
 		this.persona = persona;
 	}
-
-
-
 
 }

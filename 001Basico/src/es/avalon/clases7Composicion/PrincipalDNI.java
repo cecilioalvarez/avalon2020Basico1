@@ -5,7 +5,8 @@ public class PrincipalDNI {
 	public static void main(String[] args) {
 		Persona p = new Persona(" Juan Manuel");
 		
-		DNI dni= new DNI("1",p);
+		//añadir parametro al constructor
+		DNI dni= new DNI("1","hoy",p);
 		p.setDni(dni);
 		
 		Persona p2= new Persona ("Juan Manuel");
