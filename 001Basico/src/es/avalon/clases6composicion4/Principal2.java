@@ -1,4 +1,4 @@
-package es.avalon.clases6composicion3;
+package es.avalon.clases6composicion4;
 
 public class Principal2 {
 
