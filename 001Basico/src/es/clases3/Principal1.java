@@ -59,7 +59,7 @@ public class Principal1 {
 		Bombilla b2= new Bombilla(false);
 		
 		h.addBombilla(b1);
-		h.addBombila (b2);
+		h.addBombilla(b2);
 		ArrayList<Bombilla>bombillas=h.getBombillas();
 		for(int i=0;i<bombillas.size();i++) {
 			System.out.println(bombillas.get(i).isBombilla());
