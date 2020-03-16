@@ -1,5 +1,7 @@
 package es.clases3;
 
+import java.util.ArrayList;
+
 public class Principal1 {
 
 	public static void main(String[] args) {
@@ -41,16 +43,27 @@ public class Principal1 {
 //		imprimirEstadoBombilla(b1);
 //		//faltaba la llave aqui
 		
-		Habitacion h= new Habitacion ("salon");
-		Bombilla b1 = new Bombilla(true);
-		Bombilla b2 = new Bombilla(false);
-		h.setBombilla1(b1);
-		h.setBombilla2(b2);
-		System.out.println(h.getNombreHabi());
-		System.out.println(h.getBombilla1().isBombilla());
-		imprimirEstadoBombilla(b1);
-		System.out.println(h.getBombilla2().isBombilla());
-		imprimirEstadoBombilla(b2);
+//		Habitacion h= new Habitacion ("salon");
+//		Bombilla b1 = new Bombilla(true);
+//		Bombilla b2 = new Bombilla(false);
+//		h.setBombilla1(b1);
+//		h.setBombilla2(b2);
+//		System.out.println(h.getNombreHabi());
+//		System.out.println(h.getBombilla1().isBombilla());
+//		imprimirEstadoBombilla(b1);
+//		System.out.println(h.getBombilla2().isBombilla());
+//		imprimirEstadoBombilla(b2);
+		
+		Habitacion h= new Habitacion();
+		Bombilla b1=new Bombilla(true);
+		Bombilla b2= new Bombilla(false);
+		
+		h.addBombilla(b1);
+		h.addBombila (b2);
+		ArrayList<Bombilla>bombillas=h.getBombillas();
+		for(int i=0;i<bombillas.size();i++) {
+			System.out.println(bombillas.get(i).isBombilla());
+		}
 	}
 
 	//como es un metodo, tiene que estar fuera del metodo principal
