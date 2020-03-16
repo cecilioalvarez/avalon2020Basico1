@@ -41,6 +41,9 @@ public class Habitacion {
 		this.bombillas.add(b);
 	}
 	
+	//Cuantas bombillas hay encendidas en la habitacion?
+	
+
 	
 	
 }
