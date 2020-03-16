@@ -28,7 +28,7 @@ public class Habitacion {
 		this.bombillas.add(bombilla);
 	}
 
-	public void numeroBombillasOn(ArrayList<Bombilla> bombillas) {
+	public void numeroBombillasOn(Habitacion habitacion) {
 
 		int numeroEncendidas = 0;
 		for (int i = 0; i < bombillas.size(); i++) {
@@ -39,7 +39,7 @@ public class Habitacion {
 		System.out.println(numeroEncendidas);
 	}
 
-	public void mostrarBombillas(ArrayList<Bombilla> bombillas) {
+	public void mostrarBombillas(Habitacion habitacion) {
 		for (int i = 0; i < bombillas.size(); i++) {
 			System.out.println(bombillas.get(i).estaEncendida());
 		}
