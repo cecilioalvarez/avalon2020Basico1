@@ -22,6 +22,7 @@ public class Principal3 {
 			
 			System.out.println(i);
 		}
+		
 
 	}
 
