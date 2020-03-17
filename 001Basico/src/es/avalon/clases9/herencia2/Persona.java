@@ -1,6 +1,6 @@
 package es.avalon.clases9.herencia2;
 
-public class Persona {
+public class Persona  {
 
 	private String nombre;
 	private int edad;
@@ -19,7 +19,7 @@ public class Persona {
 		this.edad = edad;
 	}
 	public Persona(String nombre, int edad) {
-		super();
+	
 		this.nombre = nombre;
 		this.edad = edad;
 	}

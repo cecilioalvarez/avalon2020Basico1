@@ -11,6 +11,11 @@ public class Principal {
 		System.out.println(d.getEdad());
 		System.out.println(d.getDeporte());
 		
+		Deportista d2= new Deportista("ana",30);
+		System.out.println(d2.getNombre());
+		System.out.println(d2.getEdad());
+		System.out.println(d2.getDeporte());
+		
 
 	}
 
