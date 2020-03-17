@@ -19,23 +19,24 @@ public class Principal {
 		System.out.println();
 
 		ArrayList<Persona> personas = new ArrayList<Persona>();
-		personas.add(new Deportista("Moises", 35, "Futbol"));
-		personas.add(new Deportista("Moises1", 36, "Futbol"));
-		personas.add(new Deportista("Moises2", 37, "Futbol"));
-		personas.add(new Deportista("Moises3", 38, "Futbol"));
-		personas.add(new Deportista("Moises4", 39, "Futbol"));
+		personas.add(new Deportista("Moises", 1, "Futbol"));
+		personas.add(new Deportista("Moises1", 1, "Futbol"));
+		personas.add(new Deportista("Moises2", 1, "Futbol"));
+		personas.add(new Deportista("Moises3", 1, "Futbol"));
+		personas.add(new Deportista("Moises4", 1, "Futbol"));
 
 		for (Persona persona : personas) {
 			System.out.println(persona.getNombre());
 		}
 
-		Persona persona = new Persona("Antonio", 20);
-		Persona persona1 = new Persona("Carlota", 30);
+		Persona persona = new Persona("Antonio", 1);
+		Persona persona1 = new Persona("Carlota", 1);
 		personas.add(persona);
 		personas.add(persona1);
 
 		recorrerListaPersonas(personas);
-		System.out.println("La persona mas mayor es " + quienEsMayor(personas).getNombre()+ " con " + quienEsMayor(personas).getEdad());
+		System.out.println("La persona mas mayor es " + quienEsMayor(personas).getNombre() + " con " + quienEsMayor(personas).getEdad());
+		System.out.println("La suma de edades es de " + sumaEdades(personas));
 	}
 
 	public static void recorrerListaPersonas(ArrayList<Persona> lista) {
@@ -45,6 +46,14 @@ public class Principal {
 			persona.andar();
 
 		}
+	}
+
+	public static int sumaEdades(ArrayList<Persona> listaPersonas) {
+		int contador = 0;
+		for (Persona i : listaPersonas) {
+			contador = contador + i.getEdad();
+		}
+		return contador;
 	}
 
 	public static Persona quienEsMayor(ArrayList<Persona> lista) {
