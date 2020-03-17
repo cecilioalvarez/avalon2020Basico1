@@ -1,4 +1,4 @@
-package Clase6Composicion3.bombillas;
+package Clase6Composicion3.bombillasArray;
 
 import java.util.ArrayList;
 
@@ -6,7 +6,7 @@ public class Principal {
 	public static void main(String[] args) {
 
 		Habitacion h = new Habitacion();
-
+		
 		Bombilla b1 = new Bombilla(true);
 		Bombilla b2 = new Bombilla(false);
 
@@ -16,6 +16,7 @@ public class Principal {
 	}
 
 	private static void mostrarBombillas(Habitacion h) {
+		
 		ArrayList<Bombilla> bombillas = h.getBombillas();
 		for (int i = 0; i < bombillas.size(); i++) {
 			System.out.println(bombillas.get(i).isOn());
@@ -26,9 +27,13 @@ public class Principal {
 		int contador = 0;
 		ArrayList<Bombilla> bombillas = h.getBombillas();
 		for (int i = 0; i < bombillas.size(); i++) {
-			System.out.println(bombillas.get(i).isOn());
+		
+			if(bombillas.get(i).isOn()) {
+				contador++;
+			}
 		}
 		return contador;
+		
 	}
 
 }
