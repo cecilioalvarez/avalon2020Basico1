@@ -55,11 +55,13 @@ public class Principal3 {
 	}
 	public static int sumaEdades(ArrayList<Persona> lista) {
 		
-		int p = lista.get(0).getEdad();
+		int suma = 0;
 		for (Persona persona : lista) {
-			p=p+ persona.getEdad();
+			suma+= persona.getEdad();
 
 		}
+		return suma;
+		
 		
 	}
 }
