@@ -6,37 +6,47 @@ public class Principal {
 
 	public static void main(String[] args) {
 
-		ArrayList<Deportista> deportistas = new ArrayList<Deportista>();
-		deportistas.add(new Deportista("Moises", 35, "Futbol"));
-		deportistas.add(new Deportista("Moises1", 36, "Futbol"));
-		deportistas.add(new Deportista("Moises2", 37, "Futbol"));
-		deportistas.add(new Deportista("Moises3", 38, "Futbol"));
-		deportistas.add(new Deportista("Moises4", 39, "Futbol"));
-
-		for (Deportista deportista : deportistas) {
-			System.out.println(deportista.getNombre() + " " + deportista.getEdad() + " " + deportista.getDeporte());
-		}
-		System.out.println();
-
 		ArrayList<Persona> personas = new ArrayList<Persona>();
 		personas.add(new Deportista("Moises", 1, "Futbol"));
-		personas.add(new Deportista("Moises1", 1, "Futbol"));
-		personas.add(new Deportista("Moises2", 1, "Futbol"));
-		personas.add(new Deportista("Moises3", 1, "Futbol"));
-		personas.add(new Deportista("Moises4", 1, "Futbol"));
-
-		for (Persona persona : personas) {
-			System.out.println(persona.getNombre());
-		}
-
-		Persona persona = new Persona("Antonio", 1);
-		Persona persona1 = new Persona("Carlota", 1);
+		personas.add(new Deportista("Ana", 70, "Futbol"));
+		personas.add(new Deportista("Domi", 1, "Futbol"));
+		personas.add(new Deportista("Emilio", 67, "Futbol"));
+		personas.add(new Deportista("Monica", 1, "Futbol"));
+		Persona persona = new Persona("Pedro", 80);
+		Persona persona1 = new Persona("Teresa", 1);
 		personas.add(persona);
 		personas.add(persona1);
 
 		recorrerListaPersonas(personas);
-		System.out.println("La persona mas mayor es " + quienEsMayor(personas).getNombre() + " con " + quienEsMayor(personas).getEdad());
+
+		System.out.println("La persona mas mayor es " + quienEsMayor(personas).getNombre() + " con "
+				+ quienEsMayor(personas).getEdad());
 		System.out.println("La suma de edades es de " + sumaEdades(personas));
+
+		recorrerListaPersonas(listaJubilados(personas));
+
+		sumarNumeroEdad(personas, 1);
+
+	}
+
+	public static void sumarNumeroEdad(ArrayList<Persona> lista, int numero) {
+		int edad;
+		for (Persona i : lista) {
+			edad = i.getEdad();
+			edad = edad + numero;
+			i.setEdad(edad);
+		}
+	}
+
+	public static ArrayList<Persona> listaJubilados(ArrayList<Persona> lista) {
+		ArrayList<Persona> jubilados = new ArrayList<Persona>();
+		for (Persona i : lista) {
+			if (i.getEdad() > 65) {
+				jubilados.add(i);
+			}
+		}
+		return jubilados;
+
 	}
 
 	public static void recorrerListaPersonas(ArrayList<Persona> lista) {
