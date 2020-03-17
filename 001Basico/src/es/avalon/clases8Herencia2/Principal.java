@@ -12,7 +12,7 @@ public class Principal {
 		System.out.println(d.getEdad());
 		System.out.println(d.getDeporte());
 
-		Deportista d2=new Deportista("Juan",30);
+		Deportista d2=new Deportista("Juan",30);//Solo defino 2 parametros
 		System.out.println(d2.getNombre());
 		System.out.println(d2.getEdad());
 		System.out.println(d2.getDeporte());//Este parametro me saldra vacio (null)
