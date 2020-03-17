@@ -9,10 +9,10 @@ public class Principal {
 		FacturaSinIVA facturaSinIVA = new FacturaSinIVA(2,"pruebaSinIVA",100);
 		FacturaReducida facturaReducida = new FacturaReducida(2,"pruebaReducida",100);
 		
-		System.out.println(factura.getImporte());
-		System.out.println(facturaNormal.getImporte());
-		System.out.println(facturaSinIVA.getImporte());
-		System.out.println(facturaReducida.getImporte());
+		System.out.println("Factura " + factura.getImporte());
+		System.out.println("Factura normal " + facturaNormal.getImporte());
+		System.out.println("Factura sin IVA " + facturaSinIVA.getImporte());
+		System.out.println("Factura reducida " + facturaReducida.getImporte());
 	}
 
 }
