@@ -9,7 +9,7 @@ public class Telefono {
 		return numero;
 	}
 
-	public void setNumero(String numero) {
+	public void setNumero(int numero) {
 		this.numero = numero;
 	}
 
@@ -21,9 +21,9 @@ public class Telefono {
 		this.marca = marca;
 	}
 
-	public Telefono(String numero, String marca) {
+	public Telefono(int i, String marca) {
 		super();
-		this.numero = numero;
+		this.numero = i;
 		this.marca = marca;
 	}
 
