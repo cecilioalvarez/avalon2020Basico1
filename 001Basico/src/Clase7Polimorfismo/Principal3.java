@@ -29,8 +29,18 @@ public class Principal3 {
 		System.out.println(mayor.getNombre());
 		System.out.println(mayor.getEdad());
 	
-		//la suma de las edades
-		int edadTotal=sumaEdades(lista);
+		ArrayList<Persona> nueva = listaJubilados(lista);
+		for(Persona p:nueva) {
+			System.out.println(p.getNombre());
+		}
+			
+		listaMasDos(lista);
+		for(Persona p:lista) {
+			System.out.println(p.getEdad());
+		}
+
+		
+	
 	}
 
 	public static void recorrerListaPersonas(ArrayList<Persona> lista) {
@@ -61,6 +71,35 @@ public class Principal3 {
 
 		}
 		return suma;
+		
+		
+	}
+	
+	//voy a ver si me devuelve la gente que este jubilada
+	
+	public static ArrayList<Persona> listaJubilados(ArrayList<Persona> lista) {
+		ArrayList<Persona> jubilados = new ArrayList<Persona>();
+		for (Persona persona : lista) {
+			
+			if ( persona.getEdad()>65) {
+				jubilados.add(persona);
+			}
+
+		}return jubilados;
+		
+		
+		
+	}
+	
+	//recorrer el array y sumarle 2 años
+	
+	public static ArrayList<Persona> listaMasDos(ArrayList<Persona> lista) {
+		
+		for (Persona persona : lista) {
+			persona.setEdad(persona.getEdad()+2);
+	
+		}return lista;
+		
 		
 		
 	}

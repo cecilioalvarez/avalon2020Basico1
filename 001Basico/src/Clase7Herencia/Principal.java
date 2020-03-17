@@ -11,9 +11,10 @@ public class Principal {
 		
 		t.llamar(856473);
 		
-		SmartPhone t2= new SmartPhone(656455,"samsung");
+		SmartPhone t2= new SmartPhone(656455,"samsung","a");
 		System.out.println(t2.getNumero());
 		System.out.println(t2.getMarca());
+		System.out.println(t2.getWhatsapp());
 		
 		t2.llamar(8678973);
 		

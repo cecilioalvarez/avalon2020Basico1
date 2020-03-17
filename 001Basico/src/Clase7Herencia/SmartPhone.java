@@ -17,9 +17,12 @@ public class SmartPhone extends Telefono{
 
 	public SmartPhone(int numero, String marca) {
 		super(numero, marca);
-		// TODO Auto-generated constructor stub
 	}
 
+	public SmartPhone(int numero, String marca,String whatsapp) {
+		super(numero, marca);
+		this.whatsapp = whatsapp;
+	}	
 	public void llamarVideos(String otroWhatsapp) {
 		System.out.println("llamada de video desde"+getWhatsapp()+"a"+otroWhatsapp);
 	}

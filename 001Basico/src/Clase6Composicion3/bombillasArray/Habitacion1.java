@@ -6,6 +6,7 @@ import java.util.ArrayList;
 public class Habitacion1 {
 	private String nombre;
 	private ArrayList<Bombilla> bombillas=new ArrayList<Bombilla>();
+	
 	public String getNombre() {
 		return nombre;
 	}
