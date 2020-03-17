@@ -40,7 +40,7 @@ public class Principal {
 		ArrayList<Bombilla> bombillas = h.getBombillas();
 		
 		for (int i=0; i<bombillas.size(); i++) {
-			if (bombillas.get(i).isEncendido() == true); {
+			if (bombillas.get(i).isEncendido() == true) {
 				contador++;
 			}
 		}
