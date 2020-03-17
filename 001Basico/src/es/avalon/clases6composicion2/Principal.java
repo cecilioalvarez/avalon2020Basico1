@@ -10,6 +10,12 @@ public class Principal {
 		p.setDni(dni);
 		
 		
+		p.getNombre();
+		p.getNombre();
+		p.getDni().getPersona().getNombre();
+		p.getNombre();
+		p.getDni().getNumero();
+		
 		Persona p2= new Persona("cecilio");
 		
 		Dni dni2= new Dni("1","hoy",p2);
