@@ -87,7 +87,8 @@ public class Principal3 {
 	
 	public static void sumarEdadesDeTodos(ArrayList<Persona> lista) {
 		for (Persona persona : lista) {
-			persona.setEdad()
+			persona.setEdad(persona.getEdad()+2);
+			
 		}
 	
 	
@@ -97,4 +98,5 @@ public class Principal3 {
 	
 	
 	
+	}
 }
