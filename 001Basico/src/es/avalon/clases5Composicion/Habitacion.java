@@ -1,4 +1,4 @@
-package es.avalon.clasesComposicion5;
+package es.avalon.clases5Composicion;
 
 import java.util.ArrayList;
 

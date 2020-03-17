@@ -1,4 +1,4 @@
-package es.avalon.clasesComposicion4;
+package es.avalon.clases4Composicion;
 
 public class Bombilla {
 	
