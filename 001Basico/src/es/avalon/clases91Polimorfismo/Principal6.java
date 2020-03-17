@@ -32,11 +32,13 @@ public class Principal6 {
 //		System.out.println(sumarEdades(lista));
 		
 		//no es una nueva variable
-		ArrayList<Persona> nueva= jubilados(lista);
+		//ArrayList<Persona> nueva= jubilados(lista);
 		
-		for(Persona p:nueva) {
+		sumarEdadesDeTodos(lista);
+		for(Persona p:lista) {
 			
 			System.out.println(p.getNombre());
+			System.out.println(p.getEdad());
 		}
 
 	}
@@ -103,13 +105,16 @@ public class Principal6 {
 		return jubilados;
 	}
 	
-	public static void sumarEdadesDeTodos(ArrayList<Persona> lista) {
+	public static ArrayList<Persona> sumarEdadesDeTodos(ArrayList<Persona> lista) {
 
+		
 		for (Persona persona : lista) {
 
 			persona.setEdad(persona.getEdad()+2);
 		}
+		return lista;
 	}
+	
 	
 	
 
