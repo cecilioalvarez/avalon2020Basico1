@@ -25,9 +25,9 @@ public class Persona  {
 	}
 	
 	public void andar() {
-		System.out.println("la persona anda 5km/h");
+		
+		System.out.println("la persona anda a 5 km/h");
 	}
-	
 	
 	
 

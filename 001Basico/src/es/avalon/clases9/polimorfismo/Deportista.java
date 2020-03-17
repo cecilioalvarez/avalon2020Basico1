@@ -29,7 +29,10 @@ public class Deportista extends Persona {
 
 	@Override
 	public void andar() {
-		System.out.println("el deportista anda 8km/h");
+		
+		System.out.println("el deportista anda a 8 km/h");
 	}
+	
+	
 
 }
