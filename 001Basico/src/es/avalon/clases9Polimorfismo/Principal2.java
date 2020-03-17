@@ -22,7 +22,7 @@ public class Principal2 {
 		lista.add(d4);
 
 		for (Deportista undeportista : lista) {
-			//he cambiado a .getDeporte()
+			// he cambiado a .getDeporte()
 			System.out.println(undeportista.getDeporte());
 		}
 
@@ -36,11 +36,7 @@ public class Principal2 {
 		for (Persona undeportista : lista2) {
 			System.out.println(undeportista.getNombre());
 		}
-		
-		
-		
-		
-		
+
 	}
 
 }
