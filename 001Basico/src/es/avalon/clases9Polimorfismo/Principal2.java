@@ -22,7 +22,8 @@ public class Principal2 {
 		lista.add(d4);
 
 		for (Deportista undeportista : lista) {
-			System.out.println(undeportista.getNombre());
+			//he cambiado a .getDeporte()
+			System.out.println(undeportista.getDeporte());
 		}
 
 		ArrayList<Persona> lista2 = new ArrayList<Persona>();
