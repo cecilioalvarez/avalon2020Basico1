@@ -19,6 +19,9 @@ public class Principal {
 			System.out.println(lista.get(i));
 		}
 		System.out.println(lista.contains("hola"));
+		System.out.println(lista.contains("que"));
+		System.out.println(lista.contains("tal"));
+		System.out.println(lista.contains("estas"));
 	}
 
 }
