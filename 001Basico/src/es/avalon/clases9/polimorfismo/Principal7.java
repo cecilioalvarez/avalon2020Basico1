@@ -2,7 +2,7 @@ package es.avalon.clases9.polimorfismo;
 
 import java.util.ArrayList;
 
-public class Principal5 {
+public class Principal7 {
 
 	public static void main(String[] args) {
 		
@@ -24,21 +24,25 @@ public class Principal5 {
 		lista.add(p1);
 		lista.add(p2);
 		
-		System.out.println(sumarEdades(lista));
-	}
-	
-	
-	//suma de edades
-	
-	public static int sumarEdades(ArrayList<Persona> lista) {
-		int suma = 0;
-		for (Persona p: lista) {
-			suma = suma + p.getEdad();
+		ArrayList<Persona> nueva = sumarAnyos(lista);
+		
+		for (Persona i: nueva) {
+			System.out.println(i.getNombre());
+			System.out.println(i.getEdad());
 		}
-		return suma;
 		
 	}
 	
-	//arraylist personas jubiladas (65 años jubilacion)
+	
+	//recorrer el array y sumarles 2 años
+	public static ArrayList<Persona> sumarAnyos(ArrayList<Persona> lista) {
+		
+		for (Persona p: lista) {
+			p.setEdad(p.getEdad()+2);
+			
+		}
+		return lista;
+	}
+	
 
 }
