@@ -20,6 +20,10 @@ public class Deportista extends Persona{
 		this.deporte=deporte;
 	}
 
+	//Constructor con solo 2 parametros
+	public Deportista(String nombre, int edad) {
+		super(nombre, edad);
+	}
 	
 	
 
