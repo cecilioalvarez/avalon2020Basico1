@@ -10,8 +10,8 @@ public class Principal2 {
 		Deportista d2=new Deportista("Luis",15,"Surf");
 		Deportista d3=new Deportista("Alberto",5,"Petanca");
 		Deportista d4=new Deportista("Ines",15,"Padel");
+		
 		ArrayList<Deportista> listadepor = new ArrayList<Deportista>();
-
 		listadepor.add(d1);
 		listadepor.add(d2);
 		listadepor.add(d3);

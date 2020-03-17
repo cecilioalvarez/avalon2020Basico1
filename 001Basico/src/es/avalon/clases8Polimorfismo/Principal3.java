@@ -12,12 +12,10 @@ public class Principal3 {
 		Deportista d4 = new Deportista("Ines", 15, "Padel");
 
 		ArrayList<Persona> lista = new ArrayList<Persona>();
-
 		lista.add(d1);
 		lista.add(d2);
 		lista.add(d3);
 		lista.add(d4);
-
 		Persona p1 = new Persona("Maria", 25);
 		Persona p2 = new Persona("Carlota", 15);
 		lista.add(p1);

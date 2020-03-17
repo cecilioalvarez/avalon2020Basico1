@@ -1,6 +1,6 @@
 package es.avalon.clases8Polimorfismo;
 
-public class Principal {
+public class Principal1PersonaDeportistaAndar {
 
 	public static void main(String[] args) {
 

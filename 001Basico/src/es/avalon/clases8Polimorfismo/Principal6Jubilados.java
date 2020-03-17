@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class Principal6Jubilados {
 
+	//Sacar solo las personas jubiladas (mayores de 67)
 	public static void main(String[] args) {
 
 		Deportista d1 = new Deportista("Pepe", 75, "Futbol");
@@ -23,7 +24,9 @@ public class Principal6Jubilados {
 		lista.add(p1);
 		lista.add(p2);
 
+		//Declaramos una nueva variable (lista) en la que se guarda listajubilados
 		ArrayList<Persona> nueva= buscarJubilados(lista);
+		//Pintamos la listajubilados
 		for (Persona p:nueva) {
 			System.out.println(p.getNombre());
 		}
@@ -31,11 +34,11 @@ public class Principal6Jubilados {
 
 	public static ArrayList<Persona> buscarJubilados(ArrayList<Persona> lista) {
 		ArrayList<Persona> listajubilados = new ArrayList<Persona>();
+		
 		for (Persona persona : lista) {
 			if (persona.getEdad() >= 67) {
 				listajubilados.add(persona);
 			}
-
 		}
 		return listajubilados;
 	}
