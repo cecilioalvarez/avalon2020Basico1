@@ -1,4 +1,4 @@
-package es.avalon.clasesArraylist;
+package es.avalon.clases7Arraylist;
 
 import java.util.ArrayList;
 
