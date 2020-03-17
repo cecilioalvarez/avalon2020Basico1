@@ -11,6 +11,7 @@ public class Principal2 {
 
 		for(Integer i:lista) {
 			System.out.println();
+			
 		}
 	}
 
