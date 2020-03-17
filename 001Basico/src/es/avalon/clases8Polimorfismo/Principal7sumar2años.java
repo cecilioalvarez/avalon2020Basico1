@@ -2,13 +2,13 @@ package es.avalon.clases8Polimorfismo;
 
 import java.util.ArrayList;
 
-public class Principal3 {
+public class Principal7sumar2años {
 
 	public static void main(String[] args) {
 
-		Deportista d1 = new Deportista("Pepe", 25, "Futbol");
+		Deportista d1 = new Deportista("Pepe", 75, "Futbol");
 		Deportista d2 = new Deportista("Luis", 15, "Surf");
-		Deportista d3 = new Deportista("Alberto", 5, "Petanca");
+		Deportista d3 = new Deportista("Alberto", 80, "Petanca");
 		Deportista d4 = new Deportista("Ines", 15, "Padel");
 
 		ArrayList<Persona> lista = new ArrayList<Persona>();
@@ -22,19 +22,21 @@ public class Principal3 {
 		Persona p2 = new Persona("Carlota", 15);
 		lista.add(p1);
 		lista.add(p2);
-		recorrerListaPersonas(lista);
 
-	}
-
-	// En este metodo el que lo construye no necesita saber que existen deportistas
-	// (solo usa el concepto persona)
-	public static void recorrerListaPersonas(ArrayList<Persona> lista) {
-
-		for (Persona persona : lista) {
-			System.out.println(persona.getNombre());
-			System.out.println(persona.getEdad());
-			persona.andar();
+		//Saca la lista de personas sumando 2 años
+		sumar2(lista);
+		
+		for(Persona p:lista) {
+			System.out.println(p.getNombre());
+			System.out.println(p.getEdad());
 		}
 	}
 
+	public static ArrayList<Persona> sumar2(ArrayList<Persona> lista) {
+
+		for (Persona persona : lista) {
+			persona.setEdad(persona.getEdad()+2);		
+			}
+		return lista;
+	}
 }
