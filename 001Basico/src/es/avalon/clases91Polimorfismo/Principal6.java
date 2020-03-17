@@ -24,12 +24,20 @@ public class Principal6 {
 		lista.add(p1);
 		lista.add(p2);
 
-		recorrerListaPersonas(lista);
+//		recorrerListaPersonas(lista);
+//		
+//		Persona mayor= buscarMayor(lista);
+//		System.out.println(mayor.getNombre());
+//		System.out.println(mayor.getEdad());
+//		System.out.println(sumarEdades(lista));
 		
-		Persona mayor= buscarMayor(lista);
-		System.out.println(mayor.getNombre());
-		System.out.println(mayor.getEdad());
-		System.out.println(sumarEdades(lista));
+		//no es una nueva variable
+		ArrayList<Persona> nueva= jubilados(lista);
+		
+		for(Persona p:nueva) {
+			
+			System.out.println(p.getNombre());
+		}
 
 	}
 	// en este metodo el que lo construye no necesita
@@ -76,6 +84,32 @@ public class Principal6 {
 	}
 	
 	
+	public static ArrayList<Persona> jubilados(ArrayList<Persona> lista) {
+
+		// obtengo el primer elemento de lista
+		ArrayList<Persona> jubilados= new ArrayList<Persona>();
+		
+		
+		
+		for (Persona persona : lista) {
+		
+			if(persona.getEdad()>=67) {
+				
+				jubilados.add(persona);
+			}
+
+		}
+		// retornamele
+		return jubilados;
+	}
+	
+	public static void sumarEdadesDeTodos(ArrayList<Persona> lista) {
+
+		for (Persona persona : lista) {
+
+			persona.setEdad(persona.getEdad()+2);
+		}
+	}
 	
 	
 
