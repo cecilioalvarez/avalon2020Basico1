@@ -16,10 +16,11 @@ public class Bombilla {
 		super();
 		this.on = on;
 	}
-	
+
 	public void encender() {
 		this.setOn(true);
 	}
+
 	public void apagar() {
 		this.setOn(false);
 	}

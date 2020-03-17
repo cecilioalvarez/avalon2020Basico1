@@ -1,19 +1,14 @@
 package Clase6Composicion3.bombillasArray;
 
-import Clase6Composicion3.bombillas.Bombilla;
+import java.util.ArrayList;
+
+
 
 public class Habitacion {
 	private String nombre;
-	private Bombilla bombilla;
-	private Bombilla bombilla2;
+	private ArrayList<Bombilla> bombillas= new ArrayList<Bombilla>();
 
-	public Bombilla getBombilla2() {
-		return bombilla2;
-	}
-
-	public void setBombilla2(Bombilla bombilla2) {
-		this.bombilla2 = bombilla2;
-	}
+	
 
 	public String getNombre() {
 		return nombre;
@@ -23,13 +18,7 @@ public class Habitacion {
 		this.nombre = nombre;
 	}
 
-	public Bombilla getBombilla() {
-		return bombilla;
-	}
-
-	public void setBombilla(Bombilla bombilla) {
-		this.bombilla = bombilla;
-	}
+	
 
 	public Habitacion() {
 		super();
@@ -39,6 +28,14 @@ public class Habitacion {
 	public void addBombilla(Bombilla b) {
 
 		this.bombillas.add(b);
+	}
+
+	public ArrayList<Bombilla> getBombillas() {
+		return bombillas;
+	}
+
+	public void setBombillas(ArrayList<Bombilla> bombillas) {
+		this.bombillas = bombillas;
 	}
 
 }
