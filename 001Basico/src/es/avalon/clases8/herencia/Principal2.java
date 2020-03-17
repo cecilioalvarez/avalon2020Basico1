@@ -8,15 +8,12 @@ public class Principal2 {
 		System.out.println(p1.getNombre());
 		System.out.println(p1.getEdad());
 		
-		Deportista p2 = new Deportista("ana", 25, "futbol");
+		Deportista p2 = new Deportista("Ana", 25, "futbol");
 		
 		System.out.println(p2.getNombre());
 		System.out.println(p2.getEdad());
 		System.out.println(p2.getDeporte());
 		
 	}
-	
-
-	
 
 }
