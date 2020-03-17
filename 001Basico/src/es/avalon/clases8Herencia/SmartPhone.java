@@ -12,7 +12,6 @@ public class SmartPhone extends Telefono {
 		this.whatsapp = whatsapp;
 	}
 
-
 	public SmartPhone(int numero, String marca) {
 		//invocamos al constructor de la clase superior (telefono)
 		super(numero, marca);
