@@ -31,6 +31,7 @@ public class Principal2 {
 
 		for(Persona undeportista:lista2) {
 			System.out.println(undeportista.getNombre());
+			System.out.println(undeportista.getNombre());
 			
 		}
 		
