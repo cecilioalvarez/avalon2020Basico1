@@ -1,4 +1,4 @@
-package es.avalon.clases8.herencia2;
+package es.avalon.clases9.polimorfismo;
 
 public class Persona  {
 
@@ -22,6 +22,10 @@ public class Persona  {
 	
 		this.nombre = nombre;
 		this.edad = edad;
+	}
+	
+	public void andar() {
+		System.out.println("la persona anda 5km/h");
 	}
 	
 	
