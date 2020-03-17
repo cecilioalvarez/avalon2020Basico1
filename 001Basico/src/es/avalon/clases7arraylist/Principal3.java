@@ -1,8 +1,8 @@
-package es.avalon.clasesarraylist;
+package es.avalon.clases7arraylist;
 
 import java.util.ArrayList;
 
-public class Principal2 {
+public class Principal3 {
 
 	public static void main(String[] args) {
 		ArrayList<Integer> lista = new ArrayList<Integer>();
@@ -12,8 +12,8 @@ public class Principal2 {
 		lista.add(5);
 		lista.add(7);
 		
-		for (int i=0; i<lista.size(); i++) {
-			System.out.println(lista.get(i));
+		for (Integer i: lista) {
+			System.out.println(i);
 		}
 
 	}
