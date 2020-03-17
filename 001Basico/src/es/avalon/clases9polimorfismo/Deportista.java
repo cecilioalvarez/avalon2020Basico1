@@ -1,4 +1,4 @@
-package es.avalon.clases8herencia2;
+package es.avalon.clases9polimorfismo;
 
 public class Deportista extends Persona {
 
@@ -24,6 +24,11 @@ public class Deportista extends Persona {
 		// la llamada a super inicializa el constructor superior
 		super (edad, nombre);
 		
+	}
+	
+	@Override
+	public void andar() {
+		System.out.println("el deportista anda a 8 km/h");
 	}
 
 	
