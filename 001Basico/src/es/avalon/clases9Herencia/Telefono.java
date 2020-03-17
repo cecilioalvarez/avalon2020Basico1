@@ -2,10 +2,10 @@ package es.avalon.clases9Herencia;
 
 public class Telefono {
 
-	private String numero;
+	private int numero;
 	private String marca;
 
-	public String getNumero() {
+	public int getNumero() {
 		return numero;
 	}
 
