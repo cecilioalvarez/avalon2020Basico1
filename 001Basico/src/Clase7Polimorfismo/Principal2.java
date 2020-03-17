@@ -18,6 +18,23 @@ public class Principal2 {
 			System.out.println(undeportista.getDeporte());
 			
 		}
+		
+		//ahora quiero probarlo con Personas, entonces no me cogeria el deporte
+		// pero si el nombre
+		
+		
+		ArrayList<Persona> lista2=new ArrayList<Persona>();
+		lista2.add(d1);
+		lista2.add(d2);
+		lista2.add(d3);
+		lista2.add(d4);
+
+		for(Persona undeportista:lista2) {
+			System.out.println(undeportista.getNombre());
+			
+		}
+		
+		
 	}
 
 }
