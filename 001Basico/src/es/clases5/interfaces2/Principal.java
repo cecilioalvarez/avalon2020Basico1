@@ -6,10 +6,14 @@ public class Principal {
 		// TODO Auto-generated method stub
 		ElementoCasa e1= new Caldera();
 		ElementoCasa e2= new Frigorifico();
-		e1.interruptor();
-		e2.interruptor();
-		e1.interruptor();
-		e2.interruptor();
+//		e1.interruptor();
+//		e2.interruptor();
+//		e1.interruptor();
+//		e2.interruptor();
+		Casa c= new Casa();
+		c.addElemento(e1);
+		c.addElemento(e2);
+		c.encenderTodo();
 
 	}
 
