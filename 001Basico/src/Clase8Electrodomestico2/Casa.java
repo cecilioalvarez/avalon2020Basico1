@@ -13,10 +13,10 @@ public class Casa {
 	public void setLista(ArrayList<String> lista) {
 		this.lista = lista;
 	}
-	
-	public ArrayList<String> addElemento(String a) {
+		//void y no tenia return
+	public void addElemento(String a) {
 		
-		return lista.add(a);
+		 lista.add(a);
 	}
 	
 }
