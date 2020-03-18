@@ -30,5 +30,8 @@ public class Factura {
 		this.concepto = concepto;
 		this.importe = importe;
 	}
-
+	
+	public void conIVA (double importe) {
+	System.out.println( importe*1.21);
+}
 }
