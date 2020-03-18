@@ -5,11 +5,10 @@ public class Principal {
 	public static void main(String[] args) {
 
 		ElementoCasa ordenador = new Ordenador();
-		ordenador.isEstado();
+		System.out.println(ordenador.isEstado());
 		ordenador.encender();
 		ordenador.apagar();
 
-		
 	}
 
 }
