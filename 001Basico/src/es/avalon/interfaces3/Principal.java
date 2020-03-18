@@ -1,4 +1,4 @@
-package es.avalon.interfaces2;
+package es.avalon.interfaces3;
 
 public class Principal {
 
@@ -8,12 +8,10 @@ public class Principal {
 		ElementoCasa e1= new Caldera();
 		ElementoCasa e2= new Frigorifico();
 		
-		Frigorifico otro= (Frigorifico)e2;
-		
-		
-		e1.encender();
-		e2.encender();
-		
+		e1.pulsar();
+		e1.pulsar();
+		e1.pulsar();
+		e2.pulsar();
 		
 
 	}
