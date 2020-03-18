@@ -1,4 +1,4 @@
-package es.avalon.Clases9Factura;
+package es.avalon.Clases9FacturaAbstrascto;
 
 public class FacturaSinIVA extends Factura{
 
@@ -7,9 +7,8 @@ public class FacturaSinIVA extends Factura{
 	}
 
 	@Override
-	public double getImporte() {
-		double importe1= super.getImporte();
-		return importe1-importe1*0.21;
+	public double getImporteFactura() {
+		return getImporte();
 	}
 
 }
