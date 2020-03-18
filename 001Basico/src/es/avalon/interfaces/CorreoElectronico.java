@@ -18,6 +18,6 @@ public class CorreoElectronico implements Mensajeria {
 	}
 	
 	public void enviarMensaje(String texto) {
-		System.out.println("mandamos un correo electronico a "+ email+ " con el texto a " + " texto");
+		System.out.println("mandamos un correo electronico a "+ email+ " con el texto " + texto);
 	}
 }

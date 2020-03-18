@@ -18,7 +18,7 @@ public class Carta implements Mensajeria {
 	}
 	
 	public void enviarMensaje(String texto) {
-		System.out.println("mandamos una carta a "+direccion+" con el texto a "+" texto ");
+		System.out.println("mandamos una carta a "+direccion+" con el texto "+texto);
 	}
 
 }

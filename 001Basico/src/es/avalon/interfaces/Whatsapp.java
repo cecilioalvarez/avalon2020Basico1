@@ -17,6 +17,6 @@ public class Whatsapp implements Mensajeria {
 		this.cuenta = cuenta;
 	}
 	public void enviarMensaje(String texto) {
-		System.out.println("mandamos un whatsapp a "+cuenta+" con el texto a "+ " texto ");
+		System.out.println("mandamos un whatsapp a "+cuenta+" con el texto "+texto);
 	}
 }

@@ -18,7 +18,7 @@ public class Persona implements Mensajeria {
 	}
 	
 	public void enviarMensaje(String texto) {
-		System.out.println("mandamos un aviso a "+nombre+" con el texto a "+ " texto");
+		System.out.println("mandamos un aviso a "+nombre+" con el texto "+  texto);
 	}
 	
 }
