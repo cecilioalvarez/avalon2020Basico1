@@ -1,6 +1,6 @@
 package es.avalon.clases9polimorfismo2;
 
-public class Factura {
+public abstract class Factura {
 
 	private int numero;
 	private String concepto;
@@ -29,7 +29,5 @@ public class Factura {
 		this.concepto = concepto;
 		this.importe = importe;
 	}
-	public double improteIVA() {
-		return importe*1.21;
-	}
+	public abstract double importeIVA();
 }
