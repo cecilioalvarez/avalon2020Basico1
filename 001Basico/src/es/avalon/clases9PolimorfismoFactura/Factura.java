@@ -29,9 +29,9 @@ public abstract class Factura {
 		this.concepto = concepto;
 		this.importe = importe;
 	}
-	public double getImporteConIva() {
-		return getImporte()*1.21;
-	}
+	public abstract double getImporteConIva();
+		
+	
 	
 	
 

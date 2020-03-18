@@ -7,4 +7,10 @@ public class FacturaConIva extends Factura {
 		// TODO Auto-generated constructor stub
 	}
 
+	@Override
+	public double getImporteConIva() {
+		// TODO Auto-generated method stub
+		return getImporte()*1.21;
+	}
+
 }
