@@ -6,7 +6,7 @@ public class Principal {
 
 	public static void main(String[] args) {
 
-		Factura f = new Factura(1, "ordenador", 200);
+		Factura f = new FacturaConIva(1, "ordenador", 200);
 		Factura f2 = new FacturaSinIva(2, "ordenador", 200);
 		Factura f3 = new FacturaReducida(3, "tablet", 100);
 

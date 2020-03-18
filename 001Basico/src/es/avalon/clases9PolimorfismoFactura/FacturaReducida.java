@@ -10,7 +10,7 @@ public class FacturaReducida extends Factura {
 	@Override
 	public double getImporteConIva() {
 		// TODO Auto-generated method stub
-		return getImporteConIva()*1.07;
+		return getImporte()*1.07;
 	}
 
 }

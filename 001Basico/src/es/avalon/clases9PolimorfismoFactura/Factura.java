@@ -1,6 +1,6 @@
 package es.avalon.clases9PolimorfismoFactura;
 
-public class Factura {
+public abstract class Factura {
 	
 	private int numero;
 	private String concepto;
