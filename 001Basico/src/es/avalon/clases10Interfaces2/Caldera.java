@@ -15,13 +15,14 @@ public class Caldera implements ElementoCasa {
 	@Override
 	public void encender() {
 		this.encendido=true;
-		System.out.println("La calder se enciende");
+		System.out.println("La caldera se enciende");
 	}
 
 	@Override
 	public void apagar() {
 		this.encendido=false;
-		System.out.println("La calder se apaga");
+		System.out.println("La caldera se apaga");
 	}
+	
 
 }
