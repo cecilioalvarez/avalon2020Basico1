@@ -1,24 +1,33 @@
 package es.avalon.clases9.polimorfismoFacturas;
 
+import java.util.ArrayList;
+
 public class Principal {
 	public static void main(String[] args) {
 		
-		Factura f1 = new Factura(1, "iPhone 11 Pro Max", 1500);
-		FacturaNormal f2 = new FacturaNormal(2, "MacBook Pro 16", 5000);
-		FacturaReducida f3 = new FacturaReducida(3, "Papel higienico", 10);
-		FacturaSinIVA f4 = new FacturaSinIVA(4, "Algo", 50);
 		
-		System.out.println(f1.getImporteConIVA());
-		System.out.println(f2.getImporteConIVA());
-		//¡DUDA! - ¿Por qué sale 10.700000000000001?
-		System.out.println(f3.getImporteConIVA());
-		System.out.println(f4.getImporteConIVA());
+		Factura f2 = new FacturaNormal(2, "MacBook Pro 16", 5000);
+		Factura f3 = new FacturaReducida(3, "Papel higienico", 10);
+		Factura f4 = new FacturaSinIVA(4, "Algo", 50);
 		
-		System.out.println();
-		System.out.println("*******************");
-		System.out.println(f2.getNumero());
-		System.out.println(f3.getConcepto());
-		System.out.println(f4.getImporte());
+		ArrayList<Factura> lista = new ArrayList<Factura>();
+		
+		
+		lista.add(f2);
+		lista.add(f3);
+		lista.add(f4);
+		
+		for (Factura unaFactura: lista) {
+			System.out.println(unaFactura.getImporteConIVA());
+		}
+
+		//¡DUDA! - ¿Por qué sale 10.700000000000001? 
+		//Porque es un numero grande 
+		//SOLUCION
+		//- Redondear con paquete Math
+		//- Variable BigDecimal para precision
+
+		
 		
 	}
 

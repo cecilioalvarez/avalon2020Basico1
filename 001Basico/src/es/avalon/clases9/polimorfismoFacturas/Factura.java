@@ -4,11 +4,11 @@ package es.avalon.clases9.polimorfismoFacturas;
 //FacturaNormal 21%IVA
 //FacturaReducida 7%IVA
 //FacturaSinIVA 0%IVA
-public class Factura {
+public abstract class Factura {
 	
 	private int numero;
 	private String concepto;
-	private int importe;
+	private double importe;
 	
 	//Getters y setters
 	public int getNumero() {
@@ -23,15 +23,15 @@ public class Factura {
 	public void setConcepto(String concepto) {
 		this.concepto = concepto;
 	}
-	public int getImporte() {
+	public double getImporte() {
 		return importe;
 	}
-	public void setImporte(int importe) {
+	public void setImporte(double importe) {
 		this.importe = importe;
 	}
 	
 	//Constructor
-	public Factura(int numero, String concepto, int importe) {
+	public Factura(int numero, String concepto, double importe) {
 		super();
 		this.numero = numero;
 		this.concepto = concepto;
@@ -39,14 +39,5 @@ public class Factura {
 	}
 	
 	//metodo getImporteConIVA()
-	public double getImporteConIVA() {
-		return this.getImporte()*1.21;
-	}
-
-	
-	
-	
-	
-	
-
+	public abstract double getImporteConIVA();
 }

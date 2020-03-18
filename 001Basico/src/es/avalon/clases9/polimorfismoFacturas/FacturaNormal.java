@@ -11,10 +11,7 @@ public class FacturaNormal extends Factura{
 	@Override
 	public double getImporteConIVA() {
 		// TODO Auto-generated method stub
-		return super.getImporteConIVA();
+		return getImporte()*1.21;
 	}
 	
-	
-
-
 }

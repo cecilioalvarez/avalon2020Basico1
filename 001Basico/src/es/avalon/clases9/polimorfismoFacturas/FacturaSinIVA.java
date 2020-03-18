@@ -9,7 +9,7 @@ public class FacturaSinIVA extends Factura{
 	@Override
 	public double getImporteConIVA() {
 		
-		return this.getImporte();
+		return getImporte();
 	}
 
 

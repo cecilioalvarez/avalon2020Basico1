@@ -9,7 +9,7 @@ public class FacturaReducida extends Factura {
 	@Override
 	public double getImporteConIVA() {
 		
-		return this.getImporte()*1.07;
+		return getImporte()*1.07;
 	}
 
 
