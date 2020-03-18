@@ -22,11 +22,11 @@ public class Casa {
 
 	public void quitarElemento(Electrodomesticos a) {
 
-		this.lista.remove(a);
+		lista.remove(a);
 	}
 
 	public void encenderTodo() {
-		for (Electrodomesticos i : this.lista) {
+		for (Electrodomesticos i : lista) {
 			// has mantenido la negacion y te la quito (!)
 			if (i.isEncender() == false) {
 				i.pulsar();
