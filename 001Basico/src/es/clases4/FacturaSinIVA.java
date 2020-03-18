@@ -6,7 +6,7 @@ public class FacturaSinIVA extends Factura{
 		super(numero, concepto, importe);
 		// TODO Auto-generated constructor stub
 	}
-	public void conIVA (double importe) {
-		System.out.println( importe*1.00);
+	public double conIVA () {
+		return getImporte()*1.00;
 	}
 }

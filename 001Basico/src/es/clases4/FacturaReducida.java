@@ -7,8 +7,8 @@ public class FacturaReducida extends Factura{
 		// TODO Auto-generated constructor stub
 		
 	}		
-		public void conIVA (double importe) {
-			System.out.println( importe*1.1);
+		public double conIVA () {
+			return getImporte()*1.07;
 	}
 
 }

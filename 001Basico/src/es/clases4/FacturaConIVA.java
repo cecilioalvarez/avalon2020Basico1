@@ -1,9 +1,6 @@
 package es.clases4;
 
-public abstract class Factura {
-	//para trabajar con clases abstractas como coche dentro de BMV, Mercedes, Seat. +
-	//o como factura es abstracta frente a las facturas con tipos e iva
-	// pones abstrac class para reutilizar sin problemas
+public class FacturaConIVA {
 	private int numero;
 	private String concepto;
 	private double importe;
@@ -27,7 +24,7 @@ public abstract class Factura {
 		this.importe = importe;
 	}
 	
-	public Factura(int numero, String concepto, double importe) {
+	public FacturaConIVA(int numero, String concepto, double importe) {
 		super();
 		this.numero = numero;
 		this.concepto = concepto;
