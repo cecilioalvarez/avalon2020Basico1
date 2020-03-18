@@ -4,19 +4,29 @@ import java.util.ArrayList;
 
 public class Casa {
 
-	ArrayList<String> lista=new ArrayList<String>();
+	private ArrayList<Electrodomesticos> lista=new ArrayList<Electrodomesticos>();
 
-	public ArrayList<String> getLista() {
+	
+		public ArrayList<Electrodomesticos> getLista() {
 		return lista;
 	}
-
-	public void setLista(ArrayList<String> lista) {
+	public void setLista(ArrayList<Electrodomesticos> lista) {
 		this.lista = lista;
 	}
-		//void y no tenia return
-	public void addElemento(String a) {
+	//void y no tenia return
+	public void addElemento(Electrodomesticos a) {
 		
 		 lista.add(a);
 	}
-	
+	public void quitarElemento(Electrodomesticos a) {
+		
+		this.lista.remove(a);
+	}
+	public void encenderTodo() {
+		for(Electrodomesticos i:this.lista) {
+			if(!i.isEncender()==false) {
+				i.pulsar();
+			}
+		}
+	}
 }
