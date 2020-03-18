@@ -30,18 +30,19 @@ public class Principal6 {
 //		System.out.println(mayor.getNombre());
 //		System.out.println(mayor.getEdad());
 //		System.out.println(sumarEdades(lista));
-		
-		//no es una nueva variable
-		//ArrayList<Persona> nueva= jubilados(lista);
-		
+
+		// no es una nueva variable
+		// ArrayList<Persona> nueva= jubilados(lista);
+
 		sumarEdadesDeTodos(lista);
-		for(Persona p:lista) {
-			
+		for (Persona p : lista) {
+
 			System.out.println(p.getNombre());
 			System.out.println(p.getEdad());
 		}
 
 	}
+
 	// en este metodo el que lo construye no necesita
 	// saber que existene deportista solo usa el conecpto de persona
 	public static void recorrerListaPersonas(ArrayList<Persona> lista) {
@@ -53,6 +54,7 @@ public class Principal6 {
 			persona.andar();
 		}
 	}
+
 	public static Persona buscarMayor(ArrayList<Persona> lista) {
 
 		// obtengo el primer elemento de lista
@@ -71,32 +73,29 @@ public class Principal6 {
 		// retornamele
 		return p;
 	}
-	
+
 	public static int sumarEdades(ArrayList<Persona> lista) {
 
 		// obtengo el primer elemento de lista
-		int suma=0;
+		int suma = 0;
 		for (Persona persona : lista) {
-			suma=suma+persona.getEdad();
-			//suma+=persona.getEdad();
+			suma = suma + persona.getEdad();
+			// suma+=persona.getEdad();
 
 		}
 		// retornamele
 		return suma;
 	}
-	
-	
+
 	public static ArrayList<Persona> jubilados(ArrayList<Persona> lista) {
 
 		// obtengo el primer elemento de lista
-		ArrayList<Persona> jubilados= new ArrayList<Persona>();
-		
-		
-		
+		ArrayList<Persona> jubilados = new ArrayList<Persona>();
+
 		for (Persona persona : lista) {
-		
-			if(persona.getEdad()>=67) {
-				
+
+			if (persona.getEdad() >= 67) {
+
 				jubilados.add(persona);
 			}
 
@@ -104,18 +103,14 @@ public class Principal6 {
 		// retornamele
 		return jubilados;
 	}
-	
+
 	public static ArrayList<Persona> sumarEdadesDeTodos(ArrayList<Persona> lista) {
 
-		
 		for (Persona persona : lista) {
 
-			persona.setEdad(persona.getEdad()+2);
+			persona.setEdad(persona.getEdad() + 2);
 		}
 		return lista;
 	}
-	
-	
-	
 
 }
