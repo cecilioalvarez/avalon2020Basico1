@@ -7,10 +7,12 @@ public class Principal {
 		Persona d=new Deportista("Pedro",40,"padel");
 		p.andar();
 		d.andar();
-		
+		System.out.println(d.getNombre());
+		System.out.println(d.getEdad());
+
 		//casting
-		Deportista d1=(Deportista)d;
-		System.out.println(d1.getDeporte());
+//		Deportista d1=(Deportista)d;
+//		System.out.println(d1.getDeporte());
 	}
 
 }
