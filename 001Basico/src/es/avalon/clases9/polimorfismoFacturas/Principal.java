@@ -6,7 +6,7 @@ public class Principal {
 		Factura f1 = new Factura(1, "iPhone 11 Pro Max", 1500);
 		FacturaNormal f2 = new FacturaNormal(2, "MacBook Pro 16", 5000);
 		FacturaReducida f3 = new FacturaReducida(3, "Papel higienico", 10);
-		FacturaSinIVA f4 = new FacturaSinIVA(4, "Cocaina", 60);
+		FacturaSinIVA f4 = new FacturaSinIVA(4, "Algo", 50);
 		
 		System.out.println(f1.getImporteConIVA());
 		System.out.println(f2.getImporteConIVA());
