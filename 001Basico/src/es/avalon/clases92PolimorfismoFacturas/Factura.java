@@ -1,6 +1,6 @@
 package es.avalon.clases92PolimorfismoFacturas;
 
-public class Factura {
+public  abstract class Factura {
 
 	private int numero;
 	private String concepto;
@@ -31,9 +31,6 @@ public class Factura {
 		this.importe = importe;
 	}
 	
-	public double getImporteConIVA() {
-		
-		return getImporte()*1.21;
-	}
+	public abstract double getImporteConIVA();
 	
 }
