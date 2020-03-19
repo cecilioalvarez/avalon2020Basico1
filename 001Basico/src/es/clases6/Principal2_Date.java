@@ -2,7 +2,7 @@ package es.clases6;
 import java.util.*;
 import java.text.*;
 
-public class Principal2 {
+public class Principal2_Date {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
