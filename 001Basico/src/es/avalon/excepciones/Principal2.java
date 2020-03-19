@@ -6,15 +6,16 @@ public class Principal2 {
 		// TODO Auto-generated method stub
 
 		Bolsa b=new Bolsa(3);
-		try {
-			b.addItem("galletas");
-			b.addItem("galletas");
-			b.addItem("galletas");
-			b.addItem("chocolate");
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+			try {
+				b.addItem("galletas");
+				b.addItem("galletas");
+				b.addItem("galletas");
+				b.addItem("chocolate");
+			} catch (Exception e) {
+				System.out.println("ha ocurrido un error");
+			}
+			
+			System.out.println("el programa sigue");
 	}
 
 }
