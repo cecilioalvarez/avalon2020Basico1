@@ -11,7 +11,7 @@ public class Principal2Bolsa {
 			b.addItem("Patatas");
 			b.addItem("Chaskys");
 			b.addItem("Alcaparras");
-			b.addItem("Chocolate");  -->Este no me lo acepta porque lo hemos limitado a 3 items
+			b.addItem("Chocolate");  //-->Este no me lo acepta porque lo hemos limitado a 3 items
 		} catch (Exception e) {
 			System.out.println("Ha ocurrido un error");
 		}
