@@ -4,13 +4,14 @@ import java.util.ArrayList;
 
 public class Bolsa {
 
+	
 	private int tope;
-
+	
 	public int getTope() {
 		return tope;
 	}
 
-	private ArrayList<String> items = new ArrayList<>();
+	private ArrayList<String> items= new ArrayList<String>();
 
 	public ArrayList<String> getItems() {
 		return items;
@@ -20,11 +21,22 @@ public class Bolsa {
 		this.items = items;
 	}
 
-	public Bolsa(ArrayList<String> items) {
+	public Bolsa(int tope) {
 		super();
-		this.items = items;
+		this.tope = tope;
+	
 	}
 	
-	public void addItem(String item)
+	public void addItem(String item) throws Exception {
+		
+		if (this.items.size()<tope) 
+			this.items.add(item);
+		else throw new Exception ("no admito mas");
+	}
 
+
+
+	
+	
+	
 }
