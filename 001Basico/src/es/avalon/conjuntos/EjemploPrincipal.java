@@ -2,6 +2,7 @@ package es.avalon.conjuntos;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.TreeSet;
 
 public class EjemploPrincipal {
 
@@ -15,6 +16,13 @@ public class EjemploPrincipal {
 		
 		for (String cadena:conjunto) {
 			
+			System.out.println(cadena);
+		}
+		System.out.println("************");
+		
+		Set<String> otro= new TreeSet<String>(); //cadena
+		
+		for (String cadena : otro) {
 			System.out.println(cadena);
 		}
 
