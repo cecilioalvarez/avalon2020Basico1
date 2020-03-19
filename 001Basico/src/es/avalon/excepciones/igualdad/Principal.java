@@ -1,4 +1,4 @@
-package es.avalon.excepciones.wrappers;
+package es.avalon.excepciones.igualdad;
 
 import java.util.ArrayList;
 
