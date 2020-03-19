@@ -30,7 +30,7 @@ public class WordDoc {
 	}
 
 
-	public void ImprimirDocumento(String texto, Impresora impresora ) {
+	public void ImprimirDocumento(String texto) {
 		impresora.imprimir(texto);
 	}
 }

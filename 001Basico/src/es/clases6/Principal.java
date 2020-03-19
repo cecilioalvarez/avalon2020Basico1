@@ -9,15 +9,15 @@ public class Principal {
 		Impresora i3= new GuardarPDF(); 
 		
 		WordDoc word= new WordDoc(i1);
-		word.ImprimirDocumento("hola guapo", i1);
-		word.ImprimirDocumento("hola cielo", i2);
-		word.ImprimirDocumento("hola tesoro", i3);
+		word.ImprimirDocumento("hola guapo");
+		word.ImprimirDocumento("hola cielo");
+		word.ImprimirDocumento("hola tesoro");
 		 // forma de ceci
 		
 		WordDoc documento = new WordDoc( new ImpresoraLaser());
-		documento.ImprimirDocumento("hola", ImpresoraLaser());
+		documento.ImprimirDocumento("hola");
 		documento.setImpresora(new ImpresoraTinta());
-		documento.ImprimirDocumento("Cari", ImpresoraTinta());
+		documento.ImprimirDocumento("Cari");
 		
 		
 	}
