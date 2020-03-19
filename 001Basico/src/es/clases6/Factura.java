@@ -30,6 +30,11 @@ public class Factura {
 		this.concepto = concepto;
 		this.importe = importe;
 	}
+	public Factura(int numero) {
+		super();
+		this.numero = numero;
+		
+	}
 	@Override
 	public int hashCode() {
 		final int prime = 31;
