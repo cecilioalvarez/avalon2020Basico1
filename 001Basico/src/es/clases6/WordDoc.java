@@ -31,6 +31,10 @@ public class WordDoc {
 
 
 	public void ImprimirDocumento(String texto, Impresora impresora ) {
+	
+		if(this.impresora!=null) 
 		impresora.imprimir(texto);
+		else
+			System.out.println("conecte la impresora");
 	}
 }

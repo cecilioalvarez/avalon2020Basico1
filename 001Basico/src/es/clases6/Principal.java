@@ -12,12 +12,12 @@ public class Principal {
 		word.ImprimirDocumento("hola guapo", i1);
 		word.ImprimirDocumento("hola cielo", i2);
 		word.ImprimirDocumento("hola tesoro", i3);
-		 // forma de ceci
-		
+		 
+		// forma de ceci
 		WordDoc documento = new WordDoc( new ImpresoraLaser());
-		documento.ImprimirDocumento("hola", ImpresoraLaser());
+		documento.ImprimirDocumento("hola", i2);
 		documento.setImpresora(new ImpresoraTinta());
-		documento.ImprimirDocumento("Cari", ImpresoraTinta());
+		documento.ImprimirDocumento("Cari", i1);
 		
 		
 	}
