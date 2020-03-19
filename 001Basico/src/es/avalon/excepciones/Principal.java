@@ -13,7 +13,7 @@ public class Principal {
 		SimpleDateFormat formato= new SimpleDateFormat("d/M/yyyy");
 		
 		try {
-			fecha=formato.parse("1/10/2020");
+			fecha=formato.parse("19/3/2020");
 			System.out.println(fecha);
 		} catch (ParseException e) {
 			e.printStackTrace();
