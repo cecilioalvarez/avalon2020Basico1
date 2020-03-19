@@ -2,6 +2,7 @@ package es.avalon.excepciones;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 public class Principal {
@@ -17,6 +18,14 @@ public class Principal {
 		} catch (ParseException e) {
 			e.printStackTrace();
 		}
+		
+		Calendar calendario= Calendar.getInstance();
+		calendario.setTime(fecha);
+		
+		System.out.println(calendario.get(Calendar.DAY_OF_MONTH));
+		System.out.println(calendario.get(Calendar.DAY_OF_WEEK));
+		System.out.println(calendario.get(Calendar.MONTH));
+		System.out.println(calendario.get(Calendar.YEAR));
 
 	}
 
