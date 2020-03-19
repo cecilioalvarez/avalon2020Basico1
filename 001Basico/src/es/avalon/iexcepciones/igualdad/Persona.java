@@ -1,4 +1,4 @@
-package es.avalon.iexcepciones.wrappers;
+package es.avalon.iexcepciones.igualdad;
 
 public class Persona {
 
@@ -24,6 +24,10 @@ public class Persona {
 	}
 	
 	
+	public Persona(String nombre) {
+		super();
+		this.nombre = nombre;
+	}
 	
 	@Override
 	public int hashCode() {
@@ -35,10 +39,6 @@ public class Persona {
 	
 	
 	
-	public Persona(String nombre) {
-		super();
-		this.nombre = nombre;
-	}
 	// persona.equals(otraPersona)
 	//persona.equals(null)
 	@Override
