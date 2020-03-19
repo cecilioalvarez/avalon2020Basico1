@@ -6,10 +6,15 @@ public class Principal2 {
 		// TODO Auto-generated method stub
 
 		Bolsa b=new Bolsa(3);
-		b.addItem("galletas");
-		b.addItem("galletas");
-		b.addItem("galletas");
-		b.addItem("chocolate");
+		try {
+			b.addItem("galletas");
+			b.addItem("galletas");
+			b.addItem("galletas");
+			b.addItem("chocolate");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 }

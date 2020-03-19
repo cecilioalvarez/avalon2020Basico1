@@ -25,7 +25,7 @@ public class Bolsa {
 		this.tope = tope;
 	}
 	
-	public void addItem(String item) {
+	public void addItem(String item) throws Exception {
 		
 		if(this.items.size()<tope)
 			this.items.add(item);
