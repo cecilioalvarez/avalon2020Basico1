@@ -3,10 +3,20 @@ package es.avalon.dClases10InterfacesEjercicioMejor;
 public class Ordenador implements ElementoCasa {
 
 	private boolean estado;
+	private String nombre;
 
-	public Ordenador() {
+	public Ordenador(String nombre) {
 		super();
 		this.estado = false;
+		this.nombre = nombre;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
 	}
 
 	public boolean isEstado() {
@@ -21,7 +31,7 @@ public class Ordenador implements ElementoCasa {
 	public boolean pulsar() {
 		if (isEstado() == false) {
 			setEstado(true);
-		} else  {
+		} else {
 			setEstado(false);
 		}
 		return isEstado();
