@@ -10,13 +10,13 @@ public class BolsaPrincipal {
 			b.addItem("galletas");
 			b.addItem("galletas");
 			b.addItem("galletas");
-			//b.addItem("chocolate");
+			b.addItem("chocolate");
 		} catch (Exception e) {
-			System.out.println("LA BOLSA ESTA LLENA ");
+			System.out.println("ha ocurrido un error");
 			e.printStackTrace();
 		}
-		System.out.println("Solo entran 3 elementos");
 		
+		System.out.println("el programa sigue");
 
 	}
 
