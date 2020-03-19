@@ -1,9 +1,9 @@
-package es.avalon.excepciones.igualdad.factura;
+package es.avalon.conjuntos;
 
 import java.util.HashSet;
 import java.util.Set;
 
-public class Principal2 {
+public class EjemploPrincipal {
 
 	public static void main(String[] args) {
 		
