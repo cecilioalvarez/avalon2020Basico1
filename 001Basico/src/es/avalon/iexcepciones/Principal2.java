@@ -10,12 +10,13 @@ public class Principal2 {
 			b.addItem("galletas");
 			b.addItem("galletas");
 			b.addItem("galletas");
-			//b.addItem("chocolate");
+			b.addItem("chocolate");
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
+			System.out.println("ha ocurrido un error");
 			e.printStackTrace();
 		}
 		
+		System.out.println("el programa sigue");
 
 	}
 
