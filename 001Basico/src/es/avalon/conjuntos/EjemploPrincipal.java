@@ -20,7 +20,7 @@ public class EjemploPrincipal {
 		}
 		System.out.println("************");
 		
-		Set<String> otro= new TreeSet<String>(); //cadena
+		Set<String> otro= new TreeSet<String>(conjunto); 
 		
 		for (String cadena : otro) {
 			System.out.println(cadena);
