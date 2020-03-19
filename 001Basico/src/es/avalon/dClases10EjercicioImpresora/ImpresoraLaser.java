@@ -4,7 +4,7 @@ public class ImpresoraLaser implements Impresora {
 
 	public void imprimir() {
 		
-		System.out.println(" a color");
+		System.out.println(" en color");
 	}
 
 }

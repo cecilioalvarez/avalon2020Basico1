@@ -11,7 +11,6 @@ public class Principal {
 		Word word1 = new Word(impresoraTinta);
 		Word word2 = new Word(generadorPDF);
 		
-		
 		word.imprimirDocumento("Hola");
 		word1.imprimirDocumento("Hola");
 		word2.imprimirDocumento("Hola");
