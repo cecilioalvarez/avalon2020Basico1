@@ -13,7 +13,8 @@ public class Principal2Bolsa {
 			b.addItem("Alcaparras");
 			b.addItem("Chocolate");  //-->Este no me lo acepta porque lo hemos limitado a 3 items
 		} catch (Exception e) {
-			System.out.println("Ha ocurrido un error");
+			System.out.println("Ha ocurrido un error"); //Si hay mas items de la cuenta sacara el error
+			e.printStackTrace();
 		}
 
 		System.out.println("El programa sigue");
