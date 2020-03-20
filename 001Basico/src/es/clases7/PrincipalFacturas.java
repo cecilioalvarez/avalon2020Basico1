@@ -50,18 +50,20 @@ public class PrincipalFacturas {
 			
 			// metodo maria SOS
 			
-	//		System.out.println(mayornumero(diccionario.));
+			System.out.println(mayorNumero(diccionario));
 	}
-//	public static Factura mayorNumero(HashMap<Integer,Factura> factura) {
-//		 //obtengo el primer elemento de la lista
-//		 Factura f=Factura.get(0);
-//		 for (Factura i: factura) {
-//			 //int edad=40;
-//			 if(f.getNumero()< i.getNumero()){
-//				 //System.out.println(i.getNombre()+ " "+i.getEdad());
-//				f=i;
-//		 }
-//		 }
-//		 return f;
-//	 }
+	public static int mayorNumero(HashMap<Integer,Factura> factura) {
+		 //obtengo el primer elemento de la lista
+		
+		 int mayor=0;
+	
+		 for (int i: factura.keySet()) {
+			
+			 if(mayor<i){
+				 
+				mayor=i;
+		 }
+		 }
+		 return mayor;
+	 }
 }
