@@ -2,12 +2,11 @@ package Clase9Conjuntos;
 
 import java.util.HashMap;
 import java.util.Set;
-
 public class Principal3 {
 
 	public static void main(String[] args) {
-		Persona p1=new Persona("Pedro",20);
-		Persona p2=new Persona("Pedro",20);
+		Persona p1=new Persona("Pedro",20,"perez","informatico");
+		Persona p2=new Persona("Pedro",20,"perez","informatico");
 	    HashMap<String,Persona> diccionario=new HashMap<String,Persona>();
 	
 	diccionario.put(p1.getNombre(),p1);

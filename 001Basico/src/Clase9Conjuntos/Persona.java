@@ -4,6 +4,27 @@ public class Persona {
 
 	private String nombre;
 	private int edad;
+	private String apellido;
+	public String getApellido() {
+		return apellido;
+	}
+	public void setApellido(String apellido) {
+		this.apellido = apellido;
+	}
+	public String getProfesion() {
+		return profesion;
+	}
+	public void setProfesion(String profesion) {
+		this.profesion = profesion;
+	}
+	public Persona(String nombre, int edad, String apellido, String profesion) {
+		super();
+		this.nombre = nombre;
+		this.edad = edad;
+		this.apellido = apellido;
+		this.profesion = profesion;
+	}
+	private String profesion;
 	
 
 	public String getNombre() {
