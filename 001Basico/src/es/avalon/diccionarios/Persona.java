@@ -38,13 +38,13 @@ public class Persona {
 		this.edad = edad;
 		this.profesion = profesion;
 	}
-	
-	// pertenece a la clase object
 	@Override
 	public String toString() {
 		return "Persona [nombre=" + nombre + ", apellidos=" + apellidos + ", edad=" + edad + ", profesion=" + profesion
 				+ "]";
 	}
+	
+	
 	
 	
 	
