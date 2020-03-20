@@ -14,14 +14,15 @@ public class Principal3 {
 	
 	
 	Set<String> claves=diccionario.keySet();
-	System.out.println(claves);
+
 	//keyset devuelve el conjunto de claves en el diccionario la clave es el 
 	//primer elemento que pones en el diccionario
 	//y el valor lo que pones en el segundo
-	for(String clave:claves) {
-		
+	for(String clave:claves) {	
 		System.out.println(diccionario.get(clave));
 	}
+	
+	
 	}
 
 }
