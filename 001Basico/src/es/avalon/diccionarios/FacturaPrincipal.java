@@ -4,7 +4,7 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Set;
 
-public class Principal4 {
+public class FacturaPrincipal {
 
 	public static void main(String[] args) {
 
