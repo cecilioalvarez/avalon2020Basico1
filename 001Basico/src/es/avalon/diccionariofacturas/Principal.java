@@ -24,11 +24,21 @@ public class Principal {
 		
 		System.out.println(mayorNfact(diccionario));
 		
+		// otro metodo
+		Set<Integer> claves=diccionario.keySet();	
+		int mayor=0;
+		for (Integer clave:claves) {
+			
+			if (clave>mayor) {
+				mayor=clave;
+			}
+		}
+		System.out.println(mayor);
 	}
 
 	private static int mayorNfact(HashMap<Integer, Factura> diccionario) {
-		Set<Integer> claves=diccionario.keySet();
 		
+		Set<Integer> claves=diccionario.keySet();	
 		int mayor=0;
 		for (Integer clave:claves) {
 			
