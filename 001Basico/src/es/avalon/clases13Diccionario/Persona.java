@@ -47,8 +47,6 @@ public class Persona {
 		return "Persona [nombre=" + nombre + ", apellidos=" + apellidos + ", edad=" + edad + ", profesion=" + profesion
 				+ "]";
 	}
-	
 
-	for ()
 	
 }

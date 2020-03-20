@@ -17,17 +17,18 @@ public class Principal {
 		diccionario.put(f2.getNumero(), f2);
 		diccionario.put(f3.getNumero(), f3);
 		diccionario.put(f4.getNumero(), f4);
-	}
+	
 
 	// Devuelveme el conjunto de claves del diccionario
-	Set<Integer> conjunto=diccionario.keySet();
+	Set<Integer> clave=diccionario.keySet();
+	System.out.println(clave); //Estas son mis claves
 	int mayor=0;
-	for(int numero: conjunto) {
+	for(int numero: clave) {
 		if (mayor < numero) {
 			mayor = numero;
 		}
 	}
-	system.out.println(mayor);
+	System.out.println(mayor);//Saco el numero de factura mayor
 
 }
 }
