@@ -111,7 +111,7 @@ public Libro(String titulo, String autor, int precio, String categoria, String i
 			String url="jdbc:mysql://localhost:3306/biblioteca";
 			String usuario="root";
 			String clave="";
-			String consulta2= "update libros set titulo='"+this.getTitulo()+"', autor= '"+this.getAutor()+"', precio= "+this.getPrecio()+", categoria= '"+this.getCategoria()+"'+ where isbn = '"+this.getIsbn()+"'";
+			String consulta2= "update libros set titulo='"+this.getTitulo()+"', autor= '"+this.getAutor()+"', precio= "+this.getPrecio()+", categoria= '"+this.getCategoria()+"' where isbn = '"+this.getIsbn()+"'";
 			System.out.println(consulta2);
 			try {
 				conexion=DriverManager.getConnection(url, usuario,clave);
