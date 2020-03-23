@@ -6,7 +6,7 @@ public class Principal9 {
 
 	public static void main(String[] args) {
 		
-		
+		// esto guardando aqui la lista de elemetnos totales
 		ArrayList<Libro> lista= Libro.buscarTodos();
 		
 		for (Libro libro:lista) {
