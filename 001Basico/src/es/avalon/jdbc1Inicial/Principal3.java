@@ -1,4 +1,4 @@
-package es.avalon.jdbc;
+package es.avalon.jdbc1Inicial;
 
 import java.sql.Statement;
 import java.sql.Connection;

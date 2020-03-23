@@ -1,4 +1,4 @@
-package es.avalon.jdbc;
+package es.avalon.jdbc1Inicial;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -14,15 +14,13 @@ public class Principal4 {
 		String url = "jdbc:mysql://localhost:3306/biblioteca";
 		String usuario = "root";
 		String clave = "";
-		String consulta="update set autor='cecilio' where isbn='5', categoria='programacion' where isbn='5'";
+		String consulta="update Libros set autor='cecilio', categoria='programacion' where isbn='5'";
 
 		try {
 			conexion = DriverManager.getConnection(url, usuario, clave);
 			
 			Statement sentencia=conexion.createStatement();
-	
-			sentencia.executeUpdate(consulta); 
-			
+			sentencia.executeUpdate(consulta); 			
 
 		} catch (SQLException e) {
 			e.printStackTrace();
