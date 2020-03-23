@@ -2,7 +2,9 @@ package es.avalon.jdbc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.ArrayList;
 
 public class Libro {
 private String titulo;
@@ -127,8 +129,45 @@ public Libro(String titulo, String autor, int precio, String categoria, String i
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
+		}
+		public static ArrayList<Libro> buscarTodos(){
+				Connection conexion;
+				String url="jdbc:mysql://localhost:3306/biblioteca";
+				String usuario="root";
+				String clave="";
+		String consulta = "select * from libros";
+		//genero una lista de libros para trabajar de fomra natural
+		//con programacion orientada a objetos
+			ArrayList <Libro> lista= new ArrayList<Libro>();
 			
+			try {
+				conexion=DriverManager.getConnection(url, usuario,clave);
+							
+				Statement sentencia =conexion.createStatement();
+				ResultSet rs= sentencia.executeQuery(consulta);
+				
+				while (rs.next()) {
+					/*
+					 * gener un nuevo libro
+					 * al nuevo libro le asigo nos datos que me vienen en el resutlset
+					 * propiedad por propiedad
+					 */
+				Libro libro = new Libro(rs.getString("isbn"));
+				rs.getString("titulo");
+				rs.getString("autor");
+				rs.getInt("precio");
+				rs.getString("categoria");
+				//añado libro a cada lista
+				lista.add(libro);				
+				
+				}
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			return lista;
+		}
 		}
 		
-	}
+	
 	
