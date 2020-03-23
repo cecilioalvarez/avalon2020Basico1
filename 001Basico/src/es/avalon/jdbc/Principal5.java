@@ -25,7 +25,7 @@ public class Principal5 {
 		System.out.print("introduce autor: ");
 		String autor=sc.nextLine();
 		System.out.print("introduce precio: ");
-		String precio=sc.nextLine();
+		int precio=Integer.parseInt(sc.nextLine());
 		System.out.print("introduce categoria: ");
 		String categoria=sc.nextLine();
 		
@@ -36,7 +36,7 @@ public class Principal5 {
 		System.out.println(categoria);
 		
 
-		String consulta = "insert into Libros (isbn,titulo,autor,precio,categoria) values ('8','net','juan',20,'web')";
+		String consulta = "insert into Libros (isbn,titulo,autor,precio,categoria) values ('"+isbn+"','"+titulo+"','"+autor+"',"+precio+",'"+categoria+"')";
 
 		try {
 			conexion = DriverManager.getConnection(url, usuario, clave);
