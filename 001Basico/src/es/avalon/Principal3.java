@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class Principal2 {
+public class Principal3 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -17,7 +17,7 @@ public class Principal2 {
 		String url="jdbc:mysql://localhost:3306/biblioteca";
 		String usuario="root";
 		String clave="";
-		String consulta="select * from Libros";
+		String consulta="delete from Libros where autor='ana'";
 		
 		try {
 			conexion=DriverManager.getConnection(url,usuario,clave);
@@ -25,22 +25,14 @@ public class Principal2 {
 			// sentencia SQL por lo tanto
 			// a la conexion que nos cree una opcion de ejecutar una sentencia
 			Statement sentencia=conexion.createStatement();
-			ResultSet rs=sentencia.executeQuery(consulta);
+			sentencia.execute(consulta);
 			
-			while (rs.next()) {
-				
-				System.out.print(rs.getString("isbn"));
-				System.out.print(rs.getString("titulo"));
-				System.out.print(rs.getString("autor"));
-				System.out.print(rs.getInt("precio"));
-				System.out.print(rs.getString("categoria"));
-				System.out.println();
-			}	
 			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		System.out.println("borrado correcto");
 	}
 
 }
