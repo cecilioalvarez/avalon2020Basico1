@@ -16,7 +16,8 @@ public class Insert {
 		String url = "jdbc:mysql://localhost:3306/biblioteca";
 		String usuario = "root";
 		String clave = "";
-		String consulta = "insert into Libros(isbn,titulo,autor,precio,categoria) values ('2','java','ana',20,'jdbc')";
+		String consulta = "insert into Libros(isbn,titulo,autor,precio,categoria) values ('3','javaDoc','pedro',20,'jdbc')";
+		
 		try {
 			conexion = DriverManager.getConnection(url, usuario, clave);
 			Statement sentencia = conexion.createStatement();
