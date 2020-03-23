@@ -1,4 +1,4 @@
-package es.avalon.jdbc;
+package es.avalon.jdbc2;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -7,81 +7,59 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
-public class Libro {
-	private String isbn;
-	private String titulo;
-	private String autor;
-	private int precio;
-	private String categoria;
-
-	public String getIsbn() {
-		return isbn;
+public class Factura {
+	private int numero;
+	private String concepto;
+	private float importe;
+	
+	public int getNumero() {
+		return numero;
 	}
 
-	public void setIsbn(String isbn) {
-		this.isbn = isbn;
+	public void setNumero(int numero) {
+		this.numero = numero;
 	}
 
-	public String getTitulo() {
-		return titulo;
+	public String getConcepto() {
+		return concepto;
 	}
 
-	public void setTitulo(String titulo) {
-		this.titulo = titulo;
+	public void setConcepto(String concepto) {
+		this.concepto = concepto;
 	}
 
-	public String getAutor() {
-		return autor;
+	public float getImporte() {
+		return importe;
 	}
 
-	public void setAutor(String autor) {
-		this.autor = autor;
-	}
-
-	public int getPrecio() {
-		return precio;
-	}
-
-	public void setPrecio(int precio) {
-		this.precio = precio;
-	}
-
-	public String getCategoria() {
-		return categoria;
-	}
-
-	public void setCategoria(String categoria) {
-		this.categoria = categoria;
-	}
-
-	public Libro(String isbn, String titulo, String autor, int precio, String categoria) {
-		super();
-		this.isbn = isbn;
-		this.titulo = titulo;
-		this.autor = autor;
-		this.precio = precio;
-		this.categoria = categoria;
-	}
-
-	public Libro(String isbn) {
-		super();
-		this.isbn = isbn;
+	public void setImporte(float importe) {
+		this.importe = importe;
 	}
 	
+	public Factura(int numero, String concepto, float importe) {
+		super();
+		this.numero = numero;
+		this.concepto = concepto;
+		this.importe = importe;
+	}
+	
+	public Factura(int numero) {
+		super();
+		this.numero = numero;
+	}
+
 	public void insertar() {
 		Connection conexion;
 		String url = "jdbc:mysql://localhost:3306/biblioteca";
 		String usuario = "root";
 		String clave = "";
 
-		String consulta = "insert into Libros (isbn,titulo,autor,precio,categoria) values";
+		String consulta = "insert into Facturas (numero,concepto,importe) values";
 		consulta = consulta 
 		+ "('" 
-		+ this.getIsbn() + "','" 
-		+ this.getTitulo() + "', '" 
-		+ this.getAutor() + "','" 
-		+ this.getPrecio() + "', '" 
-		+ this.getCategoria() 
+		+ this.getNumero() + "','" 
+		+ this.getConcepto() + "', '"  
+		+ this.getImporte() 
 		+"')";
 		
 		System.out.println(consulta);
@@ -103,7 +81,7 @@ public class Libro {
 		String usuario = "root";
 		String clave = "";
 		
-		String consulta = "delete from Libros where isbn='" + this.getIsbn() + "'";
+		String consulta = "delete from Facturas where numero='" + this.getNumero() + "'";
 		System.out.println(consulta);
 		
 		try {
@@ -123,12 +101,10 @@ public class Libro {
 		String usuario = "root";
 		String clave = "";
 		
-		String consulta = "update Libros set "
-				+ "titulo='" + this.getTitulo() 
-				+ "', autor= '" + this.getAutor() 
-				+ "', precio='" + this.getPrecio() 
-				+ "', categoria= '" + this.getCategoria() 
-				+"' where isbn= '" + this.getIsbn() + "'";
+		String consulta = "update Facturas set "
+				+ "concepto='" + this.getConcepto() 
+				+ "', importe= '" + this.getImporte() 
+				+"' where numero= '" + this.getNumero() + "'";
 				
 		System.out.println(consulta);
 		
@@ -143,15 +119,15 @@ public class Libro {
 		System.out.println("Actualizacion correcta");
 	}
 	
-	public static ArrayList <Libro> buscarTodos(){
+	public static ArrayList <Factura> buscarTodos(){
         Connection conexion;
 		
 		String url="jdbc:mysql://localhost:3306/biblioteca";
 		String usuario="root";
 		String clave="";
-		String consulta="select * from Libros";
+		String consulta="select * from Facturas";
 		// genero una lista de libros
-		ArrayList<Libro> lista=new ArrayList<Libro>();
+		ArrayList<Factura> lista=new ArrayList<Factura>();
 		
 		try {
 			conexion=DriverManager.getConnection(url,usuario,clave);
@@ -160,12 +136,10 @@ public class Libro {
 			//visualizar
 			while (rs.next()){
 				
-				Libro libro = new Libro(rs.getString("isbn"),
-						rs.getString("titulo"),
-						rs.getString("autor"),
-						rs.getInt("precio"),
-						rs.getString("categoria"));
-				lista.add(libro);
+				Factura factura = new Factura(rs.getInt("numero"),
+						rs.getString("concepto"),
+						rs.getFloat("importe"));
+				lista.add(factura);
 				
 				
 			}
