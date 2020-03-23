@@ -5,10 +5,8 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.ArrayList;
-import java.util.Collection;
 
-public class Principal {
+public class Select {
 
 	public static void main(String[] args) {
 
@@ -16,13 +14,19 @@ public class Principal {
 		String url = "jdbc:mysql://localhost:3306/biblioteca";
 		String usuario = "root";
 		String clave = "";
-		String consulta = "insert into Libros(isbn,titulo,autor,precio,categoria) values ('5','net','juan',20,'web')";
+		String consulta = "select * from Libros";
 
 		try {
 			conexion = DriverManager.getConnection(url, usuario, clave);
 			Statement sentencia = conexion.createStatement();
-			sentencia.execute(consulta);
-			System.out.println(conexion);
+			ResultSet rs = sentencia.executeQuery(consulta);
+			while (rs.next()) {
+				System.out.print(rs.getString("isbn"));
+				System.out.print(rs.getString("titulo"));
+				System.out.print(rs.getString("autor"));
+				System.out.print(rs.getInt("precio"));
+				System.out.println(rs.getString("categoria"));
+			}
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
