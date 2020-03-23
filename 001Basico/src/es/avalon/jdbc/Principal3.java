@@ -13,7 +13,7 @@ public class Principal3 {
 		String url="jdbc:mysql://localhost:3306/biblioteca";
 		String usuario="root";
 		String clave="";
-		String consulta="delete into Libros where autor='ana'";
+		String consulta="delete from Libros where autor='Ana'";
 		
 		try {
 			conexion=DriverManager.getConnection(url,usuario,clave);
