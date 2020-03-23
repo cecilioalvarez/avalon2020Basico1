@@ -2,8 +2,10 @@ package es.avalon.jdbc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
 
 public class Libro {
 	private String isbn;
@@ -139,6 +141,41 @@ public class Libro {
 			e.printStackTrace();
 		}
 		System.out.println("Actualizacion correcta");
+	}
+	
+	public ArrayList <Libro> buscarTodos(){
+        Connection conexion;
+		
+		String url="jdbc:mysql://localhost:3306/biblioteca";
+		String usuario="root";
+		String clave="";
+		String consulta="select * from Libros";
+		// genero una lista de libros
+		ArrayList<Libro> lista=new ArrayList<Libro>();
+		
+		try {
+			conexion=DriverManager.getConnection(url,usuario,clave);
+			Statement sentencia= conexion.createStatement();
+			ResultSet rs= sentencia.executeQuery(consulta);
+			//visualizar
+			while (rs.next()){
+				
+				Libro libro=new Libro(rs.getString("isbn"));
+				rs.getString("titulo");
+				rs.getString("autor");
+				rs.getInt("precio");
+				rs.getString("categoria");
+				lista.add(libro);
+				
+				
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		// retorno la lista de objetos
+		return lista;
+
 	}
 
 }
