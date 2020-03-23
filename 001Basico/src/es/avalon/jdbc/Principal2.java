@@ -11,7 +11,7 @@ public class Principal2 {
 	public static void main(String[] args) {
 		Connection conexion;
 		String url = "jdbc:mysql://localhost:3306/biblioteca";
-		String url2="jdbc:mysql://localhost/biblioteca;?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
+		//String url2="jdbc:mysql://localhost/biblioteca;?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
 		String usuario = "root";
 		String clave = "";
 		String consulta = "select * from Libros";

@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class Principal {
+public class Principal4 {
 
 	public static void main(String[] args) {
 		
@@ -13,9 +13,7 @@ public class Principal {
 		String url="jdbc:mysql://localhost:3306/biblioteca";
 		String usuario="root";
 		String clave="";
-		String consulta="insert into Libros (isbn,titulo,autor,precio,categoria) values ('5','net','juan',20,'web')";
-		
-		
+		String consulta="update Libros set autor='cecilio' , categoria='programacion' where isbn='5'";
 		
 		try {
 			conexion=DriverManager.getConnection(url,usuario,clave);
@@ -23,7 +21,7 @@ public class Principal {
 			//sentencia SQL por lo tanto
 			// a la conexion que nos cree una opcion de ejecutar una sentencia
 			Statement sentencia=conexion.createStatement();
-			sentencia.execute(consulta);
+			sentencia.executeUpdate(consulta);
 			
 			
 			
@@ -31,7 +29,7 @@ public class Principal {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+		System.out.println("actualizacion correcta");
 		
 		
 
