@@ -10,10 +10,10 @@ public class Principal2 {
 
 	public static void main(String[] args) {
 		Connection conexion;
-		String url ="jdbc:mysql://localhost/biblioteca;?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
+		String url ="jdbc:mysql://localhost/biblioteca?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
 		String usuario = "root";
 		String clave = "";
-		String consulta = "insert into Libros (isbn,titulo,autor,precio,categoria) values ('8','net','juan',20,'web')";
+		String consulta = "select * from Libros";
 
 		try {
 			conexion = DriverManager.getConnection(url, usuario, clave);
