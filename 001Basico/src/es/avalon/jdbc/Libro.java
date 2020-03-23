@@ -85,6 +85,7 @@ public class Libro {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		System.out.println("Insertado correctamente");
 	}
 	
 	public void borrar() {
@@ -104,7 +105,34 @@ public class Libro {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		System.out.println("Borrado correctamente");
 		
+		
+	}
+	public void actualizar() {
+		Connection conexion;
+		String url = "jdbc:mysql://localhost:3306/biblioteca";
+		String usuario = "root";
+		String clave = "";
+		
+		String consulta = "update Libros set "
+				+ "titulo='" + this.getTitulo() 
+				+ "', autor= '" + this.getAutor() 
+				+ "', precio='" + this.getPrecio() 
+				+ "', categoria= '" + this.getCategoria() 
+				+"' where isbn= '" + this.getIsbn() + "'";
+				
+		System.out.println(consulta);
+		
+		try {
+			conexion = DriverManager.getConnection(url, usuario, clave);
+			Statement sentencia = conexion.createStatement();
+			sentencia.execute(consulta);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println("Actualizacion correcta");
 		
 	}
 
