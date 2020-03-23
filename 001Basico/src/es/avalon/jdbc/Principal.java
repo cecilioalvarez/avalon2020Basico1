@@ -13,7 +13,7 @@ public class Principal {
 		String url="jdbc:mysql://localhost:3306/biblioteca";
 		String usuario="root";
 		String clave="";
-		String consulta="insert into Libros (isbn,titulo,autor,precio,categoria) values ('1', 'java', 'ana',10,'programacion')";
+		String consulta="insert into Libros (isbn,titulo,autor,precio,categoria) values ('1', 'java', 'ana',10,'programacion')"; //añadir
 		
 		try {
 			conexion=DriverManager.getConnection(url,usuario,clave);

@@ -20,7 +20,7 @@ public class Principal2 {
 			conexion=DriverManager.getConnection(url,usuario,clave);
 			Statement sentencia= conexion.createStatement();
 			ResultSet rs= sentencia.executeQuery(consulta);
-			
+			//visualizar
 			while (rs.next()){
 				System.out.print(rs.getString("isbn"));
 				System.out.print(rs.getString("titulo"));
