@@ -86,5 +86,26 @@ public class Libro {
 			e.printStackTrace();
 		}
 	}
+	
+	public void borrar() {
+		Connection conexion;
+		String url = "jdbc:mysql://localhost:3306/biblioteca";
+		String usuario = "root";
+		String clave = "";
+		
+		String consulta = "delete from Libros where isbn='" + this.getIsbn() + "'";
+		System.out.println(consulta);
+		
+		try {
+			conexion = DriverManager.getConnection(url, usuario, clave);
+			Statement sentencia = conexion.createStatement();
+			sentencia.execute(consulta);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+	}
 
 }
