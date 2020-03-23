@@ -73,8 +73,15 @@ public class Libro {
 		String clave = "";
 
 		String consulta = "insert into Libros (isbn,titulo,autor,precio,categoria) values";
-		consulta = consulta + "('" + this.getIsbn() + "','" + this.getTitulo() + "', '" + this.getAutor() + "','" + this.getPrecio() + "', '" + this.getCategoria()
-				+ "')";
+		consulta = consulta 
+		+ "('" 
+		+ this.getIsbn() + "','" 
+		+ this.getTitulo() + "', '" 
+		+ this.getAutor() + "','" 
+		+ this.getPrecio() + "', '" 
+		+ this.getCategoria() 
+		+"')";
+		
 		System.out.println(consulta);
 
 		try {
@@ -85,7 +92,7 @@ public class Libro {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		System.out.println("Insertado correctamente");
+		System.out.println("Insertado correcto");
 	}
 	
 	public void borrar() {
@@ -105,10 +112,9 @@ public class Libro {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		System.out.println("Borrado correctamente");
-		
-		
+		System.out.println("Borrado correcto");
 	}
+	
 	public void actualizar() {
 		Connection conexion;
 		String url = "jdbc:mysql://localhost:3306/biblioteca";
@@ -133,7 +139,6 @@ public class Libro {
 			e.printStackTrace();
 		}
 		System.out.println("Actualizacion correcta");
-		
 	}
 
 }
