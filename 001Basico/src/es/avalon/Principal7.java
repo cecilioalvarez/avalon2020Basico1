@@ -25,7 +25,7 @@ public class Principal7 {
 		System.out.println(precio);
 		System.out.println(categoria);
 		
-		Libro libro=new Libro (isbn,titulo,autor,precio,categoria);
+		Libro libro=new Libro (isbn,titulo,autor,Integer.parseInt(precio),categoria);
 		libro.insertar();
 	}
 
