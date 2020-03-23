@@ -101,8 +101,8 @@ public class Libro {
 		String usuario = "root";
 		String clave = "";
 
-		String consulta =  "update Libros set titulo='"+getTitulo()+"',autor='"+getAutor()+"',precio="+getPrecio()+"',categoria='"+getCategoria()+"' where isbn='"+getIsbn()+"'";
-		
+		String consulta =  "update Libros set titulo='"+getTitulo()+"',autor='"+getAutor()+"',precio="+getPrecio()+",categoria='"+getCategoria()+"' where isbn='"+getIsbn()+"'";
+		System.out.println(consulta);
 		try {
 			conexion = DriverManager.getConnection(url, usuario, clave);
 			Statement sentencia = conexion.createStatement();
