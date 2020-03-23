@@ -11,7 +11,6 @@ public class Principal3 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// queremos seleccionar los registros
 		
 		Connection conexion;
 		String url="jdbc:mysql://localhost:3306/biblioteca";
