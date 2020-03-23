@@ -2,25 +2,33 @@ package es.avalon.jdbc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class Principal4 {
+public class Principal2Select {
 
 	public static void main(String[] args) {
 		Connection conexion;
 		String url ="jdbc:mysql://localhost/biblioteca?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
 		String usuario = "root";
 		String clave = "";
-		String consulta = "update Libros set autor='cecilio', categoria='programacion' where isbn='8'";
+		String consulta = "select * from Libros";
 
 		try {
 			conexion = DriverManager.getConnection(url, usuario, clave);
 			Statement sentencia = conexion.createStatement();
-			sentencia.executeUpdate(consulta);
+			ResultSet rs=sentencia.executeQuery(consulta);
 			
-			
-			
+			while(rs.next()) {
+				System.out.print(rs.getString("isbn"));
+				System.out.print(rs.getString("titulo"));
+				System.out.print(rs.getString("autor"));
+				System.out.print(rs.getString("precio"));
+				System.out.print(rs.getString("categoria"));
+				System.out.println();
+				
+			}
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}

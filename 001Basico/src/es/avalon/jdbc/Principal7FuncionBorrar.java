@@ -2,7 +2,7 @@ package es.avalon.jdbc;
 
 import java.util.Scanner;
 
-public class Principal7 {
+public class Principal7FuncionBorrar {
 
 	public static void main(String[] args) {
 		

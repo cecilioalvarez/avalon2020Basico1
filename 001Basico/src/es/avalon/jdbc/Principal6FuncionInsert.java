@@ -2,7 +2,7 @@ package es.avalon.jdbc;
 
 import java.util.Scanner;
 
-public class Principal6 {
+public class Principal6FuncionInsert {
 
 	public static void main(String[] args) {
 		
