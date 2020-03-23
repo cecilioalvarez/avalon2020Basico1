@@ -2,8 +2,10 @@ package es.avalon.jdbc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
 
 public class Libro {
 
@@ -112,5 +114,35 @@ public class Libro {
 			e.printStackTrace();
 		}
 	
+	}
+	
+	public static ArrayList<Libro> buscarTodos(){
+		Connection conexion;
+		String url ="jdbc:mysql://localhost/biblioteca?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
+		String usuario = "root";
+		String clave = "";
+		String consulta = "select * from Libros";
+		ArrayList<Libro> lista=new ArrayList<Libro>();
+		try {
+			conexion = DriverManager.getConnection(url, usuario, clave);
+			Statement sentencia = conexion.createStatement();
+			ResultSet rs=sentencia.executeQuery(consulta);
+			
+			while(rs.next()) {
+				//genero un nuevo libro
+				//al nuevo libro le asigno los datos que me vienen en el resulset
+				
+				Libro libro=new Libro(rs.getString("isbn"),
+				rs.getString("titulo"),
+				rs.getString("autor"),
+				rs.getInt("precio"),
+				rs.getString("categoria"));
+				lista.add(libro);
+				
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	return lista;
 	}
 }

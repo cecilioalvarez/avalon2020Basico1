@@ -3,8 +3,8 @@ package es.avalon.jdbc;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.Scanner;
+import com.mysql.cj.xdevapi.Statement;
 
 public class Principal5 {
 
@@ -40,8 +40,8 @@ public class Principal5 {
 
 		try {
 			conexion = DriverManager.getConnection(url, usuario, clave);
-			Statement sentencia = conexion.createStatement();
-			sentencia.execute(consulta);
+			Statement sentencia = (Statement) conexion.createStatement();
+			sentencia.execute();
 			System.out.println(conexion);
 		} catch (SQLException e) {
 			e.printStackTrace();
