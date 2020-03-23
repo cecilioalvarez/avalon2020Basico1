@@ -49,8 +49,8 @@ public class Principal3 {
 		
 		ArrayList<Libro> lista =Libro.buscarTodos();
 		for(Libro libro: lista) {
-			System.out.println(libro.getIsbn());
-			System.out.println(libro.getAutor());
+			System.out.println("isbn"+libro.getIsbn());
+			System.out.println("autor"+libro.getAutor());
 			System.out.println();
 			
 		}

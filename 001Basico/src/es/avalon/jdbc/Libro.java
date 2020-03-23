@@ -152,12 +152,12 @@ public Libro(String titulo, String autor, int precio, String categoria, String i
 					 * al nuevo libro le asigo nos datos que me vienen en el resutlset
 					 * propiedad por propiedad
 					 */
-				Libro libro = new Libro(rs.getString("isbn"));
-				rs.getString("titulo");
-				rs.getString("autor");
-				rs.getInt("precio");
-				rs.getString("categoria");
-				//añado libro a cada lista
+				Libro libro = new Libro(rs.getString("isbn"),
+				rs.getString("titulo"),
+				rs.getInt("precio"),
+				rs.getString("autor"),
+				rs.getString("categoria"));
+				//aï¿½ado libro a cada lista
 				lista.add(libro);				
 				
 				}
