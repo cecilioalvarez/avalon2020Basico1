@@ -1,20 +1,23 @@
-  package es.avalon;
+package es.avalon;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class Principal {
+public class Principal4 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+		// queremos seleccionar los registros
+		
 		Connection conexion;
 		String url="jdbc:mysql://localhost:3306/biblioteca";
 		String usuario="root";
 		String clave="";
-		String consulta="insert into Libros (isbn,titulo,autor,precio,categoria) values ('3','net','Juan',20,'web')";
+		String consulta="update Libros set autor='cecilio' , categoria= 'programacion' , where isbn='5'";
 		
 		try {
 			conexion=DriverManager.getConnection(url,usuario,clave);
@@ -24,11 +27,12 @@ public class Principal {
 			Statement sentencia=conexion.createStatement();
 			sentencia.execute(consulta);
 			
-			System.out.println(conexion);
+			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		System.out.println("actualizacion correcta");
 	}
 
 }
