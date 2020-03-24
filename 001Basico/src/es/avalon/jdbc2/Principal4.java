@@ -8,7 +8,7 @@ import es.avalon.jdbc.Libro;
 public class Principal4 {
 
 	public static void main(String[] args) {
-		// DUDA! - No detecta los decimales
+		
 		
 		ArrayList<Factura> lista = Factura.buscarTodos();
 		

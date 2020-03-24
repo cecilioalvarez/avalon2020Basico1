@@ -7,6 +7,8 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
+import es.avalon.jdbc3.dto.LibroDTO;
+
 public class Libro {
 
 	private String isbn;
@@ -150,7 +152,7 @@ public class Libro {
 	// Devuelve array list de todos los libros
 
 	public static ArrayList<Libro> buscarTodos() {
-		
+
 		Connection conexion;
 
 		String url = "jdbc:mysql://localhost:3306/biblioteca";
@@ -158,7 +160,7 @@ public class Libro {
 		String clave = "";
 
 		String consulta = "select * from Libros";
-		
+
 		ArrayList<Libro> lista = new ArrayList<Libro>();
 
 		try {
@@ -167,13 +169,10 @@ public class Libro {
 			ResultSet rs = sentencia.executeQuery(consulta);
 
 			while (rs.next()) {
-				
-				Libro libro = new Libro(rs.getString("isbn"),
-				rs.getString("titulo"),
-				rs.getString("autor"),
-				rs.getInt("precio"),
-				rs.getString("categoria"));
-				
+
+				Libro libro = new Libro(rs.getString("isbn"), rs.getString("titulo"), rs.getString("autor"),
+						rs.getInt("precio"), rs.getString("categoria"));
+
 				lista.add(libro);
 
 			}
@@ -183,6 +182,43 @@ public class Libro {
 			e.printStackTrace();
 		}
 		return lista;
+	}
+
+	public static ArrayList<LibroDTO> buscarTodosConCategoria() {
+
+		Connection conexion;
+
+		String url = "jdbc:mysql://localhost:3306/biblioteca2";
+		String usuario = "root";
+		String clave = "";
+
+		String consulta = "select * from Libros inner join Categoria on Categoria.nombre=Libros.categoria_nombre";
+
+		ArrayList<LibroDTO> listadto = new ArrayList<LibroDTO>();
+
+		try {
+			conexion = DriverManager.getConnection(url, usuario, clave);
+			Statement sentencia = conexion.createStatement();
+			ResultSet rs = sentencia.executeQuery(consulta);
+
+			while (rs.next()) {
+
+				LibroDTO librodto = new LibroDTO(rs.getString("isbn"), 
+						rs.getString("titulo"),
+						rs.getString("autor"),
+						rs.getInt("precio"), 
+						rs.getString("categoria_nombre"),
+						rs.getString("descripcion"));
+
+				listadto.add(librodto);
+
+			}
+
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return listadto;
 	}
 
 }
