@@ -2,7 +2,7 @@ package es.avalon.jdbc2;
 
 import java.util.Scanner;
 
-public class Principal4Libro {
+public class Principal4LibroInsertar {
 
 	public static void main(String[] args) {
 

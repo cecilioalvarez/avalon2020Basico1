@@ -2,7 +2,7 @@ package es.avalon.jdbc2;
 
 import java.util.ArrayList;
 
-public class Principal7Libro {
+public class Principal7LibroArray {
 
 	public static void main(String[] args) {
 
