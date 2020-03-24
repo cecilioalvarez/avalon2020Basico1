@@ -1,26 +1,25 @@
 package es.avalon.jdbc;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Principal2 {
 
 	public static void main(String[] args) {
 
-		Scanner sc = new Scanner(System.in);
+		Factura facturaNueva = new Factura(3,"FacturaNueva",123456);
+		facturaNueva.insertar();
 		
-		System.out.print("introduce isbn:  ");
-		String isbn = sc.nextLine();
-		System.out.print("introduce titulo:  ");
-		String titulo = sc.nextLine();
-		System.out.print("introduce autor:  ");
-		String autor = sc.nextLine();
-		System.out.print("introduce precio:  ");
-		int precio = Integer.parseInt(sc.nextLine());
-		System.out.print("introduce categoria:  ");
-		String categoria = sc.nextLine();
+		ArrayList<Factura> facturas = Factura.mostrarTodo();
+
+		for (Factura i : facturas) {
+
+			System.out.print(i.getNumero() + " ");
+			System.out.print(i.getConcepto() + " ");
+			System.out.println(i.getImporte());
+		}
 		
-		Libro libro = new Libro(isbn,titulo,autor,precio,categoria);
-		libro.actulizaByisbn();
+		Factura facturaActual = new Factura(3,"Factura Actual", 112.12);
 
 	}
 

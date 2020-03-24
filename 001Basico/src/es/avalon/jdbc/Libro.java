@@ -2,8 +2,10 @@ package es.avalon.jdbc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Libro {
@@ -74,8 +76,8 @@ public class Libro {
 		String url = "jdbc:mysql://localhost:3306/biblioteca";
 		String usuario = "root";
 		String clave = "";
-		String consulta = "update Libros set titulo = '" + getTitulo() + "' , autor = '" + getAutor()
-				+ "', precio = '" + getPrecio() + "' , categoria = '" + getCategoria() + "' where isbn = '" + getIsbn() + "' ";
+		String consulta = "update Libros set titulo = '" + getTitulo() + "' , autor = '" + getAutor() + "', precio = '"
+				+ getPrecio() + "' , categoria = '" + getCategoria() + "' where isbn = '" + getIsbn() + "' ";
 
 		try {
 			conexion = DriverManager.getConnection(url, usuario, clave);
@@ -85,6 +87,30 @@ public class Libro {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
+	}
+
+	public static ArrayList<Libro> mostrarTodo() {
+
+		Connection conexion;
+		String url = "jdbc:mysql://localhost:3306/biblioteca";
+		String usuario = "root";
+		String clave = "";
+		String consulta = "select * from Libros";
+		ArrayList<Libro> lista = new ArrayList<Libro>();
+
+		try {
+			conexion = DriverManager.getConnection(url, usuario, clave);
+			Statement sentencia = conexion.createStatement();
+			ResultSet rs = sentencia.executeQuery(consulta);
+			
+			while (rs.next()) {
+				Libro libro = new Libro(rs.getString("isbn"), rs.getString("titulo"), rs.getString("autor"),rs.getInt("precio"), rs.getString("categoria"));
+				lista.add(libro);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return lista;
 	}
 
 	public void insertar() {
