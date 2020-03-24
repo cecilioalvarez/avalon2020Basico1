@@ -8,10 +8,11 @@ public class Principal4 {
 		
 		// Busca todas las facturas
 		ArrayList<Factura> lista= Factura.buscarTodos();
-		
+		System.out.println("Numero     Concepto      Importe");
 		for (Factura factura:lista) {
-			System.out.print(factura.getNumero()+" ");
-			System.out.print(factura.getConcepto()+" ");
+			
+			System.out.print("  "+factura.getNumero()+"         ");
+			System.out.print(factura.getConcepto()+"         ");
 			System.out.print(factura.getImporte());
 			
 			System.out.println();
