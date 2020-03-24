@@ -7,6 +7,8 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
+import es.avalon.jdbc.dto.LibroDTO;
+
 public class Libro {
 
 	private String isbn;
@@ -185,4 +187,48 @@ public class Libro {
 			//retorno la lista de objetos
 			return lista;
 		}
+		
+		public static ArrayList<LibroDTO> buscarTodosConCategoria() {	
+			Connection conexion;
+			String url = "jdbc:mysql://localhost:3306/biblioteca2";
+			String usuario = "root";
+			String clave = "";
+			String consulta = "select * from Libros"
+					+ " inner join"
+					+ " Categoria on Categoria.nombre="
+					+ "  Libros.categoria_nombre";
+			
+			//genero una lista de libros para trabajar de una forma natural
+			// con programación orientada a objeto
+			ArrayList<LibroDTO> lista= new ArrayList<LibroDTO>();
+			try {
+				conexion = DriverManager
+						.getConnection(url, usuario, clave);
+				Statement sentencia = conexion.createStatement();
+				ResultSet rs=sentencia.executeQuery(consulta);
+				
+				while(rs.next()) {
+					
+					// genero un nuevo libro
+					// al nuevo libro le asigno los datos que me vienen en el resultset
+					// propiedad por propiedad
+					
+					LibroDTO librodto=
+							new LibroDTO(rs.getString("isbn"),
+					rs.getString("titulo"),
+					rs.getString("autor"),
+					rs.getInt("precio"),
+					rs.getString("categoria_nombre"),
+					rs.getString("descripcion"));
+					// añado cada libro a la lista
+					lista.add(librodto);	
+				}
+						
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			//retorno la lista de objetos
+			return lista;
+		}
+		
 }
