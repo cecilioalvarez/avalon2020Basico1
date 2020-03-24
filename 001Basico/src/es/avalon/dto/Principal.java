@@ -1,4 +1,4 @@
-package es.avalon.jdbc3;
+package es.avalon.dto;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
