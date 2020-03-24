@@ -8,6 +8,8 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import es.avalon.jdbcDTO.LibroDTO;
+
 public class Libro {
 
 	private String isbn;
@@ -148,6 +150,31 @@ public class Libro {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
+	}
+	
+	
+	public static ArrayList<LibroDTO> mostrarTodoConCategoria() {
+
+		Connection conexion;
+		String url = "jdbc:mysql://localhost:3306/biblioteca2";
+		String usuario = "root";
+		String clave = "";
+		String consulta = "SELECT * FROM libros INNER JOIN categoria on categoria.nombre=libros.categoria_nombre";
+		ArrayList<LibroDTO> lista = new ArrayList<LibroDTO>();
+
+		try {
+			conexion = DriverManager.getConnection(url, usuario, clave);
+			Statement sentencia = conexion.createStatement();
+			ResultSet rs = sentencia.executeQuery(consulta);
+			
+			while (rs.next()) {
+				LibroDTO libroDTO = new LibroDTO(rs.getString("isbn"), rs.getString("titulo"), rs.getString("autor"),rs.getInt("precio"), rs.getString("categoria_nombre"),rs.getString("descripcion"));
+				lista.add(libroDTO);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return lista;
 	}
 
 }

@@ -26,7 +26,6 @@ public class Principal3InnerJoin {
 				System.out.print(rs.getString("autor")+ " ");
 				System.out.print(rs.getInt("precio")+ " ");
 				System.out.print(rs.getString("categoria_nombre")+ " ");
-				System.out.print(rs.getString("nombre")+ " ");
 				System.out.println(rs.getString("descripcion")+ " ");
 			}
 		} catch (SQLException e) {

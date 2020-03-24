@@ -3,23 +3,24 @@ package es.avalon.jdbc;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import es.avalon.jdbcDTO.LibroDTO;
+
 public class Principal2 {
 
 	public static void main(String[] args) {
 
-		Factura facturaNueva = new Factura(3, "FacturaNueva", 123456);
-		facturaNueva.insertar();
-
-		mostrarBBDD();
-
-		Factura facturaActual = new Factura(3, "Factura Actual", 112.12F);
-		facturaActual.actulizaByisbn();
-
-		mostrarBBDD();
-
-		Factura.borrarBynumero(3);
-
-		mostrarBBDD();
+		ArrayList<LibroDTO> librodto = Libro.mostrarTodoConCategoria();
+		
+		for (LibroDTO libro : librodto) {
+			
+			System.out.print(libro.getIsbn() + " ");
+			System.out.print(libro.getTitulo() + " ");
+			System.out.print(libro.getAutor() + " ");
+			System.out.print(libro.getPrecio() + " ");
+			System.out.print(libro.getCategoriaNombre() + " ");
+			System.out.println(libro.getCategoroaDescripcion() + " ");
+			
+		}
 	}
 
 	private static void mostrarBBDD() {
