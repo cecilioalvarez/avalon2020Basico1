@@ -8,6 +8,7 @@ public class Principal {
 		
 		Scanner sc = new Scanner(System.in);
 		
+		// Añade una factura
 		System.out.print("Introduce numero:  ");
 		int numero = Integer.parseInt(sc.nextLine());
 		

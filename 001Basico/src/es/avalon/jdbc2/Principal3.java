@@ -6,6 +6,7 @@ public class Principal3 {
 
 	public static void main(String[] args) {
 		
+		// Edita una factura
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.print("Introduce numero:  ");

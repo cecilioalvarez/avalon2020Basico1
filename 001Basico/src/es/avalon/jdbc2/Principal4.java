@@ -6,6 +6,7 @@ public class Principal4 {
 
 	public static void main(String[] args) {
 		
+		// Busca todas las facturas
 		ArrayList<Factura> lista= Factura.buscarTodos();
 		
 		for (Factura factura:lista) {
