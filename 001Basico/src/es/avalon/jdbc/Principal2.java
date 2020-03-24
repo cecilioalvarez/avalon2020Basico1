@@ -7,9 +7,22 @@ public class Principal2 {
 
 	public static void main(String[] args) {
 
-		Factura facturaNueva = new Factura(3,"FacturaNueva",123456);
+		Factura facturaNueva = new Factura(3, "FacturaNueva", 123456);
 		facturaNueva.insertar();
-		
+
+		mostrarBBDD();
+
+		Factura facturaActual = new Factura(3, "Factura Actual", 112.12F);
+		facturaActual.actulizaByisbn();
+
+		mostrarBBDD();
+
+		Factura.borrarBynumero(3);
+
+		mostrarBBDD();
+	}
+
+	private static void mostrarBBDD() {
 		ArrayList<Factura> facturas = Factura.mostrarTodo();
 
 		for (Factura i : facturas) {
@@ -18,9 +31,7 @@ public class Principal2 {
 			System.out.print(i.getConcepto() + " ");
 			System.out.println(i.getImporte());
 		}
-		
-		Factura facturaActual = new Factura(3,"Factura Actual", 112.12);
-
+		System.out.println();
 	}
 
 }
