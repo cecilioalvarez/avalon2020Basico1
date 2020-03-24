@@ -45,6 +45,7 @@ public class LibroDTO {
 	public void setCategoriaDescripcion(String categoriaDescripcion) {
 		this.categoriaDescripcion = categoriaDescripcion;
 	}
+	
 	//Constructor
 	public LibroDTO(String isbn, String titulo, String autor, int precio, String categoriaNombre,
 			String categoriaDescripcion) {
